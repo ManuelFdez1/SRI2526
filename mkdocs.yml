@@ -1,2 +1,6 @@
 site_name: Servicios de Red e Internet - 2º ASIR
 theme: readthedocs
+nav:
+    - Home: index.md
+    - User Guide: user-guide.md
+    - Bug Tracker: https://example.com/
