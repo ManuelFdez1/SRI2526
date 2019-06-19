@@ -8,11 +8,13 @@ Welcome to Servicios de Red e Internet's documentation!
 
 .. toctree::
    :maxdepth: 2
+
    intro
    strings
    datatypes
    numeric
-   :caption: Contents:
+
+   
 
 
 
