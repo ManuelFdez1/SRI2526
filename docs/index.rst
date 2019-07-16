@@ -10,12 +10,7 @@ Welcome to Servicios de Red e Internet's documentation!
    :maxdepth: 2
 
    intro
-   strings
-   datatypes
-   numeric
-   (many more documents listed here)
-
-
+   
 Indices and tables
 ==================
 
