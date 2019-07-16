@@ -1,10 +1,10 @@
-================
-My Documentation
-================
-
-You can have text here. But don't introduce headlines,
-if you want to have the pulled in files at the same level.
+====================
+Contenidos
+====================
 
 .. toctree::
-  introduccion\intro
-  Chapter-1
+   :numbered:
+   :maxdepth: 5
+   :glob:
+
+   *
