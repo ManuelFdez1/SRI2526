@@ -9,8 +9,8 @@ Welcome to Servicios de Red e Internet's documentation!
 .. toctree::
    :maxdepth: 2
 
-   intro
-   
+   introduccion/intro
+
 Indices and tables
 ==================
 
