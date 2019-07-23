@@ -1,10 +1,10 @@
 ====================
-Contenidos
+SERVICIOS DE RED E INTERNET
 ====================
 
 .. toctree::
-   :numbered:
-   :maxdepth: 5
-   :glob:
+   :caption: Índice de contenidos
+   :maxdepth: 3
 
-   *
+   intro
+   TEMA 1
