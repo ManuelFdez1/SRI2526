@@ -12,6 +12,16 @@ level 4 sectioning
 ~~~~~~~~~~~~~~~~~~
 
 level 5 sectioning
-^^^^^^^^^^^^^^^^^^
 
-Hello
+
++------------------------------+
+| (current level of            |
+| indentation)                 |
++------------------------------+
+   +---------------------------+
+   | block quote               |
+   | (body elements)+          |
+   |                           |
+   | -- attribution text       |
+   |    (optional)             |
+   +---------------------------+
