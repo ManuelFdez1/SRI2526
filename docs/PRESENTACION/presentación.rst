@@ -1,7 +1,10 @@
 ==============
 Presentación materia
 ==============
-
+OBJETIVOS DE LA SEGURIDAD INFORMATICA
+CLASIFICACIÓN DE LA SEGURIDAD
+FISICA/LÓGICA
+ACTIVA/PASIVA
 level 2 sectioning
 ==================
 
