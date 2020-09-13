@@ -4,9 +4,9 @@ SERVICIOS DE RED E INTERNET
 
 .. toctree::
    :caption: Índice de contenidos
-   :maxdepth: 3
+   :maxdepth: 1
    :numbered:
 
-   PRESENTACION/presentación.rst
+   PRESENTACION/presentación.md
    TEMA_1_Introduccion/introduccion.rst
    TEMA_2_Dhcp/dhcp.rst
