@@ -10,6 +10,7 @@ Tomás Giménez Albert</br>
 
 HORARIO:
 Lunes 16:23 – 19:34
+
 Miércoles 15:30 – 18:09
 
 **6 H. Sem * 20 sem = 120 HORAS**
@@ -19,6 +20,7 @@ Miércoles 15:30 – 18:09
 ![Calendario IES Botet Curso 2020-21](img/CALENDARI2020-21WEB.png "Calendario IES Botet Curso 2020-21")
 
 ## Objetivos del módulo
+
 + Administra servicios de **resolución de nombres**, analizándolos y garantizando la seguridad del servicio.
 + Administra servicios de **configuración automática**, identificándolos y verificando la correcta asignación de los parámetros.
 + Administra **servidores Web** aplicando criterios de configuración y asegurando el funcionamiento del servicio.
@@ -30,7 +32,8 @@ Miércoles 15:30 – 18:09
 + **Gestiona entornos de virtualización.**
 
 ## Contenidos
-<table style=" margin-left: auto;margin-right: auto;">
+
+<table style=" margin-left: auto;margin-right: auto; padding:5px; border:1;">
     <thead>
         <tr>
             <th>1ª Evaluación</th>
@@ -58,6 +61,7 @@ Miércoles 15:30 – 18:09
 </table>
 
 ## Funcionamiento
+
 + Asistencia **PRESENCIAL semanas alternas**. A distancia, en el resto de horas.
 + Mayor grado de responsabilidad y autonomía por vuestra parte. **¡1 semana sin vernos!**
 + Mayor grado de flexibilidad e innovación por la mía
@@ -65,7 +69,7 @@ Miércoles 15:30 – 18:09
 + Ventaja: vamos a usar **herramientas que ya conocemos** y que no nos deben ser complicadas de usar
   + Aules. → Materiales, tareas, cuestionarios, *foros, Chats*
   + Webex → https://profevirtual.webex.com/meet/gimenez_manalb
-  + Correo electrónico → mtgimenez.prof@gmail.com
+  + Correo electrónico →[mtgimenez.prof@gmail.com](mtgimenez.prof@gmail.com)
   + Telegram (canal para noticias/anuncios) → [Enlace al canal](https://t.me/joinchat/AAAAAFMwpD0qKZUgMmcTeg)
 + Las explicaciones teóricas se harán en clase con Webex lo más reducidas posible y a trabajar (en clase o en casa).
 + Fuera de horario habrá unas horas de tutoría online para resolver dudas.
@@ -78,8 +82,8 @@ Miércoles 15:30 – 18:09
 
 ## Evaluación
 
-+ ###### Prácticas / Ejercicios=60%
-+ ###### Examen Final Evaluación=40%
++ Prácticas / Ejercicios=60%
++ Examen Final Evaluación=40%
 Como máximo el/la alumno-a puede dejar **3 ejercicios/practicas sin entregar** y en el examen final de cada evaluación debe sacar un **mínimo de 3**.
 
 <span style="color: red;">APROBAR LA 1ª EVALUACIÓN SIGNIFICA SUPERAR ESA PARTE DEL MODULO PROFESIONAL</span>.
