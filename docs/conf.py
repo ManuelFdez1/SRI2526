@@ -192,4 +192,4 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
-#extensions = ['recommonmark']
+extensions = ['recommonmark']
