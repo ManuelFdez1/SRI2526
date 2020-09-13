@@ -84,7 +84,9 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
    'body_text_align': 'justify',
-   'font_family': 'Roboto'
+   'font_family': 'Roboto',
+   'page_width':'70%',
+   'sidebar_width':'70%',
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
