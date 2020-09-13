@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Servicios de Red e Internet'
-copyright = u'2019, M. Tomás Giménez Albert'
+copyright = u'2020, M. Tomás Giménez Albert'
 author = u'M. Tomás Giménez Albert'
 
 # The short X.Y version
@@ -82,8 +82,10 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
-
+html_theme_options = {
+   'body_text_align': 'justify',
+   'font_family': 'Roboto'
+}
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
