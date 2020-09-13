@@ -7,6 +7,6 @@ SERVICIOS DE RED E INTERNET
    :maxdepth: 1
    :numbered:
 
-   PRESENTACION/presentación.md
+   PRESENTACION/presentacion.md
    TEMA_1_Introduccion/introduccion.rst
    TEMA_2_Dhcp/dhcp.rst
