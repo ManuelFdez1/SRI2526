@@ -8,7 +8,7 @@ Conceptos previos
 Definición de Servicio de Red
 ==================
 
-virtualización
+Virtualización
 ==================
 
 Introducción
@@ -27,3 +27,6 @@ Bitnami
 
 Contenedores
 ------------------
+
+Entorno de trabajo
+==================
