@@ -115,22 +115,31 @@ El funcionamiento de los servidores hoy día no tiene nada que ver con lo que su
 
 ![Esquema básico virtualización](img/arquitectura-v1.png)
 
+**VENTAJAS**
++ Reducción de costes y mejor gestión de los recursos hardware. Cada máquina física puede usarse para varios propósitos a la vez, con los recursos adecuados.
++ Sustitución de ordenadores por un fondo de MV (pool) que puedan ser creadas, clonadas y destruidas a demanda.
++ Posibilidad de vender capacidad de cálculo a otras empresas
+(Virtual Private Servers).
++ Simplificación de los sistemas de copia de seguridad.
+Entornos para aprendizaje y pruebas. Se simplifica el montaje y experimentación de otros sistemas operativos y software distinto al que usamos habitualmente. Ideal para estudiantes.
++ Compatibilidad de programas. Posibilidad de usar programas que no ofrezcan versiones para nuestro sistema habitual.
++ Entornos controlados. Se pueden probar programas en los que no confiamos,
++ Fácil migración de unos ordenadores a otros.
+
 ### Tipos de Virtualización.
 
 **TIPO 1:** Denominada **nativa/unhosted**, es software que se ejecuta directamente sobre el hardware, para ofrecer la funcionalidad.
 
 ![](img/virtTipo_1.png)
 
-
 **TIPO 2:** denominada **hosted o paravirtualización**, es software que se ejecuta **sobre un SO** para ofrecer la funcionalidad(con la consiguiente penlización en rendimiento).
 
 ![](img/virtTipo_2.png)
 
-
 **CONTENEDORES:** Es una alternativa más de virtualización, que persigue mejorar el rendimiento y permitiendo el diseño de infraestructuras de trabajo más dinámicas.
 Posibilidad de aplicaciones de gestión automática(Kubernetes..)
-![](img/arquitecturaContenedores.png)
 
+![](img/arquitecturaContenedores.png)
 
 **CLOUD virtualization:**   Virtualización en sistemas remotos, con todas la ventajas del cloud computing (Azure, AWS, GoogleCloud..)
 
