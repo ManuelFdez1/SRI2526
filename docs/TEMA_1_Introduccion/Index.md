@@ -117,6 +117,23 @@ El funcionamiento de los servidores hoy día no tiene nada que ver con lo que su
 
 ### Tipos de Virtualización.
 
+**TIPO 1:** Denominada **nativa/unhosted**, es software que se ejecuta directamente sobre el hardware, para ofrecer la funcionalidad.
+<img width="256" alt="Virtualización tipo 1" src='img/virtTipo_1.png' style="display:block;margin-left:auto;margin-right:auto;">
+
+**TIPO 2:** denominada **hosted o paravirtualización**, es software que se ejecuta **sobre un SO** para ofrecer la funcionalidad(con la consiguiente penlización en rendimiento).
+
+<img width="256" alt="Virtualización tipo 1" src='img/virtTipo_2.png' style="display:block;margin-left:auto;margin-right:auto;">
+
+
+**CONTENEDORES:** Es una alternativa más de virtualización, que persigue mejorar el rendimiento y permitiendo el diseño de infraestructuras de trabajo más dinámicas.
+Posibilidad de aplicaciones de gestión automática(Kubernetes..)
+
+<img width="400" alt="Virtualización tipo 1" src='img/arquitecturaContenedores.png' style="display:block;margin-left:auto;margin-right:auto;">
+
+**CLOUD virtualization:**   Virtualización en sistemas remotos, con todas la ventajas del cloud computing (Azure, AWS, GoogleCloud..)
+
+<a title="Tondashell / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg"><img width="512" alt="OpenQRMEnterprise-Datacenter-Cloud-Model-2017" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg/512px-OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg"></a>
+
 ### Gestión de la virtualización.
 ### Contenedores
 
