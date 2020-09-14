@@ -8,5 +8,5 @@ SERVICIOS DE RED E INTERNET
    :numbered:
 
    PRESENTACION/presentacion.md
-   TEMA_1_Introduccion/introduccion.rst
-   TEMA_2_Dhcp/dhcp.rst
+   TEMA_1_Introduccion/Index
+   TEMA_2_Dhcp/Index
