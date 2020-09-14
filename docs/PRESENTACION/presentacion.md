@@ -44,7 +44,7 @@ Objetivos del módulo
     </thead>
     <tbody>
         <tr>
-            <td >Introducción a los Servicios de red</td>
+            <td >Introducción a los Srvs. de red</td>
             <td >Interconexión de redes. Seguridad.</td>
         </tr>
         <tr>
