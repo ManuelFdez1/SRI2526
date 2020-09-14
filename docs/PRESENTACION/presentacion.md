@@ -1,4 +1,5 @@
-# Presentación módulo
+Presentación módulo
+===============
 
 El módulo profesional **Servicios de Red e Internet** se imparte durante el segundo curso del Ciclo Formativo de Grado Superior de *Administración de Sistemas Informáticos en Red* (Puedes encontrar más información en el [dossier del ciclo en la web de Conselleria](http://www.ceice.gva.es/es/web/formacion-profesional/publicador-ciclos/-/asset_publisher/FRACVC0hANWa/content/ciclo-formativo-administracion-de-sistemas-informaticos-en-red)).
 
@@ -15,12 +16,13 @@ Miércoles 15:30 – 18:09
 
 **6 H. Sem * 20 sem = 120 HORAS**
 
-## Calendario del curso
 
+Calendario del curso
+---------------
 ![Calendario IES Botet Curso 2020-21](img/CALENDARI2020-21WEB.png "Calendario IES Botet Curso 2020-21")
 
-## Objetivos del módulo
-
+Objetivos del módulo
+---------------
 + Administra servicios de **resolución de nombres**, analizándolos y garantizando la seguridad del servicio.
 + Administra servicios de **configuración automática**, identificándolos y verificando la correcta asignación de los parámetros.
 + Administra **servidores Web** aplicando criterios de configuración y asegurando el funcionamiento del servicio.
@@ -50,7 +52,7 @@ Miércoles 15:30 – 18:09
         <td>Acceso remoto a ficheros.</td>
         </tr>
         <tr>
-            <td >Sistema de Nombres de dominio. DNS</td>
+            <td >Sist. Nombres de dominio. DNS</td>
             <td>Servicio de Correo Electrónico</td>
         </tr>
         <tr>
