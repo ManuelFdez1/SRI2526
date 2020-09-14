@@ -118,17 +118,19 @@ El funcionamiento de los servidores hoy día no tiene nada que ver con lo que su
 ### Tipos de Virtualización.
 
 **TIPO 1:** Denominada **nativa/unhosted**, es software que se ejecuta directamente sobre el hardware, para ofrecer la funcionalidad.
-<img width="256" alt="Virtualización tipo 1" src='img/virtTipo_1.png' style="display:block;margin-left:auto;margin-right:auto;">
+
+![Virtualización tipo 1](img/virtTipo_1.png)
+
 
 **TIPO 2:** denominada **hosted o paravirtualización**, es software que se ejecuta **sobre un SO** para ofrecer la funcionalidad(con la consiguiente penlización en rendimiento).
 
-<img width="256" alt="Virtualización tipo 1" src='img/virtTipo_2.png' style="display:block;margin-left:auto;margin-right:auto;">
+![Virtualización tipo 1](img/virtTipo_2.png)
 
 
 **CONTENEDORES:** Es una alternativa más de virtualización, que persigue mejorar el rendimiento y permitiendo el diseño de infraestructuras de trabajo más dinámicas.
 Posibilidad de aplicaciones de gestión automática(Kubernetes..)
+![Virtualización tipo 1](img/arquitecturaContenedores.png)
 
-<img width="400" alt="Virtualización tipo 1" src='img/arquitecturaContenedores.png' style="display:block;margin-left:auto;margin-right:auto;">
 
 **CLOUD virtualization:**   Virtualización en sistemas remotos, con todas la ventajas del cloud computing (Azure, AWS, GoogleCloud..)
 
