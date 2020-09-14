@@ -26,9 +26,9 @@ Las características de ambos tipos de equipos suelen ser distintas:
             <td >
             <ul>
               <li>Menor potencia de cálculo</li>
-              <li>Realiza las peticiones al servidor</li>
+              <li>Peticiones al srv.</li>
               <li>Menor potencia de cálculo</li>
-              <li>Puede interactuar con varios srv.</li>
+              <li>Interactuar con varios srv.</li>
               <li>Interfaz visual+   Conectividad</li>
             </ul>
             </td>
@@ -53,15 +53,61 @@ No es más que un conjunto de redes locales **interconectadas** entre sí:
 
 <a title="Mro / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Internet-transit.svg"><img width="512" alt="Internet-transit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Internet-transit.svg/512px-Internet-transit.svg.png" style="display:block;margin-left:auto;margin-right:auto;"></a>
 
-> **¿SABRÍAS?**
+___
+> **RECUERDA...**
 1. ¿Que dispositivos  HW actuan típicamente como NODOS?
 2. ¿Que Hardware necesitan obligatoriamente esos dispositivos?.
 3. ¿Como se llama la accion de ”hacer visible” un servicio a traves de Internet?
 4. ¿Podrías hacerlo en tu casa?
-¿Y la acción que permite a los equipos de una LAN navegar por Internet?
+5. ¿Y la acción que permite a los equipos de una LAN navegar por Internet?
+___
 
 Componentes de los Srv. de Red
 ------------------
+Para poder configurar correctamente cualquier servicio, se deben tener claros algunos conceptos relacionados con las redes informáticas.
+
+**PROTOCOLOS**
+
+En el campo de las telecomunicaciones, un protocolo de comunicaciones es el conjunto de reglas normalizadas para la representación, señalización, autenticación y detección de errores necesario para enviar información a través de un canal de comunicación.
+Al conjunto de protocolos que aseguran la comunicaciones entre dos o más sistemas las denominamos *pila de protocolos*. Conocemos dos modelos, uno funciona como marco práctico (**OSI**) y el otro es el más utilizado en la práctica (**TCP/IP**). Los distintos protocolos trabajan directamente con sus iguales en el otro extremo de la comunicación.
+
+<a title="Cristianzambrano / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Osi_y_tcp-ip.jpg"><img width="512" alt="Osi y tcp-ip" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Osi_y_tcp-ip.jpg" style="display:block;margin-left:auto;margin-right:auto;"></a>
+
+En este módulo nos vamos a centrar en algunos de los protocolos más importantes de la **capa de Aplicación**
+
+<a title="GISEPROI / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:Suite_de_Protocolos_TCPIP.png"><img width="512" alt="Suite de Protocolos TCPIP" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Suite_de_Protocolos_TCPIP.png/512px-Suite_de_Protocolos_TCPIP.png" style="display:block;margin-left:auto;margin-right:auto;"></a>
+
+
+**DIRECCIONAMIENTO IP:**
+
+Una dirección IP es una etiqueta numérica que identifica a un interfaz (elemento de comunicación/conexión) de un dispositivo (habitualmente una computadora) **dentro de una MISMA red** que utilice el protocolo IP (Internet Protocol), que corresponde al nivel de red del protocolo TCP/IP.
+
+<u>CARACTERÍSTICAS:</u>
++ Existen 5 clases.
++ Nos interesan los tres primeros (A, B y C)
++ Hay dos tipos de  direcciones
+  + Públicas
+  + Privadas
++ IPv4 vs IPv6
+
+<u>OTROS PARÁMETROS IP:</u>
+
+Además de la dirección IP, todo equipo necesita tener definidos otros parámetros para poder interactuar en la red correctamente.
++ **MÁSCARA DE SUBRED**: La máscara permite distinguir los bits que identifican la red y los que identifican el host de una dirección IP.
++ **PUERTA DE ENLACE/GATEWAY/PASARELA**: Direccion del dispositivo que permite interconectar redes con protocolos y arquitecturas diferentes a todos los niveles de comunicación. *Obligatoriamente debe estar en la misma red que el equipo*.
++ **SERVIDOR/ES DNS**: Direccion/es de aquel/aquellos equipo/s encargado/s de traducir los nombres de dominio por su correspondiente IP. *Puede estar en una red externa*.
+
+___
+> **RECUERDA...**
+1. ¿Que elemento maneja el nivel de enlace, el de red y el de transporte, para realizar sus funciones correspondientes?
+1. Explica la estructura de las tres clases de direcciones IP que nos interesan, indicando la cantidad de redes existentes y el número de ordenadores que podemos incluir en cada una de esas redes. Indica, para cada clase, los rangos de direcciones públicas y privadas.
+2. Explica las diferencias entre las dos versiones de IP comentadas.
+3. Indica los comandos que utilizarías para averiguar la información IP:
+  + Windows.
+  + Linux.
+4. Averigua tu IP pública.¿Cual es la de tus compañeros?¿Podrías explicarlo?
+5. ¿La puerta de enlace ha de pertenecer a tu red para funcionar correctamente?¿y los servidores DNS?
+___
 
 Virtualización
 ------------------
