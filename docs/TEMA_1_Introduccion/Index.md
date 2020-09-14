@@ -115,6 +115,7 @@ El funcionamiento de los servidores hoy día no tiene nada que ver con lo que su
 
 <img width="512" alt="Esquema básico virtualización" src="img/arquitectura-v1.png" style="display:block; margin-left:auto;margin-right:auto;">
 
+![Esquema básico virtualización](img/arquitectura-v1.png "Esquema básico virtualización")
 
 
 ### Tipos de Virtualización.
