@@ -70,8 +70,8 @@ Objetivos del módulo
 + Si algo no funciona. Se cambia. Se habla...
 + Ventaja: vamos a usar **herramientas que ya conocemos** y que no nos deben ser complicadas de usar
   + Aules. → Materiales, tareas, cuestionarios, *foros, Chats*
-  + Webex → https://profevirtual.webex.com/meet/gimenez_manalb
-  + Correo electrónico →[mtgimenez.prof@gmail.com](mtgimenez.prof@gmail.com)
+  + Webex → [https://profevirtual.webex.com/meet/gimenez_manalb](https://profevirtual.webex.com/meet/gimenez_manalb)
+  + Correo electrónico →[mtgimenez.prof@gmail.com](mailto:mtgimenez.prof@gmail.com)
   + Telegram (canal para noticias/anuncios) → [Enlace al canal](https://t.me/joinchat/AAAAAFMwpD0qKZUgMmcTeg)
 + Las explicaciones teóricas se harán en clase con Webex lo más reducidas posible y a trabajar (en clase o en casa).
 + Fuera de horario habrá unas horas de tutoría online para resolver dudas.
