@@ -35,7 +35,7 @@ Objetivos del módulo
 
 ## Contenidos
 
-<table style=" margin-left: auto;margin-right: auto; padding:5px; border:1;">
+<table style=" margin-left: auto;margin-right: auto;padding:5px; border:1;">
     <thead>
         <tr>
             <th>1ª Evaluación</th>
