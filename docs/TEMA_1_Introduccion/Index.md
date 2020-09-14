@@ -53,7 +53,14 @@ No es más que un conjunto de redes locales **interconectadas** entre sí:
 
 <a title="Mro / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Internet-transit.svg"><img width="512" alt="Internet-transit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Internet-transit.svg/512px-Internet-transit.svg.png" style="display:block;margin-left:auto;margin-right:auto;"></a>
 
-Definición de Servicio de Red
+> **¿SABRÍAS?**
+1. ¿Que dispositivos  HW actuan típicamente como NODOS?
+2. ¿Que Hardware necesitan obligatoriamente esos dispositivos?.
+3. ¿Como se llama la accion de ”hacer visible” un servicio a traves de Internet?
+4. ¿Podrías hacerlo en tu casa?
+¿Y la acción que permite a los equipos de una LAN navegar por Internet?
+
+Componentes de los Srv. de Red
 ------------------
 
 Virtualización
