@@ -100,19 +100,26 @@ Además de la dirección IP, todo equipo necesita tener definidos otros parámet
 ___
 > **RECUERDA...**
 1. ¿Que elemento maneja el nivel de enlace, el de red y el de transporte, para realizar sus funciones correspondientes?
-1. Explica la estructura de las tres clases de direcciones IP que nos interesan, indicando la cantidad de redes existentes y el número de ordenadores que podemos incluir en cada una de esas redes. Indica, para cada clase, los rangos de direcciones públicas y privadas.
-2. Explica las diferencias entre las dos versiones de IP comentadas.
-3. Indica los comandos que utilizarías para averiguar la información IP:
+2. Explica la estructura de las tres clases de direcciones IP que nos interesan, indicando la cantidad de redes existentes y el número de ordenadores que podemos incluir en cada una de esas redes. Indica, para cada clase, los rangos de direcciones públicas y privadas.
+3. Explica las diferencias entre las dos versiones de IP comentadas.
+4. Indica los comandos que utilizarías para averiguar la información IP:
   + Windows.
   + Linux.
-4. Averigua tu IP pública.¿Cual es la de tus compañeros?¿Podrías explicarlo?
-5. ¿La puerta de enlace ha de pertenecer a tu red para funcionar correctamente?¿y los servidores DNS?
+5. Averigua tu IP pública.¿Cual es la de tus compañeros?¿Podrías explicarlo?
+6. ¿La puerta de enlace ha de pertenecer a tu red para funcionar correctamente?¿y los servidores DNS?
+7. De los protocolos de la capa de aplicación, nombra 5 e indica su función y el nº de puerto que utilizan para operar.
 ___
 
 Virtualización
 ------------------
 
-### Introducción
+El funcionamiento de los servidores hoy día no tiene nada que ver con lo que sucedía hace unos pocos años. Se ha pasado de un alojamiento en máquinas reales, las cuales incluso albergaban varios servicios, a trabajar con máquinas simuladas que ofrecen unicámente un servicio. Estas técnicas reciben el nombre de *Virtualización*. La virtualización de sistemas es una potente **técnica de abstracción mediante la cual podemos crear una capa intermedia que se encarga de posibilitar la comunicación entre una máquina física (anfitrión o host) y el sistema o sistemas huésped (guest) virtuales**.
+
+<a title="Esquema básico virtualización"><img width="512" alt="Suite de Protocolos TCPIP" src="img/arquitectura-v1.png" style="display:block;margin-left:auto;margin-right:auto;"></a>
+
+
+
+### Tipos de Virtualización.
 
 ### Gestión de la virtualización.
 ### Contenedores
