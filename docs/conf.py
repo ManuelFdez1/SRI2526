@@ -85,7 +85,7 @@ html_theme = 'alabaster'
 html_theme_options = {
    'body_text_align': 'justify',
    'font_family': 'Roboto',
-   'body_max_width': '90%',
+   'body_max_width': '1024px',
    'page_width':'70%',
    'sidebar_width':'30%',
 }
