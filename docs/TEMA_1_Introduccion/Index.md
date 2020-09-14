@@ -29,7 +29,7 @@ Las características de ambos tipos de equipos suelen ser distintas:
               <li>Peticiones al srv.</li>
               <li>Menor potencia de cálculo</li>
               <li>Interactuar con varios srv.</li>
-              <li>Interfaz visual+   Conectividad</li>
+              <li>If visual+   Conectividad</li>
             </ul>
             </td>
             <td >
@@ -114,7 +114,7 @@ Virtualización
 El funcionamiento de los servidores hoy día no tiene nada que ver con lo que sucedía hace unos pocos años. Se ha pasado de un alojamiento en máquinas reales, las cuales incluso albergaban varios servicios, a trabajar con máquinas simuladas que ofrecen unicámente un servicio. Estas técnicas reciben el nombre de *Virtualización*. La virtualización de sistemas es una potente **técnica de abstracción mediante la cual podemos crear una capa intermedia que se encarga de posibilitar la comunicación entre una máquina física (anfitrión o host) y el sistema o sistemas huésped (guest) virtuales**.
 
 
-<a title="Esquema básico virtualización"><img width="512" alt="Suite de Protocolos TCPIP" src="./img/arquitectura-v1.png" style="display:block;margin-left:auto;margin-right:auto;"></a>
+<a title="Esquema básico virtualización"><img width="512" alt="Esquema básico virtualización" src="./img/arquitectura-v1.png" style="display:block;margin-left:auto;margin-right:auto;"></a>
 
 
 
