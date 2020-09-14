@@ -4,7 +4,7 @@ SERVICIOS DE RED E INTERNET
 
 .. toctree::
    :caption: Índice de contenidos
-   :maxdepth: 1
+   :maxdepth: 2
    :numbered:
 
    PRESENTACION/presentacion.md
