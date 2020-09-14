@@ -1,5 +1,5 @@
 ==============
-El servicio DHCP
+ACCESO REMOTO A FICHEROS
 ==============
 
 level 2 sectioning

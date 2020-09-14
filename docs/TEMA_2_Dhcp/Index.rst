@@ -1,5 +1,5 @@
 ==============
-El servicio DHCP
+DHCP
 ==============
 
 level 2 sectioning

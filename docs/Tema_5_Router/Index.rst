@@ -1,5 +1,5 @@
 ==============
-El servicio DHCP
+INTERCONEXIÓN DE REDES
 ==============
 
 level 2 sectioning
