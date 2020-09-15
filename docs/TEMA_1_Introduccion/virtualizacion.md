@@ -19,29 +19,56 @@ Entornos para aprendizaje y pruebas. Se simplifica el montaje y experimentación
 **INCONVENIENTES**
 + Un único punto de fallo para todas las máquinas virtuales que se ejecuten en un único servidor físico. Para solucionarlo se deben utilizar **servidores con un alto nivel de redundancia** de discos, memoria, red, fuente de alimentación, y demás componentes (algo bastante más fácil de conseguir si trabajamos en entornos virtualizados)
 
-```eval_rst
-  .. note:: This is a note admonition.
-     This is the second line of the first paragraph.
-```
+
+  **Actualmente se asocia un único servicio a cada servidor, con el fin de limitar el alcance de un hipotético fallo**
+
 
 ### Tipos de Virtualización.
 
-**TIPO 1:** Denominada **nativa/unhosted**, es software que se ejecuta directamente sobre el hardware, para ofrecer la funcionalidad.
+**TIPO 1:** Denominada **nativa/unhosted**, es software que se ejecuta directamente sobre el hardware, para ofrecer la funcionalidad. El hipervisor es un SO cuya única misión es gestionar conjuntos de clusters, Máq. Virtuales, unidades de almacenamiento, etc... Un ejemplo de este tipo de virtualización [lo puedes encontrar en el siguiente video](https://youtu.be/ERb_X20UKqU), en el que muestran una instalación real de un hipervisor denominado [Proxmox](https://www.proxmox.com/en/).
 
 ![](img/virtTipo_1.png)
 
-**TIPO 2:** denominada **hosted o paravirtualización**, es software que se ejecuta **sobre un SO** para ofrecer la funcionalidad(con la consiguiente penlización en rendimiento).
+**Ejemplos**
+* Proxmox
+* PowerVM (IBM)
+* ESXi (VmWare)
+*  Xen
+*  OpenVZ
+
+**TIPO 2:** denominada **hosted o paravirtualización**, es software que se ejecuta **sobre un SO** para ofrecer la funcionalidad(con la consiguiente penlización en rendimiento). Es la virtualización que has usado hasta ahora.
 
 ![](img/virtTipo_2.png)
+
+**Ejemplos**
+* Parallels (Windows/Mac/Linux)
+* VMware (Windows / Linux)
+* VirtualBox (Windows/Mac/Linux, Gratis)
+* QEMU(Linux, Gratis)
+* Windows Virtual PC (Windows, Gratis)
 
 **CONTENEDORES:** Es una alternativa más de virtualización, que persigue mejorar el rendimiento y permitiendo el diseño de infraestructuras de trabajo más dinámicas.
 Posibilidad de aplicaciones de gestión automática(Kubernetes..)
 
 ![](img/arquitecturaContenedores.png)
 
+**Ejemplos**
+* Docker
+* LXC/LXD
+* Windows servers containers
+
 **CLOUD virtualization:**   Virtualización en sistemas remotos, con todas la ventajas del cloud computing (Azure, AWS, GoogleCloud..)
 
 <a title="Tondashell / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg"><img width="512" alt="OpenQRMEnterprise-Datacenter-Cloud-Model-2017" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg/512px-OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg"></a>
+
+**Ejemplos**
+* Azure
+*  Amazon Web Services.
+* Google Cloud
+* ……
+
+> ##### Puedes encontrar un interesante artículo de las diferencias entre MV y contenedor, y la evolución de estas tecnologías en los últimos años en el **[siguiente blog](https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo)**.
+
 
 ### Gestión de la virtualización.
 ### Contenedores
