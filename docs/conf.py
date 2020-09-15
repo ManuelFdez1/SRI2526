@@ -88,6 +88,8 @@ html_theme_options = {
    'body_max_width': '1024px',
    'page_width':'70%',
    'sidebar_width':'30%',
+   'nosidebar':'false'
+
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
