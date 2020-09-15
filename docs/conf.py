@@ -83,14 +83,13 @@ html_theme = 'haiku'
 # documentation.
 #
 html_theme_options = {
-   'body_text_align': 'justify',
-   'font_family': 'Roboto',
-   'body_max_width': '1024px',
-   'page_width':'70%',
-   'sidebar_width':'30%',
-   'nosidebar':'false'
-
+    #'body_min_width': '0',
+    'body_min_width': '90%',
+    'body_text_align': 'justify',
+    'font_family': 'Roboto',
+    'body_max_width': '1024px',
 }
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -137,7 +136,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'ServiciosdeRedeInternet.tex', u'Servicios de Red e Internet Documentation',
+    (master_doc, 'ServiciosdeRedeInternet.tex', u'Servicios de Red e Internet',
      u'M. Tomás Giménez Albert', 'manual'),
 ]
 

@@ -16,6 +16,14 @@ Entornos para aprendizaje y pruebas. Se simplifica el montaje y experimentación
 + Entornos controlados. Se pueden probar programas en los que no confiamos,
 + Fácil migración de unos ordenadores a otros.
 
+**INCONVENIENTES**
++ Un único punto de fallo para todas las máquinas virtuales que se ejecuten en un único servidor físico. Para solucionarlo se deben utilizar **servidores con un alto nivel de redundancia** de discos, memoria, red, fuente de alimentación, y demás componentes (algo bastante más fácil de conseguir si trabajamos en entornos virtualizados)
+
+```eval_rst
+  .. note:: This is a note admonition.
+     This is the second line of the first paragraph.
+```
+
 ### Tipos de Virtualización.
 
 **TIPO 1:** Denominada **nativa/unhosted**, es software que se ejecuta directamente sobre el hardware, para ofrecer la funcionalidad.
