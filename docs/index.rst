@@ -4,10 +4,10 @@ SERVICIOS DE RED E INTERNET
 
 .. toctree::
    :caption: Índice de contenidos
-   :maxdepth: 2
+   :maxdepth: 1
    :numbered:
 
-   PRESENTACION/presentacion.md
+   PRESENTACION/Index
    TEMA_1_Introduccion/Index
    TEMA_2_Dhcp/Index
    Tema_3_DNS/Index
