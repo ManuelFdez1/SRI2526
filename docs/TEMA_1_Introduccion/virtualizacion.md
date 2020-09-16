@@ -84,8 +84,12 @@ A la hora de virtualizar SO, debemos tener varios elementos y parametros de conf
 
 <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
 <b>PRÁCTICA 1</b></br></br>
-1.- Crea en tu equipo una MV del SO Windows 2012, instala las GuestAdditions y crea una carpeta compartida con tu SO anfitrion. Finalmente comprueba si te funciona tu dispositivo USB.  </br>
-2.- Crea en tu equipo una MV del SO  Ubuntu Server 18.04, instala las GuestAdditions y crea una carpeta compartida con tu SO anfitrion. Finalmente comprueba si te funciona tu dispositivo USB.  
+1.- Crea en tu equipo una MV del SO <b>Windows 2016 CON GUI</b>, instala las GuestAdditions y crea una carpeta compartida con tu SO anfitrion. Finalmente configura manualmente la tarjeta de red.  </br>
+2.- Crea en tu equipo una MV del SO <b>Windows 2016 sin GUI</b>, instala las GuestAdditions y crea una carpeta compartida con tu SO anfitrion. Finalmente intenta configurar manualmente la tarjeta de red mediante PowerShell.  </br>
+3.- Crea en tu equipo una MV del SO <b>Ubuntu Server 20.04</b>, instala las GuestAdditions y crea una carpeta compartida con tu SO anfitrion. Finalmente intenta configurar manualmente la tarjeta de red.</br>
+Las dos MV únicamente deben verse entre ellas, fuera del alcance del resto de equipos del aula.
+</br>  </br>  
+
 Envía un documento pdf con los pantallazos y características de los equipos, aportadndo las explicaciones que consideres oportunas.
 </div>
 
