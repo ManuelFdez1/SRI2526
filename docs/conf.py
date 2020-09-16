@@ -85,10 +85,12 @@ html_theme = 'haiku'
 html_theme_options = {
     #'body_min_width': '0',
     'body_min_width': '90%',
-    'body_text_align': 'justify',
-    'font_family': 'Roboto',
+    #'body_text_align': 'justify',
+    #'font_family': 'Roboto',
     'body_max_width': '1024px',
 }
+
+html_title='ASIR - Servicios de Red e Internet'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

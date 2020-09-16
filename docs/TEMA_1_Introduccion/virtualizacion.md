@@ -69,6 +69,25 @@ Posibilidad de aplicaciones de gestión automática(Kubernetes..)
 
 > ##### Puedes encontrar un interesante artículo de las diferencias entre MV y contenedor, y la evolución de estas tecnologías en los últimos años en el **[siguiente blog](https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo)**.
 
-
 ### Gestión de la virtualización.
+
+A la hora de virtualizar SO, debemos tener varios elementos y parametros de configuracion en cuenta. En concreto, **utilizando VirtualBox** debemos prestar especial atención a:
+
+* **Requisitos del SO a virtualizar** → En el apartado de **Configuración** de VBox (Memoria, procesador..)
+* **Medios virtuales** → Para incluir el/los discos duros necesarios para nuestro sistema, además de vinular la ISO del SO que queremos instalar.
+* **Configuracion de red en las MV** → Uno de los apdos. más importantes. Debemos tener claro los distintos tipos de red en VBox y la utilidad de cada uno. Puedes encontrar una buena aclaración en el [apartado correspondiente del manual oficial de VirtualBox](https://www.virtualbox.org/manual/ch06.html#networkingmodes).
+* **Dispositivos USB** → Extension Pack (se instala en la consola de administración de VBox)
+* **Carpetas compartidas** → GuestAdditions (Se deben instalar en cada MV por separado. ¿Sabrías hacerlo en una MV sin interfaz gráfica(GUI)?). Puedes encontrar guías de como hacerlo en la web:
+  * [Sistemas Linux](https://www.techrepublic.com/article/how-to-install-virtualbox-guest-additions-on-a-gui-less-ubuntu-server-host/).
+  * [Sistemas Windows](http://somebooks.es/instalar-guest-additions-windows-server-2016-sin-escritorio-virtualizado-virtualbox/)
+
+
+<div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<b>PRÁCTICA 1</b></br></br>
+1.- Crea en tu equipo una MV del SO Windows 2012, instala las GuestAdditions y crea una carpeta compartida con tu SO anfitrion. Finalmente comprueba si te funciona tu dispositivo USB.  </br>
+2.- Crea en tu equipo una MV del SO  Ubuntu Server 18.04, instala las GuestAdditions y crea una carpeta compartida con tu SO anfitrion. Finalmente comprueba si te funciona tu dispositivo USB.  
+Envía un documento pdf con los pantallazos y características de los equipos, aportadndo las explicaciones que consideres oportunas.
+</div>
+
+
 ### Contenedores
