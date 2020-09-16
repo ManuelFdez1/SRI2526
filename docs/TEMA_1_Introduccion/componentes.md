@@ -43,5 +43,6 @@ ___
 5. Averigua tu IP pública.¿Cual es la de tus compañeros?¿Podrías explicarlo?
 6. ¿La puerta de enlace ha de pertenecer a tu red para funcionar correctamente?¿y los servidores DNS?
 7. De los protocolos de la capa de aplicación, nombra 5 e indica su función y el nº de puerto que utilizan para operar.
-8. ¿Sabrías partir una red(**subnetting**) de tipo C en dos subredes, por ejemplo *192.168.100.0/24*?
+8. ¿Qué es una **dirección** de red?¿y una de **broadcast**?
+9. ¿Sabrías partir una red(**subnetting**) de tipo C en 4 subredes, por ejemplo *192.168.100.0/24*?
 ___
