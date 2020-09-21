@@ -185,3 +185,5 @@ epub_exclude_files = ['search.html']
 
 # -- Extension configuration -------------------------------------------------
 extensions = ['recommonmark']
+#enable_auto_toc_tree = 'true'
+#enable_eval_rst = 'true'

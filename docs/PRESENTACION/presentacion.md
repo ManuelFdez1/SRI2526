@@ -55,7 +55,7 @@ Funcionamiento
   + Aules. → Materiales, tareas, cuestionarios, *foros, Chats*
   + Webex → [https://profevirtual.webex.com/meet/gimenez_manalb](https://profevirtual.webex.com/meet/gimenez_manalb)
   + Correo electrónico →[mtgimenez.prof@gmail.com](mailto:mtgimenez.prof@gmail.com)
-  + Telegram (canal para noticias/anuncios) → [Enlace al canal](https://t.me/joinchat/AAAAAFMwpD0qKZUgMmcTeg)
+  + Telegram (grupo para noticias/anuncios) → [Enlace al canal](https://t.me/joinchat/BUXkgRijEmvnH5P_Y9YV1Q)
 + Las explicaciones teóricas se harán en clase con Webex lo más reducidas posible y a trabajar (en clase o en casa).
 + Fuera de horario habrá unas horas de tutoría online para resolver dudas.
 + Los puestos están señalados. NO desplazar equipo o mobiliario.
