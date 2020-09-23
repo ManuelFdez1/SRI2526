@@ -87,7 +87,7 @@ html_theme_options = {
     'body_min_width': '90%',
     #'body_text_align': 'justify',
     #'font_family': 'Roboto',
-    'body_max_width': '1024px',
+    'body_max_width': '90%',
 }
 
 html_title='ASIR - Servicios de Red e Internet'
@@ -96,6 +96,8 @@ html_title='ASIR - Servicios de Red e Internet'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_style = "css/my_theme.css"
+
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
