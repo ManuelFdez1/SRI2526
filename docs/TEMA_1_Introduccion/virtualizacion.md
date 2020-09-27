@@ -89,3 +89,111 @@ Accede al aula virtual del módulo y completa la primera práctica, siguiendo lo
 
 
 ### Contenedores
+
+Los contenedores(containers) son el siguiente paso en la evolución de la virtualización de sistemas operativos, su objetivo principal es OPTIMIZAR el uso de los recursos de la máquina anfitrión(host). Se puede entender como una virtualización a nivel de sistema operativo.
+Se evita la sobrecarga asociada con tener a cada huésped ejecutando un sistema operativo completamente instalado. Una desventaja de la virtualización basada en contenedores, sin embargo, es que cada invitado debe utilizar el mismo sistema operativo que utiliza el host, además de tener un menor nivel de aislamiento.
+
+<div style="text-align:center;">
+<a title="Containers diagram" href="https://hackernoon.com/how-container-tech-like-docker-and-business-service-automation-will-monetize-the-cloud-5cbc5a85fe59"><img width="512" alt="Containers diagram" src="https://hackernoon.com/hn-images/1*xef4b78LWTh-raeSkIssvA.png"></a>
+</div>
+
+
+
+**Docker**
+
+Se ha impuesto como sistema de virtualización de aplicaciones mediante contenedores. Podemos encontrar muchos tutoriales y formaciones en la web <b><sup id="fnref:note1"><a class="footnote-ref" href="#fn:note1" role="doc-noteref">1</a></sup></b>. Varios aspectos destacan:
+* Inicialmente creada para GNU/Linux. Actualmente también existe como aplicación para Windows 2010/2016/2019 Srv
+* Los contenedores ofrecen un mejor rendimiento que las MV.
+* Pueden crearse redes virtuales privadas de contenedores
+* Existen herramientas para la gestión de grupos de contenedores(clusters..).
+  * [Kubernetes](https://kubernetes.io/es/docs/home/).
+  * [Docker Swarm](https://docs.docker.com/engine/swarm/key-concepts).
+* El núcleo es el Docker Engine, pero existen opciones para gestionar contenedores.
+  * [Docker Compose](https://docs.docker.com/compose/).
+  * [Docker Machine](https://www.josedomingo.org/pledin/2016/05/creando-servidores-docker-con-docker-machine/).
+* Se manejan dos conceptos principales:
+    * *Imágenes*: Fichero con todo lo necesario para poner en marcha un contenedor. Pueden estar en [repositorios públicos](https://hub.docker.com/search?q=&type=image) o privados (locales)
+    * *Contenedores*: Se crean a partir de las imágenes.
+
+Para poder ejecutar docker, debemos instalarlo previamente en nuestro SO (preferiblemente una MV Ubunt Server 20.04, donde ya viene incluido en los repositorios por defecto), teniendo en cuenta varias cosas:
+
+* Docker autocompleta los comandos.
+* En caso de duda
+    ```console
+      $docker --help
+    ```
+* Para instalar docker
+    ```console
+      #apt install docker docker.io
+    ```
+* Para ejectuar docker sin privilegios de administración(sin sudo)
+    ```console
+      #usermod -a -G docker usuario
+    ```
+* Estado de Docker, imágenes y contenedores:
+    ```console
+      $docker system info
+      $docker [image|container] [ls|rm|prune|load..] [-a]
+    ```
+* Arrancar|parar un contenedor:
+    ```console
+      $docker [container] [run|start|pause|kill|restart...]
+    ```
+* Gestíon de las **redes**([doc oficial](https://docs.docker.com/network/)) en nuestros entornos(similar a lo que ofrecen las MV):
+    ```console
+      $docker network [ls|connect|create|rm|prune]
+    ```
+* Administración de **volúmenes**([doc oficial](https://docs.docker.com/storage/)). Es importante entender la diferencia entre **Volúmenes vs Dir. Enlazado**
+    ```console
+      $docker volume [create|inspect|ls|prune|rm]
+    ```
+* Ejecución de comandos contra los contenedores.
+    ```console
+      $docker exec -it apache-2 /bin/bash
+      $docker cp index.html apache:/opt/bitnami/apache/htdocs/index.html
+    ```
+
+Como ejemplo, un comando típico de docker puede ser:
+  ```console
+      $docker run -d -p 80:8080 --name=XX –mount type=bind, source=dirHost, target=dirContainer DockerImg
+  ```
+
+Si quisiéramos organizar la ejecución de dos contenedores relacionados de alguna manera (por ejemplo un servidor http y un servidor de BD que trabajan en conjunto para servir una página web) tendríamos la opción de usar **Docker-compose**<b><sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup></b>. Previamente debemos haber instalado el paquete.
+
+___
+> **¿SABRÍAS?...**
+1. Instalar *docker y docker-compose* en una máquina virtual Ubuntu Server
+2. Conseguir ejecutar comandos de docker sin necesidad de sudo.
+3. **Descargar** la imagen Hello-world del repoitorio oficial de docker.
+4. Listar las imágenes y contenedores existentes en tu MV, ejecutar la imagen anterior, comprobar su estado y finalmente borrar la imagen de tu MV.
+5. Ejecutar el contenedor **[httpd](https://hub.docker.com/_/httpd/)**  poniéndole como nombre *web* y redirigiendo al puerto 8080 del host(tu MV) el puerto 80 del contenedor. Prueba el acceso a la web.
+6. Modificar la ejecución anterior para que tu web se encuentre en una carpeta real de tu MV.
+7. Ejecutar 4 veces más el contenedor con las mismas características que el caso anterior, en cada caso a los puertos *8081..8084* y con los nombres *web2..web5*
+8. Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.
+___
+
+<div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<b>PRÁCTICA 2</b></br></br>
+Accede al aula virtual del módulo y completa la segunda práctica sobre contenedores siguiendo lo indicado en el enunciado. Envía un <b>documento pdf</b> con los pantallazos y características de los equipos, aportadndo las explicaciones que consideres oportunas.
+</div>
+
+<div class="footnotes">
+       <hr />
+       <ol>
+           <li class="footnote" id="fn:note1">
+               <p>
+                   <b>Más ayuda en:</b> <a class="footnote-backref" rev="footnote" href="#fnref:note1">&#8617;</a>
+                   <ul>
+                   <li><a href="https://www.mclibre.org/consultar/webapps/lecciones/docker.html" target="_blank">mclibre</a></li>
+                   <li><a href="https://www.josedomingo.org/pledin/2016/02/primeros-pasos-con-docker/" target="_blank">pledin 3.0</a></li>
+                   </ul>
+               </p>
+           </li>
+           <li class="footnote" id="fn:note2">
+               <p>
+                   <b>Ejemplo: </b><a href="https://blog.dinahosting.com/servicio-web-con-docker-y-docker-compose/" target="_blank">Como levantar un srv con docker-compose</a> <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
+               </p>
+           </li>
+       </ol>
+
+   </div>
