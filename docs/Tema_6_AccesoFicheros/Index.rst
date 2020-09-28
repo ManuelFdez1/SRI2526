@@ -1,6 +1,6 @@
-==============
-ACCESO REMOTO A FICHEROS
-==============
+========================
+Acceso Remoto a Ficheros
+========================
 
 level 2 sectioning
 ==================

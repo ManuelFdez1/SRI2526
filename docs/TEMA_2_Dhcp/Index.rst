@@ -1,17 +1,20 @@
-==============
-DHCP
-==============
+Protocolo de Configuración Dinámico. DHCP
+=========================================
 
-level 2 sectioning
-==================
+La finalidad de una red, bien sea local o de área extensa, es que los usurarios de los sistemas informáticos de una organización puedan hacer un mejor uso de los mismos mejorando de este modo el rendimiento global de la organización, medianta la utilización de servicios como:
 
-level 3 sectioning
-------------------
+    * Acceso remoto a archivos.
+    * Correo Electrónico
+    * Acceso a información de hipertexto(pag. Web)
+    * Otros servicios(muchos de ellos transparentes para l@s usuari@s)
 
-level 4 sectioning
-~~~~~~~~~~~~~~~~~~
+En este tema vamos a analizar los siguientes apartados, los cuales serán **básicos** para poder trabajar el resto del curso en los distintos servicios que aprenderemos a configurar.
 
-level 5 sectioning
-^^^^^^^^^^^^^^^^^^
+.. toctree::
+   :maxdepth: 2
 
-Hello
+   funcionamiento
+   parametros
+   configuracion
+   comprobacion
+   ampliacion

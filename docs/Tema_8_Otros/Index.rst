@@ -1,6 +1,6 @@
-==============
-OTROS SERVICIOS
-==============
+===============
+Otros Servicios
+===============
 
 level 2 sectioning
 ==================

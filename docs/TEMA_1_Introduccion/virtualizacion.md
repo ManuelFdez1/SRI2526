@@ -167,15 +167,17 @@ ___
 3. **Descargar** la imagen Hello-world del repoitorio oficial de docker.
 4. Listar las imágenes y contenedores existentes en tu MV, ejecutar la imagen anterior, comprobar su estado y finalmente borrar la imagen de tu MV.
 5. Ejecutar el contenedor **[httpd](https://hub.docker.com/_/httpd/)**  poniéndole como nombre *web* y redirigiendo al puerto 8080 del host(tu MV) el puerto 80 del contenedor. Prueba el acceso a la web.
-6. Modificar la ejecución anterior para que tu web se encuentre en una carpeta real de tu MV.
-7. Ejecutar 4 veces más el contenedor con las mismas características que el caso anterior, en cada caso a los puertos *8081..8084* y con los nombres *web2..web5*
-8. Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.
+6. Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.
 ___
 
 <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
 <b>PRÁCTICA 2</b></br></br>
-Accede al aula virtual del módulo y completa la segunda práctica sobre contenedores siguiendo lo indicado en el enunciado. Envía un <b>documento pdf</b> con los pantallazos y características de los equipos, aportadndo las explicaciones que consideres oportunas.
+Accede al aula virtual del módulo y completa la segunda práctica sobre contenedores siguiendo lo indicado en el enunciado. Envía un <b>documento pdf</b> con los pantallazos y características de los equipos, aportando las explicaciones que consideres oportunas.
 </div>
+</br>
+
+
+**Para practicar un poco más y ampliar los conocimientos, sobretodo en cuanto a redes y almacenamiento en Docker, se recomienda la realización del [Curso de Introducción a Docker de OpenWebInars](https://openwebinars.net/academia/portada/docker-introduccion/).**
 
 <div class="footnotes">
        <hr />

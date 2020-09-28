@@ -1,6 +1,6 @@
-==============
-CORREO ELECTRNÓNICO
-==============
+==================
+Correo Electrónico
+==================
 
 level 2 sectioning
 ==================

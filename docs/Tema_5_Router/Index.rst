@@ -1,6 +1,6 @@
-==============
-INTERCONEXIÓN DE REDES
-==============
+======================
+Interconexión de Redes
+======================
 
 level 2 sectioning
 ==================

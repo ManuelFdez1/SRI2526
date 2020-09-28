@@ -12,6 +12,13 @@ En algunos apartados del módulo (especialmente en el servicio web) podremos enc
 
 ![](img/escenarioDockermultiple.jpg "Entorno de trabajo con múltiples contenedores")
 
+<div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<b>PRÁCTICA 3</b></br></br>
+Accede al aula virtual del módulo y completa la tercera práctica.  Es muy importante que la realices correctamente, ya que la mayoría de los escenarios para probar nuestros servicios serán similares a este. Envía un <b>documento pdf</b> con los pantallazos y características de los equipos, aportando las explicaciones que consideres oportunas.
+</div>
+</br>
+
+
 <div class="footnotes">
        <hr />
        <ol>
