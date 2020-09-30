@@ -24,7 +24,7 @@ En PowerShell, a través del comando `Set-NetIPInterface <https://docs.microsoft
 
 .. code-block:: shell-session
 
-              PS C:\>Set-NetIPInterface -InterfaceIndex 5 -Dhcp Disabled
+              PS C:\>Set-NetIPInterface -InterfaceIndex 5 -Dhcp Enabled
 
 Linux
 ^^^^^^^
