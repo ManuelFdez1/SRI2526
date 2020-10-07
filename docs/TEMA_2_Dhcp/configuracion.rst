@@ -162,6 +162,13 @@ En Ubuntu srv 18.04/20.04 el servidor que viene en sus repositorios es **isc-dch
   1. **/etc/default/isc-dhcp-server** → Interfaces donde trabaja el srv dhcp
   2. **/etc/dhcp/dhcpd.conf** → Configuración y def. De ámbitos
 
+Un ejemplo sencillo de configuración de un ámbito (**subnet en el fichero dhcpd.conf**) podría ser:
+
+    .. image:: img/ejemploConfUbuntu.png
+        :width: 400 px
+        :alt: NAS Diagram
+        :align: center
+
 Además de gestiónar el servicio con los siguiente comandos (podemos elegir entre las dos opciones):
 
 
