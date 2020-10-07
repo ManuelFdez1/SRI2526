@@ -134,7 +134,7 @@ Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:
 * Configuración de un ámbito y sus opciones. Un ejemplo podría ser:
             .. code-block:: shell-session
 
-              Add-DhcpServerv4Scope -name "RedAula2" -StartRange 10.0.0.1 -EndRange 10.0.0.254 -SubnetMask 255.255.255.0 -State Active
+              Add-DhcpServerv4Scope -name "RedAula2" -StartRange 192.168.200.11 -EndRange 192.168.200.254 -SubnetMask 255.255.255.0 -State Active
               Set-DhcpServerv4OptionValue  -ComputerName win-ts9g7n11dbe -ScopeId 192.168.100.0 -DnsServer 192.168.100.254 -Router 192.168.100.254 -Force
 
 * Exportar/Importar configuración DHCP server a fichero de texto.
