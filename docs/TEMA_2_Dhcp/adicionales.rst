@@ -18,9 +18,9 @@ DHCP Relay
 
 .. raw:: html
 
-      <span style="text-align:center;">
+      <div style="text-align:center;">
       <a title="Rel" href="https://bytelearning.blogspot.com/2016/08/como-crear-un-dhcp-relay-en-linux.html"><img width="512" alt="DHCP Relay" src="https://4.bp.blogspot.com/-rA3kiCPJBMk/V578DoqT5rI/AAAAAAAAGXc/sXiD6rSCUzIgyfzppzpTf7KfcGNhGu98gCLcB/s1600/Diagrama.png"></a>
-      </span>
+      </div>
 
 DHCP Failover
 --------------
