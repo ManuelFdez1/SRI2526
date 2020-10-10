@@ -102,7 +102,7 @@ Windows
       <b>GUI </b><sup id="fnref:note1"><a class="footnote-ref" href="#fn:note1" role="doc-noteref">1</a></sup>
     </p>
 
-De manera visual a traves de la interfaz gráfica que ofrece Windows 2012/2016 Server y la instalación de roles y características.
+De manera visual a traves de la interfaz gráfica que ofrece Windows 2012/2016/2019 Server y la instalación de roles y características.
     .. image:: img/confSrvWindowsGui.png
         :width: 400 px
         :alt: NAS Diagram
@@ -116,7 +116,7 @@ Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:
 
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
         <b>PRÁCTICA 1</b></br></br>
-        Accede al aula virtual del módulo y completa la primera práctica del Tema2. Envía un <b>documento pdf</b> con los pantallazos y características de los equipos, aportando las explicaciones que consideres oportunas.
+        Accede al aula virtual del módulo y completa la primera práctica del Tema2.
         </div>
         </br>
 

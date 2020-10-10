@@ -62,6 +62,9 @@ El componente principal de un archivo de zona es su registro de recursos. El for
       * SRV – OTROS SERVIDORES.
 
 
+Ejemplo Fichero de zona
+-------------------------
+
       .. code-block:: shell-session
 
         $ORIGIN example.com.
