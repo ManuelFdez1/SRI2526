@@ -19,4 +19,4 @@ Todo se desarrolla en los siguientes apartados:
    funcionamiento
    configuracion
    comprobacion
-   ampliacion
+   adicionales

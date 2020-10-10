@@ -188,6 +188,19 @@ Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:
         </div>
         </br>
 
+.. raw:: html
+
+    <div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+    <u>¿Sabrías?</u></br>
+    En todos los servidores DHCP tenemos la opción de incluir <b>RESERVAS</b>, las cuales son muy útiles para configurar equipos especiales de nuestra red, tales como:
+    <ul>
+      <li>Impresoras</li>
+      <li>Servidores</li>
+      <li>...........</li>
+    </ul>
+    ¿Podrías configurar alguna reserva en tus servidores DHCP?
+    </div></br>
+
 
 .. raw:: html
 
