@@ -66,3 +66,10 @@ En Linux, las opciones que tenemos para comprobar el estado de nuestro servidor 
             :width: 600 px
             :alt: Ejemplo concesion ubuntu
             :align: center
+
+.. raw:: html
+
+    <div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+    <u>¿Sabrías?</u></br>
+    Realizar las comprobaciones correspondientes al funcionamiento del servidor DHCP en cada uno de los tres SSOO que has virtualizado anteriormente
+    </div></br>
