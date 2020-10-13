@@ -186,6 +186,29 @@ Linux
     </div></br>
 
 
+A partir de aquí podemos trabajar sobre escenarios más complejos en los que podremos incluir:
+
+* Servidores maestros
+* Servidores esclavos
+* Delegaciones de zona
+
+          .. raw:: html
+
+              <p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pdf-2127829.png/480px-Pdf-2127829.png" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>  En el siguiente documento puedes encontrar un manual completo de como realizar esto tanto en Windows como en Linux. </br> </br>
+
+          .. image:: img/Practicas_DNS.pdf
+              :width: 400 px
+              :alt: Tutorial configuración servidores DNS
+              :align: center
+
+    .. raw:: html
+
+        </br>
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <u><b>PRÁCTICA 6</b></u></br>
+        Realiza la práctica 6 del Tema 2 del aula virtual, vas a crear y documentar tu plan de backup en Windows.
+        </div>
+
 .. raw:: html
 
    </br>
