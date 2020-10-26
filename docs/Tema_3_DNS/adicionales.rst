@@ -1,2 +1,0 @@
-Configuraciones adicionales
-==============================

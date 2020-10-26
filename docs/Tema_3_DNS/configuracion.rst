@@ -57,8 +57,8 @@ Linux
                             addresses: [10.10.10.1, 1.1.1.1]
 
 
-Configuración servidor
-----------------------
+Configuración básica servidor
+-----------------------------
 
 Windows
 ^^^^^^^
@@ -186,6 +186,9 @@ Linux
     </div></br>
 
 
+Mejorando nuestro servicio
+-----------------------------
+
 A partir de aquí podemos trabajar sobre escenarios más complejos en los que podremos incluir:
 
 * Servidores maestros
@@ -205,8 +208,8 @@ A partir de aquí podemos trabajar sobre escenarios más complejos en los que po
 
         </br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>PRÁCTICA 6</b></u></br>
-        Realiza la práctica 6 del Tema 2 del aula virtual, vas a crear y documentar tu plan de backup en Windows.
+        <u><b>PRÁCTICA 1</b></u></br>
+        Realiza la práctica 1 del Tema 3 del aula virtual, vas a crear tu sistema de servidores DNS.
         </div>
 
 .. raw:: html

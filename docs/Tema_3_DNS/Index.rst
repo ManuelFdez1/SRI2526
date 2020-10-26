@@ -25,4 +25,3 @@ Para estudiar este servicio, uno de los más importantes del WWW, vamos a analiz
    ficherozona
    configuracion
    comprobaciones
-   adicionales
