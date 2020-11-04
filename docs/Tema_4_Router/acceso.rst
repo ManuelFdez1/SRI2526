@@ -19,8 +19,17 @@ Es un servicio muy sencillo de instalar a través de la función (ROLE) **ACCESO
 
 **PowerShell**
 
-Install-WindowsFeature  -Name Routing
- New-NetNat -Name LOCAL -InternalIPInterfaceAddressPrefix 192.168.100.0/24
+Con dos sencillos comandos tendríamos navegando por Internet a nuestros clientes:
+
+      .. code-block:: shell-session
+
+                    Install-WindowsFeature  -Name Routing
+                    Get-NetAdapter | Set-NetIPInterface -Forwarding Enabled
+                    New-NetNat -Name LOCAL -InternalIPInterfaceAddressPrefix 192.168.100.0/24
+
+      .. warning::
+             **192.168.100.0/24** es el id de la red local
+
 
 Linux
 --------
@@ -48,7 +57,7 @@ Puedes encontrar mucha `ayuda en tutoriales en la web <https://smr.iesharia.org/
 
 
       .. code-block:: shell-session
-      
+
                   net.ipv4.ip_forward=1net.ipv4.ip_forward=1
                   #!/bin/bash
                   iptables -A FORWARD -j ACCEPT
