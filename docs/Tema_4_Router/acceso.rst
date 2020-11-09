@@ -53,20 +53,35 @@ Debemos incluir los comandos necesarios para:
 * Realizar la NAT para que se puedan comunicar con la red destino.
 
 Finalmente, sería conveniente configurar todo lo anterior de manera que el servicio se iniciara con el arranque del SO para evitar tener que reconfigurar en caso de reinicio del servidor.
-Puedes encontrar mucha `ayuda en tutoriales en la web <https://smr.iesharia.org/wiki/doku.php/src:recetas:enrutamiento>`_
+Puedes encontrar un HOW-TO en el `siguiente tutorial web <https://smr.iesharia.org/wiki/doku.php/src:recetas:enrutamiento>`_
 
 
       .. code-block:: shell-session
 
-                  net.ipv4.ip_forward=1net.ipv4.ip_forward=1
+                  1. net.ipv4.ip_forward=1net.ipv4.ip_forward=1
                   #!/bin/bash
-                  iptables -A FORWARD -j ACCEPT
-                  iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
+                  2.- iptables -A FORWARD -j ACCEPT
+                  3. iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
 
 
 .. warning::
-   Recuerda que para ello tendrás que realizar tareas relacionadas con:
+   En relación con las lineas anteriores:
 
-   * Scripting en Linux
-   * Permisos de ejecución
-   * Sistema de arranque de Linux. Servicios propios.
+   1. Poniendo ese bit de sistema a 1 **activas únicamente el enrutamiento** entre tarjetas
+   2. Iptables acepta paquetes FORWARD (aquellos que llegan al servidor con destino a otras redes). Esta linea es opcional.
+   3. Configuras iptables para que envíe los paquetes de la red local(*192.168.200.0/24*) a la tarjeta externa(*enp0s3*) realizando la traducción correspondiente (usamos la palabra MASQUERADE, aunque puede usarse SNAT también. En la `siguiente web te explican las diferencias entre una y otra <https://terrywang.net/2016/02/02/new-iptables-gotchas.html>`_ ).
+
+Si lo prefieres, también puedes ver como se realiza esto en multitud de videotutoriales.
+
+.. raw:: html
+
+            <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/HeUyUDV697E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+
+.. raw:: html
+
+        </br>
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <u><b>PRÁCTICA 1</b></u></br>
+        Realiza la práctica 1 del Tema 4 del aula virtual, convirtiendo tus servidores en enrutadores.
+        </div>
+        </br>
