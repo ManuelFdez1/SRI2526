@@ -53,7 +53,7 @@ Debemos incluir los comandos necesarios para:
 * Realizar la NAT para que se puedan comunicar con la red destino.
 
 .. important::
-   Para que funcione correctamente el enrutamiento, recuerda repasar tus servidors DHCP y DNS, comprobando que todo esté correctamente configurado.
+   Para que funcione bien el enrutamiento, recuerda repasar tus servidors DHCP y DNS, comprobando que todo esté correctamente configurado.
 
 
 Finalmente, sería conveniente configurar todo lo anterior de manera que el servicio se iniciara con el arranque del SO para evitar tener que reconfigurar en caso de reinicio del servidor.
