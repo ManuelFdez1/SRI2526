@@ -43,8 +43,18 @@ La principal desventaja del uso de proxy es la necesidad de configurar los naveg
 
 Debemos configurar iptables para que TODO el trafico http(80) y https(443) sean redirigidos al puerto donde esté trabajando el proxy(por defecto squid trabaja en  el 3128)
 
-echo 1 > /proc/sys/net/ipv4/ip_forward
-iptables -A FORWARD -j ACCEPT
-iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
-iptables -t nat -A PREROUTING -s 192.168.100.0/24 -p tcp --dport 80 -j REDIRECT --to-port 3128
-iptables -t nat -A PREROUTING -s 192.168.100.0/24 -p tcp --dport 443 -j REDIRECT --to-port 3128
+.. code-block:: shell-session
+
+            echo 1 > /proc/sys/net/ipv4/ip_forward //No necesita reinicio
+            #iptables -A FORWARD -j ACCEPT
+            #iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
+            #iptables -t nat -A PREROUTING -s 192.168.100.0/24 -p tcp --dport 80 -j REDIRECT --to-port 3128
+            #iptables -t nat -A PREROUTING -s 192.168.100.0/24 -p tcp --dport 443 -j REDIRECT --to-port 3128
+
+
+.. warning::
+   Donde:
+   
+   * **192.168.100.0/24** es la red local de mi servidor.
+   * **eth0** es la tarjeta externa del servidor
+   * **3128** es el puerto por defecto de Squid

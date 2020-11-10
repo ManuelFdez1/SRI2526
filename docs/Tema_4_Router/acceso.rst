@@ -62,10 +62,10 @@ Puedes encontrar un HOW-TO en el `siguiente tutorial web <https://smr.iesharia.o
 
       .. code-block:: shell-session
 
-                  1. net.ipv4.ip_forward=1net.ipv4.ip_forward=1
+                  1. net.ipv4.ip_forward=1 //poner este bit a 1. Tienes varias alternativas.
                   #!/bin/bash
-                  2.- iptables -A FORWARD -j ACCEPT
-                  3. iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
+                  2. #iptables -A FORWARD -j ACCEPT
+                  3. #iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
 
 
 .. warning::
