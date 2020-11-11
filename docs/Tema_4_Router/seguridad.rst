@@ -18,9 +18,9 @@ Vamos a estudiar uno de los proxy más ampliamente utilizado en la actualidad, *
 
 Ya teniendo instalado nuestro servidor squid, ahora deberemos saber en donde se encuentra toda la configuración del mismo(**/etc/squid**). Ya dentro de esta carpeta se encontraran varios archivos pero el mas importante es el **squid.conf** el cual se encarga de la configuración del servicio. En la configuración de squid hay que distinguir varios elementos:
 
-1 Configuración General: Parámetros generales de funcionamiento del servicio.
-2 ACL (Lista de control de acceso): Definición de conjunto de elementos a los que se aplicarán reglas.
-3 REGLAS: Decisiones de autorización/denegación de acceso a ACL.
+1. Configuración General: Parámetros generales de funcionamiento del servicio.
+2. **ACL (Lista de control de acceso)**: Definición de conjunto de elementos a los que se aplicarán reglas.
+3. **REGLAS**: Decisiones de autorización/denegación de acceso a ACL.
 
 Los recursos que podéis encontrar en la web son muchos, por ejemplo el siguiente videotutorial:
 
@@ -54,7 +54,7 @@ Debemos configurar iptables para que TODO el trafico http(80) y https(443) sean 
 
 .. warning::
    Donde:
-   
+
    * **192.168.100.0/24** es la red local de mi servidor.
    * **eth0** es la tarjeta externa del servidor
    * **3128** es el puerto por defecto de Squid
