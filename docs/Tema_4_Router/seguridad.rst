@@ -3,11 +3,11 @@ Seguridad. Proxy-Caché
 
 Un proxy es un programa o dispositivo que realiza una acción en representación de otro. Esta situación estratégica de punto intermedio suele ser aprovechada para soportar una serie de funcionalidades:
 
-* PROPORCIONAR CACHÉ.
-* CONTROL DE ACCESO
-* REGISTRO DEL TRÁFICO
-* PROHIBIR CIERTO TIPO DE TRÁFICO.
-* REGULACION ANCHO DE BANDA
+      * PROPORCIONAR CACHÉ.
+      * CONTROL DE ACCESO
+      * REGISTRO DEL TRÁFICO
+      * PROHIBIR CIERTO TIPO DE TRÁFICO.
+      * REGULACION ANCHO DE BANDA
 
 El uso mas común de este servicio se encuentra en Internet. Se trata de un **proxy para el control del acceso a la web (principalmente los protocolos HTTP y HTTPS)**, proporcionando una caché para las páginas web y los contenidos descargados. Cuando esto sucede se dice que el proxy web está haciendo un servicio de proxy-cache. Esta caché es compartida por todos los usuario del proxy, con la consiguiente mejora en los tiempos de acceso para consultas coincidentes. Al mismo tiempo libera la carga de los enlaces hacia Internet.
 
@@ -18,9 +18,9 @@ Vamos a estudiar uno de los proxy más ampliamente utilizado en la actualidad, *
 
 Ya teniendo instalado nuestro servidor squid, ahora deberemos saber en donde se encuentra toda la configuración del mismo(**/etc/squid**). Ya dentro de esta carpeta se encontraran varios archivos pero el mas importante es el **squid.conf** el cual se encarga de la configuración del servicio. En la configuración de squid hay que distinguir varios elementos:
 
-1. Configuración General: Parámetros generales de funcionamiento del servicio.
-2. **ACL (Lista de control de acceso)**: Definición de conjunto de elementos a los que se aplicarán reglas.
-3. **REGLAS**: Decisiones de autorización/denegación de acceso a ACL.
+      1. Configuración General: Parámetros generales de funcionamiento del servicio.
+      2. **ACL (Lista de control de acceso)**: Definición de conjunto de elementos a los que se aplicarán reglas.
+      3. **REGLAS**: Decisiones de autorización/denegación de acceso a ACL.
 
 Los recursos que podéis encontrar en la web son muchos, por ejemplo el siguiente videotutorial:
 
@@ -29,6 +29,9 @@ Los recursos que podéis encontrar en la web son muchos, por ejemplo el siguient
             <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/zXusMCM6p_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
 O también podéis encontrar manuales, como en el `siguiente enlace <http://www.alcancelibre.org/staticpages/index.php/19-0-como-squid-general>`_.
+
+.. important::
+   Recuerda consultar los ficheros de registro del proxy en **/var/log/squid** .
 
 
 Proxy transparente
