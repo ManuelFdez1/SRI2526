@@ -67,13 +67,19 @@ Una de las opciones puede ser utilizar el comando **update-rc.d**. Puedes encont
                   2. #iptables -A FORWARD -j ACCEPT
                   3. #iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
 
-
 .. warning::
    En relación con las lineas anteriores:
 
    1. Poniendo ese bit de sistema a 1 **activas únicamente el enrutamiento** entre tarjetas
    2. Iptables acepta paquetes FORWARD (aquellos que llegan al servidor con destino a otras redes). Esta linea es opcional.
    3. Configuras iptables para que envíe los paquetes de la red local(*192.168.200.0/24*) a la tarjeta externa(*enp0s3*) realizando la traducción correspondiente (usamos la palabra MASQUERADE, aunque puede usarse SNAT también. En la `siguiente web te explican las diferencias entre una y otra <https://terrywang.net/2016/02/02/new-iptables-gotchas.html>`_ ).
+
+El script debería quedar bastante similar al siguiente. Recuerda que en las lineas iniciales definimos en que **niveles de ejecución** queremos que se inicie el servicio y en que otros queremos que se pare.
+
+.. image:: img/scriptEnrutamientoNat.png
+    :width: 400 px
+    :alt: script enrutamiento y NAT
+    :align: center
 
 Si lo prefieres, también puedes ver como se realiza esto en multitud de videotutoriales.
 
