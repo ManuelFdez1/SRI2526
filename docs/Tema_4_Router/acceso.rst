@@ -57,7 +57,7 @@ Debemos incluir los comandos necesarios para:
 
 
 Finalmente, sería conveniente configurar todo lo anterior de manera que el servicio se iniciara con el arranque del SO para evitar tener que reconfigurar en caso de reinicio del servidor.
-Puedes encontrar un HOW-TO en el `siguiente tutorial web <https://smr.iesharia.org/wiki/doku.php/src:recetas:enrutamiento>`_
+Una de las opciones puede ser utilizar el comando **update-rc.d**. Puedes encontrar un HOW-TO en el `siguiente tutorial web <https://www.solusan.com/como-va-update-rcd-niveles-de-ejecucion-en-debian.html>`_
 
 
       .. code-block:: shell-session
