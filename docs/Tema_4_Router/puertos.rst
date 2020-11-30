@@ -33,3 +33,13 @@ Si trabajamos, como en nuestro caso, configurando un SISTEMA OPERATIVO como Rout
             * **80** puerto donde se reciben las conexiones externas
             * **192.168.1.2**: IP interna del equipo destino.
             * **8080**: Puerto en el equipo destino.
+
+Otro de los ejemplos en los que usarás la redirección de puertos es el **funcionamiento de los contenedores**, en los cuales se redirigen puertos de la máquina anfitrión a puertos contenedor.
+
+      .. code-block:: shell-session
+
+                $docker run -d -p 8080:80 nginx:alpine
+
+
+      .. important::
+            En el comando anterior se ejecuta como demonio (-d) el contenedor *nginx:alpine*, redirigiendo el **puerto 8080 de la máquina anfitrión al puerto 80 del contenedor** (-p 8080:80).

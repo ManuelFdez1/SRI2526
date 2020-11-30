@@ -5,6 +5,7 @@ Un proxy es un programa o dispositivo que realiza una acción en representación
 
       * PROPORCIONAR CACHÉ.
       * CONTROL DE ACCESO
+          * Si lo que se gestiona es el acceso desde el exterior a los recursos internos de nuestra red estaríamos hablando de un `proxy inverso <https://es.wikipedia.org/wiki/Proxy_inverso>`_.
       * REGISTRO DEL TRÁFICO
       * PROHIBIR CIERTO TIPO DE TRÁFICO.
       * REGULACION ANCHO DE BANDA
@@ -28,11 +29,41 @@ Los recursos que podéis encontrar en la web son muchos, por ejemplo el siguient
 
             <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/zXusMCM6p_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
-O también podéis encontrar manuales, como en el `siguiente enlace <http://www.alcancelibre.org/staticpages/index.php/19-0-como-squid-general>`_.
+O también podéis encontrar muchísimos recursos en la web:
+    * `Wiki completa de configuración de Squid <https://wiki.squid-cache.org/SquidFaq/SquidAcl>`_.
+    * `Unos cuantos ejemplos sencillos para comenzar <https://elpuig.xeill.net/Members/vcarceler/smx-m07/actividades/squid-a3>`_.
+    * `Documentación oficial Squid <http://www.squid-cache.org/Doc/config/>`_.
 
 .. important::
-   Recuerda consultar los ficheros de registro del proxy en **/var/log/squid** .
+   En relación con el servicio proxy, debes tener en cuenta:
+    * Puedes consultar los ficheros de registro del proxy en */var/log/squid*.
+    * Los clientes del proxy pueden configurarse de diferentes maneras.
 
+Para configurar los clientes que van a utilizar nuestro servicio de proxy tenemos varias opciones:
+
+1. **Configuración de los navegadores**: Firefox, tiene en sus configuraciones la configurar el servidor intermediario.
+
+            .. image:: img/conProxyNavegador.png
+                  :width: 200 px
+                  :alt: Configuración proxy en Firefox
+                  :align: center
+
+2. **Proxy de sistema**: Chrome u otros navegadores utilizan el proxy que se configura para todo el sistema.
+
+            .. image:: img/conProxySistema.png
+                  :width: 200 px
+                  :alt: Configuración proxy en Windows 10
+                  :align: center
+
+3. Con un **fichero de configuración automática del proxy(PAC)**: Nos va a permitir automatizar algunos aspectos. Puedes ver más información en el `siguiente enlace <https://www.watchguard.com/help/docs/help-center/es-419/Content/es-419/Fireware/proxies/explicit_proxy/explicit_proxy_pacfiles_c.html?TocPath=Controlar%20el%20Tr%C3%A1fico%20de%20Red%7CServidores%20Proxy%7CAcerca%20del%20Proxy%20Expl%C3%ADcito%7C_____4>`_.
+
+
+.. raw:: html
+
+    <div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+    <u>¿Sabrías?</u></br>
+    ¿Instalar el paquete Squid en una MV y realizar las configuraciones y pruebas pertinentes para comprobar su funcionamiento?¿Qué es lo que ocurre por defecto si no modificamos nada de la configuración inicial de Squid?
+    </div></br>
 
 Proxy transparente
 ------------------
