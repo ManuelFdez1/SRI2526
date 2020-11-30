@@ -35,7 +35,6 @@ O también podéis encontrar muchísimos recursos en la web:
     * `Documentación oficial Squid <http://www.squid-cache.org/Doc/config/>`_.
 
 .. important::
-   En relación con el servicio proxy, debes tener en cuenta:
     * Puedes consultar los ficheros de registro del proxy en */var/log/squid*.
     * Los clientes del proxy pueden configurarse de diferentes maneras.
 
