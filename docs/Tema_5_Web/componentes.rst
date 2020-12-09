@@ -12,14 +12,14 @@ Entre otros, algunos de los elementos más destacados del protocolo HTTP son los
 
     * Request/Response
     * Cabeceras HTTP
-    * Códigos de respuesta HTTP.
+    * Códigos de respuesta HTTP
     * URL/URI
     * Cookies
     * Métodos HTTP (Comandos en Linux)
     * Caché
-    * HTTP vs HTTPS.
-    * Tipos MIME.
-    * Métodos de autenticación.
+    * HTTP vs HTTPS
+    * Tipos MIME
+    * Métodos de autenticación
     * Sesión HTTP
     * Virtual Host
 
