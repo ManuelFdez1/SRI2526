@@ -42,7 +42,7 @@ En cualquiera de los servidores que utilicemos debemos prestar especial atenció
 
 .. raw:: html
 
-      <p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pdf-2127829.png/480px-Pdf-2127829.png" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>  En el siguiente documento puedes encontrar un manual completo de como realizar la configuración básica de algunos servidores web. </br> </br>
+      <p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pdf-2127829.png/480px-Pdf-2127829.png" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>  <b>En el siguiente documento puedes encontrar un manual completo de como realizar la configuración básica de algunos servidores web.</b></br>
 
 .. image:: img/ConfiguracionservidoresHTTP.pdf
       :width: 400 px
@@ -75,8 +75,74 @@ en la cual podemos encontrar información muy completa y tutoriales de creación
    2. Lista los módulos instalados en apache. Instala alguno más.
    3. Configura tu servidor para que, por ejemplo, sirva los sitios prueba1.com y prueba2.com.
    4. Permite el indizado de directorio en algún caso concreto.
-   5. Activa el acceso con identificación. 
+   5. Activa el acceso con identificación.
 
+.. raw:: html
+
+        </br>
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <u><b>PRÁCTICA 1</b></u></br>
+        Accede a la práctica 1 del Tema 5 del aula virtual. Realiza la configuración de un servidor Apache.
+        </div>
+        </br>
 
 NginX
 -------
+
+.. raw:: html
+
+    <p>
+    <b>NGINX, pronunciado en inglés como «engine-ex»</b>, es un famoso software de servidor web de código abierto <sup id="fnref:note1"><a class="footnote-ref" href="#fn:note1" role="doc-noteref">1</a></sup>.
+    En su versión inicial, funcionaba en servidores web HTTP.
+    Sin embargo, hoy en día también sirve como proxy inverso, balanceador de carga HTTP y proxy de correo electrónico para IMAP, POP3 y SMTP.
+    </p>
+
+La aparición de este servidor fue provocada por la búsqueda de un servicio web que
+mejorara las prestaciones de Apache en páginas con una alta tasa de accesibilidad (en el orden de miles de conexiones simultáneas).
+En realidad la configuración de un servidor y otro guardan ciertas semejanzas.
+
+.. raw:: html
+
+    <p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Document_%2889367%29_-_The_Noun_Project.svg" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>
+    Un ejemplo de fichero de configuración lo puedes encontrar en el siguiente enlace.
+    </p>
+
+
+.. image:: img/nginxEjemplo.txt
+    :width: 400 px
+    :alt: Ejemplo fichero configuración NGINX
+    :align: center
+
+
+.. raw:: html
+
+    <p>
+    Al igual que en el caso de Apache, puedes encontrar muchísima ayuda en la web<sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup>. Por ejemplo puedes acceder a este conjunto de videotutoriales en el que explican paso a paso como configurar
+    un servidor NGINX.
+    </p>
+
+
+.. raw:: html
+
+      <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/eyxpLa9hUS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+.. raw:: html
+
+   </br>
+   <div class="footnotes">
+       <hr />
+       <ol>
+           <li class="footnote" id="fn:note1">
+               <p>
+                   <b>Fuente:</b> <a href="https://www.hostinger.es/tutoriales/que-es-nginx/" target="_blank">¿Qué es NGINX y cómo funciona?</a>
+                   <a class="footnote-backref" rev="footnote" href="#fnref:note1">&#8617;</a>
+               </p>
+           </li>
+           <li class="footnote" id="fn:note2">
+               <p>
+                   <b> Documentación oficial:</b> <a href="https://nginx.org/en/docs/" target="_blank">https://nginx.org/en/docs/</a>
+                  <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
+               </p>
+           </li>
+       </ol>
+   </div>

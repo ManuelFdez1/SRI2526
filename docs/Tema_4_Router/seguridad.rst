@@ -30,7 +30,7 @@ Los recursos que podéis encontrar en la web son muchos, por ejemplo el siguient
 
 .. raw:: html
 
-            <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/zXusMCM6p_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+            <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/zXusMCM6p_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
 O también podéis encontrar muchísimos recursos en la web:
     * `Wiki completa de configuración de Squid <https://wiki.squid-cache.org/SquidFaq/SquidAcl>`_.
