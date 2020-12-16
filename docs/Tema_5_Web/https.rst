@@ -27,41 +27,51 @@ Al instalar apache2 se instala también el módulo ssl para apache2, por lo que 
 
                 # a2enmod ssl
 
-    2. Generar un certificado para el servidor (Genera un certificado autofirmado) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
+    2. Generar un certificado para el servidor (Recuerda los conceptos **certificado, clave pública/privada, firma**) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
 
-      .. code-block:: shell-session
+        .. code-block:: shell-session
 
-                  # make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/ssl/certs/apache2.pem
+                # openssl genrsa -out prueba.com.key 1024
+                # openssl req -new -key prueba.com.key -out prueba.com.csr
+                # openssl x509 -req -days 365 -in prueba.com.csr -signkey prueba.com.key -out prueba.com.crt
 
-    3. Crear servidor virtual seguro.
-    4. Habilitar puerto(Listen 443)
-    5. Redirigir HTTP a HTTPS
-        * Opcional
-        * mod_rewrite
-        * Redirect
+
+    3. Crear virtual host seguro.
+        * Habilitar puerto(Listen 443)
+        * Activar SSL
+        * Incluir la **clave privada y el certificado** en la configuración
+
+    4. Redirigir HTTP a HTTPS  →  OPCIONAL, aunque recomendable
+        * **mod_rewrite**
         * Ejemplos en la web
 
-.. image:: img/ejemplohttpsApache.png
-                :width: 400 px
-                :alt: Protocolo HTTPS
-                :align: center
+   5. Activar el nuevo sitio creado
 
+        .. code-block:: shell-session
 
-.. warning::
+                # a2ensite prueba.ssl.com
 
-   La configuración del certificado público..https://www.linuxito.com/seguridad/598-como-crear-un-certificado-ssl-autofirmado-en-dos-simples-pasos para
-   un escenario de prod..certificado por entidad....
+En el siguiente video puedes encontrar una configuración paso a paso de un servidor en modo seguro:
 
 .. raw:: html
 
             <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/wq4S6BlIFmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
 
+.. warning::
+
+   Los ejemplos vistos se adaptan a un entorno de pruebas como el nuestro. Si estuvieras tratando con un entorno 'real' deberías obtener un certificado por parte de una
+   `autoridad certificadora (CA) <https://es.wikipedia.org/wiki/Autoridad_de_certificaci%C3%B3n>`_. Tienes varias opciones:
+
+      * CA de pago
+      * Opciones gratuitas como `Let's Encrypt <https://letsencrypt.org/es/>`_
+
+
 .. raw:: html
 
         </br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>PRÁCTICA 2</b></u></br>
-        Realiza la práctica 2 del Tema 5 del aula virtual. Configura tu servidor Apache de modo seguro.
+        <u><b>EJERCICIO 2</b></u></br>
+        Realiza el ejercicio 2 del Tema 5 del aula virtual. Configura tu servidor Apache de modo seguro.
         </div>
         </br>
