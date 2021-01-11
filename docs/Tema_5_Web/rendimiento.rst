@@ -20,6 +20,7 @@ La mayoria de estas opciones de optimización y mejora del rendimiento de nuestr
     1. Opciones generales de optimización.
     2. Configuración Caché
     3. Módulos Apache.
+    4. Controladores(**Handlers**)
 
 **OPCIONES GENERALES**
 
@@ -56,8 +57,22 @@ La mayoria de estas opciones de optimización y mejora del rendimiento de nuestr
                     <li>Worker</li>
                     <li>Event</li>
                   </ul>
-                  <b>¿Sabrías distinguir entre los distintos modos?</b>
                   </p>
+
+
+**HANDLERS**
+
+    * Los Handlers o Controladores son los programas encargados de ejecutar determinados ficheros del servicio web. La elección de unos u otros puede mejorar el rendimiento del servidor.
+      El ejemplo más habitual en los actualmente es el del handler configurado en nuestro servidor para procesar las peticiones de paginas **.php**.
+      Las alternativas existentes, tal y como puedes `consultar en la web <https://blog.ahierro.es/php-mod_php-vs-cgi-vs-fastcgi-vs-fpm/#modphp,_CGI,_FastCGI_o_FPM,_cual_es_mejor>`_, son:
+          1. ***mod_php**
+          2. CGI/_FastCGI
+          3. **FPM**
+
+
+.. warning::
+
+   ¿Sabrías decir que tipo de configuración de MPM y handler de PHP necesitarías si fueras a alojar una web en tu servidor con una carga de actividad y número de peticiones elevadas y concurrentes?
 
 NginX
 -------
@@ -92,22 +107,35 @@ Obtención de datos
 
 Existen multitud de herramientas para hacer test de referencia (**benchmarking** en inglés) sobre servidores web, simulando multitud de conexiones y devolviendo los datos de tiempo y carga registrados en el servidor (Apache, NginX..)
 
-    .. code-block:: shell-session
-
-                    $ ab -n 1000 -c 5 -k http://example.com
-
-    .. image:: img/resultadoComandoAB.png
-                    :width: 300 px
-                    :alt: Resultado comando AB
-                    :align: center
-
 .. important::
 
    Algunos ejemplos este tipo de SW que podemos usar para obtener cálculos del rendimiento de nuestros servidrores web son:
 
       * `AB (Apache Benchmarking) <https://httpd.apache.org/docs/2.4/programs/ab.html>`_, incluido en la instalación de Apache.
+          .. code-block:: shell-session
+
+                    $ ab -n 1000 -c 5 -k http://example.com
+
+        .. image:: img/resultadoComandoAB.png
+                        :width: 300 px
+                        :alt: Resultado comando AB
+                        :align: center
+
       * `Apache JMeter <https://jmeter.apache.org/>`_
       * `Gatling <https://gatling.io/>`_
+
+
+
+
+
+.. raw:: html
+
+        </br>
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <u><b>EJERCICIO 3</b></u></br>
+        Realiza el ejercicio 3 del Tema 5 del aula virtual. Realiza comprobaciones del rendimiento de tu servidor web y configúralo para mejorar los resultados.
+        </div>
+        </br>
 
 .. raw:: html
 

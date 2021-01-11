@@ -16,9 +16,30 @@ Tenemos diferentes alternativas si queremos configurar un escenario de redundanc
 
     * **Apache** pueden configurarse para actuar como servidor intermedio (`documentación oficial <https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html>`_).
     * En el caso de **NginX**, es uno de los puntos fuertes del programa (`guía en la documentación oficial <https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/>`_).
+    * Existe SW específico que nos pueden ofrecer más alternativas de configuración (una de las más populares es `HAPROXY <http://www.haproxy.org/>`_).
 
 
-¿Te atreverías a montar un balanceo de carga con Apache? Deberías manejar concetpos como:
-Proxy inverso
-Balanceo de carga
-Contenedores
+.. important::
+
+   ¿Te atreverías a montar tu primer balanceador de carga? Una buena manera para comenzar podría incluir la combinación de:
+
+      * Una MV en la que se ejecute Apache y permita la ejecución de contenedores.
+      * Conjunto de contenedores en la MV anterior ejecutando alguna imagen de Apache. Puedes buscarla en el `Docker Hub <https://hub.docker.com>`_.
+      * Configuración del balanceador en Apache, tal y como muestra el siguiente video.
+
+
+.. raw:: html
+
+            <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/G0cqFq_EedI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+
+.. raw:: html
+
+        </br>
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <u><b>PRÁCTICA 2</b></u></br>
+        Realiza la práctica 2 del Tema 5 del aula virtual. Monta un balanceador de carga en Apache.
+        </div>
+        </br>
+
+En un entorno real se deben tener en cuenta muchos factores a la hora de configurar correctamente la alta disponibilidad, y
+lograr que nuestro sitio web funcione correctamente y de manera transparente para l@s usuari@s. **¿Imaginas algunos de estos factores?**
