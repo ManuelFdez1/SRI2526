@@ -42,4 +42,9 @@ Tenemos diferentes alternativas si queremos configurar un escenario de redundanc
         </br>
 
 En un entorno real se deben tener en cuenta muchos factores a la hora de configurar correctamente la alta disponibilidad, y
-lograr que nuestro sitio web funcione correctamente y de manera transparente para l@s usuari@s. **¿Imaginas algunos de estos factores?**
+lograr que nuestro sitio web funcione correctamente y de manera transparente para l@s usuari@s, por ejemplo:
+
+    * Lograr la **persistencia** de nuestra estructura de contenedores mediante el uso de `estructuras de almacenamiento de Docker <https://docs.docker.com/storage/>`_.
+    * ¿Los servidores web alojados en los contenedores deben *'apuntar'* al mismo código web?
+    * ¿Usan la misma BD?
+    * Automatizar la puesta en marcha y la parada de nuestro escenario lo máximo posible (`Docker-compose <https://docs.docker.com/compose/>`_)
