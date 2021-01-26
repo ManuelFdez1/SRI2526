@@ -1,7 +1,7 @@
 @import url("theme.css");
 
 .wy-nav-content {
-max-width: 95%;
+max-width: 100%;
 text-align: justify;
 }
 
@@ -11,5 +11,3 @@ div.highlight pre {
 color: green;
 font-size: 14px;
 }
-
-
