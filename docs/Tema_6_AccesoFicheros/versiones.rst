@@ -51,6 +51,7 @@ Conociendo su funcionamiento, ya podemos configurar nuestro equipo para tener un
 .. Important::
    Un buen ejercicio podría consistir en crear una cuenta en algún sitio público  que ese GIT (github, gitlab, gitbook....), crees tu primer repositorio y
    lo conectes a un cliente GIT para trabajar con él. Piensa en las utilidades que podría tener este repositorio:
+   
         * Alojar el código fuente de tus proyectos de IAW.
         * Copias de seguridad y configuraciones de tus BD.
         * C. Seg de tus ficheros de conf. de SER.

@@ -43,15 +43,17 @@ Los pasos a realizar, `extraídos del siguiente manual <https://www.digitalocean
             :align: center
 
     5. Reiniciar apache
-    6. Probar la conexión con un cliente
-        * Puede ser Linux o Windows.
-        * ¿DirectoryIndex disabled para clientes Windows?
+    6. Probar la conexión con un cliente(Linux|Windows|MAC).
 
         .. image:: img/webdav_3.png
             :width: 400 px
             :alt: WebDAV
             :align: center
 
+
+.. Warning::
+   La directiva `DirectoryIndex <https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex>`_ para listar el contenido de un directorio del servidor suele ser una fuente de errores en combinación con WebDAV. 
+   **La recomendación general es desactivar esa directiva para poder utilizar los módulos dav**
 
 .. raw:: html
 
@@ -63,5 +65,5 @@ Los pasos a realizar, `extraídos del siguiente manual <https://www.digitalocean
         </br>
 
 .. Important::
-   Apache no es el único servidor que permite la configuración de esta característica. NginX también incluye el módulo `ngx_http_dav_module <http://nginx.org/en/docs/http/ngx_http_dav_module.html>`_ para permitir este tipo de accesos a 
+   Apache no es el único servidor que permite la configuración de esta característica. NginX también incluye el módulo `ngx_http_dav_module <http://nginx.org/en/docs/http/ngx_http_dav_module.html>`_ para permitir este tipo de accesos a
    nuestros servidores.
