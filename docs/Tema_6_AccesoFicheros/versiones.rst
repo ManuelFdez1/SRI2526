@@ -30,7 +30,7 @@ algo parecido a la siguiente imagen.
                :alt: Sw control de versiones
                :align: center
 
-.. Important::
+.. Warning::
    En los repositorios se utilizan términos como **TRUNK, TAG o BRANCH**. Debemos conocer su significado para entender correctamente como trabajan los sistemas de
    control de versiones.
 
@@ -48,11 +48,10 @@ Conociendo su funcionamiento, ya podemos configurar nuestro equipo para tener un
 
       <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/3XlZWpLwvvo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
-.. raw:: html
-
-        </br>
-        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>Ejercicio 1</b></u></br>
-        Crea tu primer repositorio público en la web.
-        </div>
-        </br>
+.. Important::
+   Un buen ejercicio podría consistir en crear una cuenta en algún sitio público  que ese GIT (github, gitlab, gitbook....), crees tu primer repositorio y
+   lo conectes a un cliente GIT para trabajar con él. Piensa en las utilidades que podría tener este repositorio:
+        * Alojar el código fuente de tus proyectos de IAW.
+        * Copias de seguridad y configuraciones de tus BD.
+        * C. Seg de tus ficheros de conf. de SER.
+        * Tu documentación, anotaciones de distintas categorías.
