@@ -39,7 +39,7 @@ Contenidos
         </tr>
         <tr>
         <td >Servidores web</td>
-        <td>Cloud computing</td>
+        <td>Otros servicios</td>
         </tr>
     </tbody>
 </table>
