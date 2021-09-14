@@ -1,6 +1,6 @@
 Calendario del curso
 ===============
-![Calendario IES Botet Curso 2020-21](img/CALENDARI2020-21WEB.png "Calendario IES Botet Curso 2020-21")
+![Calendario IES Botet Curso 2021-22](img/CALENDARI2021-22WEB.png "Calendario IES Botet Curso 2021-22")
 
 Objetivos del módulo
 ===============
@@ -39,7 +39,7 @@ Contenidos
         </tr>
         <tr>
         <td >Servidores web</td>
-        <td>Otros Servicios</td>
+        <td>Cloud computing</td>
         </tr>
     </tbody>
 </table>
@@ -47,28 +47,31 @@ Contenidos
 Funcionamiento
 ===============
 
-+ Asistencia **PRESENCIAL semanas alternas**. A distancia, en el resto de horas.
-+ Mayor grado de responsabilidad y autonomía por vuestra parte. **¡1 semana sin vernos!**
-+ Mayor grado de flexibilidad e innovación por la mía
++ Asistencia **PRESENCIAL**.
 + Si algo no funciona. Se cambia. Se habla...
 + Ventaja: vamos a usar **herramientas que ya conocemos** y que no nos deben ser complicadas de usar
   + Aules. → Materiales, tareas, cuestionarios, *foros, Chats*
-  + Webex → [https://profevirtual.webex.com/meet/gimenez_manalb](https://profevirtual.webex.com/meet/gimenez_manalb)
+  + Webex → [https://gveducacion.webex.com/meet/gimenez_manalb](https://gveducacion.webex.com/meet/gimenez_manalb)
   + Correo electrónico →[mtgimenez.prof@gmail.com](mailto:mtgimenez.prof@gmail.com)
-  + Telegram (grupo para noticias/anuncios) → [Enlace al canal](https://t.me/joinchat/BUXkgRijEmvnH5P_Y9YV1Q)
+  + Telegram (grupo para noticias/anuncios) → [Enlace al canal](https://t.me/joinchat/WRVYnBd3Dh5j1hXV)
+
+      ![QRGrupoTelegram](img/QRGrupoTelegram.png "Enlace al canal de Telegram")
+
 + Las explicaciones teóricas se harán en clase con Webex lo más reducidas posible y a trabajar (en clase o en casa).
 + Fuera de horario habrá unas horas de tutoría online para resolver dudas.
 + Los puestos están señalados. NO desplazar equipo o mobiliario.
 + Siempre nos sentaremos en el mismo sitio
 + Evitar tocar la pantalla.
-+ Para evitar las pérdidas de información usa tu propio disco duro externo/portátil (además irá mas rápido que el equipo del aula)
++ Para evitar las pérdidas de información y facilitar tu trabajo tienes dos opciones (**OBLIGATORIO**):
+  + Usa tu propio disco duro externo/portátil SSD.
+  + Traer tu propio portátil (En este caso habría que ubicarte en algún puesto concreto. **ATENCIÓN AL USO DE LOS CABLES DE RED**).
 + **PACIENCIA y RESILIENCIA**
 + **Atención a las entradas/salidas de clase/patios**
 
 Evaluación
 ===============
 
-+ Prácticas / Ejercicios=60%
++ Prácticas / Ejercicios=60%. **INCLUYENDO EXÁMENES POR TEMA**
 + Examen Final Evaluación=40%
 Como máximo el/la alumno-a puede dejar **3 ejercicios/practicas sin entregar** y en el examen final de cada evaluación debe sacar un **mínimo de 3**.
 
