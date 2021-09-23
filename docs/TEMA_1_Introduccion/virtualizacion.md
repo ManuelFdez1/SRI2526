@@ -155,7 +155,7 @@ Para poder ejecutar docker, debemos instalarlo previamente en nuestro SO (prefer
 
 Como ejemplo, un comando típico de docker, en el que publicamos el puerto 80 del contenedor en el 8080 del host, puede ser:
   ```console
-      $docker run -d -p 8080:80 --name=XX –mount type=bind, source=dirHost, target=dirContainer DockerImg
+      $docker run -d -p 8080:80 --name=XX --mount type=bind, source=dirHost, target=dirContainer DockerImg
   ```
 
 Si quisiéramos organizar la ejecución de dos contenedores relacionados de alguna manera (por ejemplo un servidor http y un servidor de BD que trabajan en conjunto para servir una página web) tendríamos la opción de usar **Docker-compose**<b><sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup></b>. Previamente debemos haber instalado el paquete.
