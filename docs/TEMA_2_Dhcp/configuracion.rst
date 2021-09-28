@@ -68,6 +68,7 @@ Para la consulta, el up/down y  la actualización de las tarjetas tenemos comand
             .. code-block:: shell-session
 
               $ip a
+              $ifconfig
         * Comprobar la dirección de una interfaz en concreto.
             .. code-block:: shell-session
 
