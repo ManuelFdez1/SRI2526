@@ -22,6 +22,23 @@ DHCP Relay
       <a title="Rel" href="https://bytelearning.blogspot.com/2016/08/como-crear-un-dhcp-relay-en-linux.html"><img width="512" alt="DHCP Relay" src="https://4.bp.blogspot.com/-rA3kiCPJBMk/V578DoqT5rI/AAAAAAAAGXc/sXiD6rSCUzIgyfzppzpTf7KfcGNhGu98gCLcB/s1600/Diagrama.png"></a>
       </div>
 
+
+En el siguiente documento puedes encontrar, paso a paso, como montar un agente DHCP Relay en Ubuntu. Debes tener en cuenta varias cosas:
+
+* Necesitarás varias MV en marcha (hasta 3)
+* Deberás realizar alguna modificación en la configuración de red (en concreto la **creación de rutas**)
+* Aunque el documento hable de Ubuntu Server puedes utilizar otras distribuciones, no será muy diferente a lo expuesto en él.
+* Puedes combinar MV Windows/Linux según tus necesidades para que actúen tanto como servidor DHCP o como Relay.
+
+          .. raw:: html
+
+              <p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pdf-2127829.png/480px-Pdf-2127829.png" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>  En el siguiente documento puedes encontrar un manual completo de como realizar esto tanto en Windows como en Linux. </br> </br>
+
+          .. image:: img/Practica_Dhcp_RELAY_UbuntuServer.pdf
+              :width: 400 px
+              :alt: Tutorial configuración DHCP Relay Linux
+              :align: center
+
 DHCP Failover
 --------------
 

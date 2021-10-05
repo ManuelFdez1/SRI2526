@@ -20,11 +20,19 @@ En las propiedades de la interfaz (tarjeta) de red correspondiente:
 
 **Línea de comandos**
 
-En PowerShell, a través del comando `Set-NetIPInterface <https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipinterface?view=win10-ps>`_ (debemos asegurarnos de borrar las posibles direcciones estáticas que se hayan asignado a la interfaz)
+En PowerShell, a través del comando `Set-NetIPInterface <https://docs.microsoft.com/en-us/powershell/module/nettcpip/set-netipinterface?view=win10-ps>`_ (debemos asegurarnos de borrar las posibles direcciones estáticas que se hayan asignado a la interfaz usando el comando
+`Remove-NetIPAddress <https://docs.microsoft.com/en-us/powershell/module/nettcpip/remove-netipaddress?view=windowsserver2019-ps>`_ )
 
 .. code-block:: shell-session
 
               PS C:\>Set-NetIPInterface -InterfaceIndex 5 -Dhcp Enabled
+
+Si quisiéramos dejar de nuevo una configuración estática deberíamos hacer algo como lo siguiente (observa el uso de los comandos **New-NetIPAddress** y **Set-NetIPAddress**).
+
+.. code-block:: shell-session
+
+              PS C:\> New-NetIPAddress -InterfaceIndex 5 -IPAddress 192.168.0.1
+              PS C:\> Set-NetIPAddress -InterfaceIndex 5 -IPAddress 192.168.0.1 -PrefixLength 24
 
 Linux
 ^^^^^^^
