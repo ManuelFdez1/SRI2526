@@ -59,7 +59,7 @@ te puede servir de ayuda el siguiente video elaborado por un alumno de Ciclos Fo
 
 El protoco DHCP FAILOVER puedes encontrarlo en cualquiera de los sistemas operativos actuales. Si hasta ahora unicámente nos hemos referido a Linux(Ubuntu), su configuración no es muy distinta en Windows.
 
-  * Windws SRV con GUI: `Blog con tutorial paso a paso <https://blog.ragasys.es/configurar-dhcp-failover-cluster-en-ms-windows-server-2016/>`_
+  * Windws SRV con GUI: `Blog con tutorial paso a paso <https://www.solvetic.com/tutoriales/article/3364-como-configurar-dhcp-failover-en-windows-server-2016//>`_
   * PowerShell: `Doc. oficial de Microsoft <https://docs.microsoft.com/en-us/powershell/module/dhcpserver/add-dhcpserverv4failover?view=windowsserver2019-ps/>`_
 
 
