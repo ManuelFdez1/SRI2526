@@ -49,11 +49,27 @@ DHCP es un servicio crítico, en caso de fallo nuestra red estaría inoperativa 
               :alt: Esquema DHCP Failover
               :align: center
 
-Puedes encontrar ayuda, en el siguiente video elaborado por una alumno de Ciclos Formativos:
+En el siguiente enlace https://www.fpgenred.es/DHCP/protocolo_dhcp_failover.html puedes encontrar una completa referencia a los parámetros que pueden incluirse, además de un ejemplo de configuración completo en Linux. también
+te puede servir de ayuda el siguiente video elaborado por un alumno de Ciclos Formativos:
 
 .. raw:: html
 
         <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/RmYv8ssRL7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+
+
+El protoco DHCP FAILOVER puedes encontrarlo en cualquiera de los sistemas operativos actuales. Si hasta ahora unicámente nos hemos referido a Linux(Ubuntu), su configuración no es muy distinta en Windows.
+
+  * Windws SRV con GUI: `Blog con tutorial paso a paso <https://blog.ragasys.es/configurar-dhcp-failover-cluster-en-ms-windows-server-2016/>`_
+  * PowerShell: `Doc. oficial de Microsoft <https://docs.microsoft.com/en-us/powershell/module/dhcpserver/add-dhcpserverv4failover?view=windowsserver2019-ps/>`_
+
+
+.. raw:: html
+
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <b>PRÁCTICA 4</b></br></br>
+        Accede al aula virtual del módulo y completa la última práctica del tema. Vas a montar un sistema de alta disponibilidad sobre el servicio DHCP.
+        </div>
+        </br>
 
 
 .. raw:: html

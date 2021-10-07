@@ -164,7 +164,13 @@ Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:
 Linux
 ^^^^^^^
 
-Se suele configurar directamente con el fichero de configuración correspondiente, pero existen programas denominados **paneles** que nos permiten configurar los servidores a través de un **entorno web** (uno de los muchos ejemplos que existen puede ser `Webmin <https://www.webmin.com/>`_ ).
+.. raw:: html
+
+    <p>
+      Se suele configurar directamente con el fichero de configuración correspondiente<sup id="fnref:note3"><a class="footnote-ref" href="#fn:note3" role="doc-noteref">3</a></sup>, pero existen programas denominados <b>paneles</b> que nos permiten configurar los servidores a través de un <b>entorno web</b> (uno de los muchos ejemplos que existen puede ser <a href="https://www.webmin.com/">Webmin</a>).
+    </p>
+
+
 
 En Ubuntu srv 18.04/20.04 el servidor que viene en sus repositorios es **isc-dchp-server**, en el que destacan 2 Ficheros de configuración a tener en cuenta:
 
@@ -225,6 +231,11 @@ Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:
            <li class="footnote" id="fn:note2">
                <p>
                    <b>Inst. y configuración servidor DHCP Windows(PowerShell):</b> <a href="https://docs.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-deploy-wps" target="_blank">Doc. oficial de Microsoft</a> / <b>comandos DHCP PowerShell:</b> <a href="https://docs.microsoft.com/en-us/powershell/module/dhcpserver/?view=win10-ps" target="_blank">Doc. oficial de Microsoft</a> <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
+               </p>
+           </li>
+           <li class="footnote" id="fn:note3">
+               <p>
+                   <b>Manual completo de ISC-DHCP-SERVER:</b> <a href="https://www.fpgenred.es/DHCP/etcdhcpdhcpdconf.html" target="_blank">FPGENRED</a> <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
                </p>
            </li>
        </ol>
