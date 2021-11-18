@@ -33,7 +33,12 @@ Con dos sencillos comandos tendríamos navegando por Internet a nuestros cliente
 
 Linux
 --------
-En las distribuciones Linux no necesitamos instalar ningún servicio para conseguir el enrutamiento y la NAT, ya que con las utilidades que incorpora el núcleo del SO podremos conseguir lo que pretendemos. Para ello haremos uso de las `IPTABLES <https://es.wikipedia.org/wiki/Netfilter/>`_.
+En las distribuciones Linux no necesitamos instalar ningún servicio para conseguir el enrutamiento y la NAT, ya que con las utilidades que incorpora el núcleo del SO podremos conseguir lo que pretendemos.
+Tenemos varias opciones para crear rutas:
+
+1. Con el uso del comando **ip route** (https://www.cyberciti.biz/faq/linux-route-add/)
+2. Inclyendo **rutas estáticas en nuestro fichero de netplan** de configuración de red (https://linuxconfig.org/how-to-add-static-route-with-netplan-on-ubuntu-20-04-focal-fossa-linux)
+3. A través de las **IPTABLES** (https://es.wikipedia.org/wiki/Netfilter).
 
           .. raw:: html
 
