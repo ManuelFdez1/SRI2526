@@ -30,8 +30,8 @@ Seguramente, uno de los programas que más utilices a diario en tu pc, móvil, e
 
 .. raw:: html
 
-    <div id="browser-ww-monthly-201912-202011" width="600" height="400" style="width:600px; height: 400px; margin-left:auto; margin-right:auto;"></div><!-- You may change the values of width and height above to resize the chart --><p>Fuente: <a href="https://gs.statcounter.com/browser-market-share/desktop-tablet-console/worldwide/#monthly-201912-202011-bar">StatCounter Global Stats - Browser Market Share</a></p><script type="text/javascript" src="https://www.statcounter.com/js/fusioncharts.js"></script><script type="text/javascript" src="https://gs.statcounter.com/chart.php?browser-ww-monthly-201912-202011&chartWidth=600"></script>
-
+    <div id="browser-ww-monthly-201912-202111" width="600" height="400" style="width:600px; height: 400px;"></div><!-- You may change the values of width and height above to resize the chart --><p>Source: <a href="https://gs.statcounter.com/browser-market-share/desktop-tablet-console/worldwide/#monthly-201912-202111-bar">StatCounter Global Stats - Browser Market Share</a></p><script type="text/javascript" src="https://www.statcounter.com/js/fusioncharts.js"></script><script type="text/javascript" src="https://gs.statcounter.com/chart.php?browser-ww-monthly-201912-202111&chartWidth=600"></script>
+    
 La mayoría de los navegadores actuales más utilizados incorporan muchísimas herramientas para poder analizar y comprender lo que sucede cuando navegamos por la red.
 
 .. tip::
