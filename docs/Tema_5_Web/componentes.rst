@@ -19,9 +19,11 @@ Entre otros, algunos de los elementos más destacados del protocolo HTTP son los
     * Caché
     * HTTP vs HTTPS
     * Tipos MIME
+    * Estilos
     * Métodos de autenticación
     * Sesión HTTP
     * Virtual Host
+    * Web Stack
 
 .. raw:: html
 
