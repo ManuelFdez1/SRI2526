@@ -5,7 +5,7 @@ Configuración HTTP
 
     1. **Apache**: Servidor Open Source disponible en sistemas Unix, Microsoft y Apple
     2. **NGINX**: Software libre y de código abierto, para Linux, FreeBSD y Windows, pensado para mejorar el rendimiento de apache.
-    3. Internet Information Services**(IIS)**: Propiedad de Microsoft, únicamente para sistemas Windows.
+    3. **Internet Information Services(IIS)**: Propiedad de Microsoft, únicamente para sistemas Windows.
 
 
 Puedes encontrar una comparativa muy interesante entre la utilización de los distintos servidores
