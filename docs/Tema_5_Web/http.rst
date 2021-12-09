@@ -21,7 +21,7 @@ En cualquiera de los servidores que utilicemos debemos prestar especial atenció
 
     * Instalación y configuración del servicio sobre el **SO** e Infraestructura(**MV, contenedor**, cloud...) correspondiente.
     * Directorio/s donde se ubicarán el/los sitio/s web que administremos.
-        * Permisos adecuados → *$¡¡¡¡¡¡¡¡sudo chmod -R 777!!!!*)
+        * Permisos adecuados (chown/chmod) → *$¡¡¡¡¡¡¡¡sudo chmod -R 777!!!!*)
         * Espacio disponible
         * Seguridad (Backups, redundancia, ...)
     * Instalación módulos necesarios:
