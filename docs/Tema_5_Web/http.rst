@@ -117,8 +117,11 @@ En realidad la configuración de un servidor y otro guardan ciertas semejanzas.
 .. raw:: html
 
     <p>
-    Al igual que en el caso de Apache, puedes encontrar muchísima ayuda en la web<sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup>. Por ejemplo puedes acceder a este conjunto de videotutoriales en el que explican paso a paso como configurar
-    un servidor NGINX.
+    Al igual que en el caso de Apache, puedes encontrar muchísima ayuda en la web<sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup>. Puedes encontrar, por ejemplo:
+    <ul  style="padding-left: 5em;">
+      <li>Listado de tutoriales en <b><a href="https://techexpert.tips/es/category/nginx-es/" target="_blank">https://techexpert.tips/es/category/nginx-es/</a></b>.</li>
+      <li>acceder a este conjunto de videotutoriales en el que explican paso a paso como configurar un servidor NGINX.</li>
+    </ul>
     </p>
 
 
