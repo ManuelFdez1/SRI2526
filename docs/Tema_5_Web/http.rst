@@ -104,7 +104,7 @@ En realidad la configuración de un servidor y otro guardan ciertas semejanzas.
 .. raw:: html
 
     <p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Document_%2889367%29_-_The_Noun_Project.svg" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>
-    Un ejemplo de fichero de configuración lo puedes encontrar en el siguiente enlace.
+    Un ejemplo de fichero de configuración lo puedes ver en el siguiente enlace.
     </p>
 
 
