@@ -17,45 +17,22 @@ solamente pueda ser descifrada por el servidor. Si durante la transferencia de l
 intentara descifrarlos, los algoritmos garantizarían que no podría hacerlo por fuerza bruta (probando todas las claves posibles) en un plazo mínimo de
 varios años.
 
-**APACHE**
+**CONFIGURACIÓN**
 
-Al instalar apache2 se instala también el módulo ssl para apache2, por lo que no es necesario instalar ningún paquete adicional, tan solo debemos:
+La configuración de una web protegida con HTTPS, independientemente del servidor que utilicemos, se realiza básicamente con los siguientes pasos:
 
-    1. Activar el módulo ssl.
-
-        .. code-block:: shell-session
-
-                # a2enmod ssl
-
+    1. Activar los módulos correspondientes (en el caso de Apache).
     2. Generar un certificado para el servidor (Recuerda los conceptos **certificado, clave pública/privada, firma**) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
+          * ¿Ubicación de los certificados?
+          * ¿Propietario/Permisos?
+    3. Crear virtual host seguro.Incluyendo la **clave privada y el certificado** en la configuración
+    4. Redirigir HTTP a HTTPS  →  (**OPCIONAL, aunque recomendable**)
+    5. Activar el nuevo sitio creado →  (**a2ensite** si estamos en Apache, **ln -s** en NginX)
 
-        .. code-block:: shell-session
+En los siguientes enlaces puedes encontrar unos sencillos tutoriales:
 
-                # openssl genrsa -out prueba.com.key 1024
-                # openssl req -new -key prueba.com.key -out prueba.com.csr
-                # openssl x509 -req -days 365 -in prueba.com.csr -signkey prueba.com.key -out prueba.com.crt
-
-
-    3. Crear virtual host seguro.
-        * Habilitar puerto(Listen 443)
-        * Activar SSL
-        * Incluir la **clave privada y el certificado** en la configuración
-
-    4. Redirigir HTTP a HTTPS  →  OPCIONAL, aunque recomendable
-        * **mod_rewrite**
-        * Ejemplos en la web
-
-   5. Activar el nuevo sitio creado
-
-        .. code-block:: shell-session
-
-                # a2ensite prueba.ssl.com
-
-En el siguiente video puedes encontrar una configuración paso a paso de un servidor en modo seguro:
-
-.. raw:: html
-
-            <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/wq4S6BlIFmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+    - APACHE: https://techexpert.tips/es/apache-es/habilitar-https-en-apache/
+    - NGINX: https://techexpert.tips/es/nginx-es/habilitar-https-en-nginx/
 
 
 .. warning::
