@@ -14,8 +14,7 @@ servidor intermedio(proxy inverso) que puede actuar, por ejemplo, como:
 
 Tenemos diferentes alternativas si queremos configurar un escenario de redundancia (La mayoría de las webs que visitamos en realidad trabajan con estos esquemas)
 
-    * **Apache** pueden configurarse para actuar como servidor intermedio (`documentación oficial <https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html>`_ o una versión
-      más simplificada en https://josejuansanchez.org/iaw/practica-05/index.html). 
+    * **Apache** pueden configurarse para actuar como servidor intermedio (`documentación oficial <https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html>`_). 
     * En el caso de **NginX**, es uno de los puntos fuertes del programa (`guía en la documentación de CLOUDING.IO <https://help.clouding.io/hc/es/articles/360019908839-C%C3%B3mo-configurar-un-servidor-de-balanceo-de-carga-Nginx-en-Ubuntu-20-04>`_).
     * Existe SW específico que nos pueden ofrecer más alternativas de configuración (una de las más populares es `HAPROXY <http://www.haproxy.org/>`_).
 
