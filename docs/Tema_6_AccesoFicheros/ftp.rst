@@ -69,9 +69,13 @@ En este servicio debemos prestar atención a los siguientes elementos o propieda
       * Limitar acceso por IP/ Hora..
   * Tipos de usuari@/autenticación.
       * Usuari@s locales
-      * Usuari@s virtuales
+      * Usuari@s virtuales. Varias posibilidades.
+          * Ficheros generados con el paquete db-util (https://help.ubuntu.com/community/vsftpd)
+          * Ficheros generados con htpasswd.
+          * Bases de datos (MySql..)
+          * Servicios de directorio (LDAP)
       * Autorizar acceso anónimo
-  * Enjaular a l@s usuari@s.
+  * Enjaular a l@s usuari@s (**CHROOT**).
   * Soporte para conexiones seguras mediante SSL(instalación de certificados).
 
 **SERVIDOR FTP EN LINUX**
@@ -79,7 +83,7 @@ En este servicio debemos prestar atención a los siguientes elementos o propieda
 Utilizaremos VsFTP (`manual en la web <https://comoinstalar.me/como-instalar-ftp-en-ubuntu-20-04-lts/>`_), teniendo en cuenta lo siguiente:
 
   * # apt-get install vsftpd
-  * 1 solo fichero de configuración
+  * La configuración bastante sencilla
   * Permite **servidores virtuales** (por IP)
   * Puede incluirse **cifrado** (FTP seguro)
   * **Enjaular usuarios** (*atención writeable chroot*)
