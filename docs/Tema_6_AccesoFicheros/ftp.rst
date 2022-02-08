@@ -80,7 +80,8 @@ En este servicio debemos prestar atención a los siguientes elementos o propieda
 
 **SERVIDOR FTP EN LINUX**
 
-Utilizaremos VsFTP (`manual en la web <https://comoinstalar.me/como-instalar-ftp-en-ubuntu-20-04-lts/>`_), teniendo en cuenta lo siguiente:
+Utilizaremos VsFTP (`manual en la web <https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-rg-es-4/s1-ftp-vsftpd-conf.html>`_ o también
+la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html>`_  ), teniendo en cuenta lo siguiente:
 
   * # apt-get install vsftpd
   * La configuración bastante sencilla
