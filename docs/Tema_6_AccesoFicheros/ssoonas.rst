@@ -24,16 +24,20 @@ debemos dar los siguientes pasos:
     1 Crearemos una MV
        * OpenMediaVault/FreeNAS ISO
        * Atentos-as a los requisitos y al tipo de la MV
+
     2 Añadimos disco/s duro/s a nuestra configuración (nuestro NAS)
-       * Podemos añadir los que queramos y darle estructura de RAID
+       * Podemos añadir los que queramos y darle estructura de RAID/LVM¿?¿
+
     3 Configuramos la red de la MV para hacerlo pública
+
     4 Primeras tareas
        * Crear pool
        * Usuarios/grupos
        * Configuramos el/los servicios que queramos proporcionar
           * SMB
           * WebDAV
-          * ....
+          * FTP
+          * Git
 
 .. Important::
-   Configurar tu propio NAS y 'juega' con las opciones de servicios, uso y seguridad que te ofrecen.
+   Configurar tu propio NAS instalando uno de los SO comentados en una MV, añade tantos DD virtuales como quieras y 'juega' con las opciones de servicios, uso y seguridad que te ofrecen.
