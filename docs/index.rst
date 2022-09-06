@@ -3,7 +3,7 @@ SERVICIOS DE RED E INTERNET
 ====================
 
 .. toctree::
-   :caption: Índice de contenidos
+   :caption: Contenidos
    :maxdepth: 1
    :numbered:
 
