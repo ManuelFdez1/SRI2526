@@ -111,11 +111,13 @@ Se ha impuesto como sistema de virtualización de aplicaciones mediante contened
 * El núcleo es el Docker Engine, pero existen opciones para gestionar contenedores.
   * [Docker Compose](https://docs.docker.com/compose/).
   * [Docker Machine](https://www.josedomingo.org/pledin/2016/05/creando-servidores-docker-con-docker-machine/).
-* Se manejan dos conceptos principales:
-    * *Imágenes*: Fichero con todo lo necesario para poner en marcha un contenedor. Pueden estar en [repositorios públicos](https://hub.docker.com/search?q=&type=image) o privados (locales)
-    * *Contenedores*: Se crean a partir de las imágenes.
+* Se manejan varios conceptos importantes:
+    * **Imágenes**: Plantillas a partir de las cuales lanzamos los contenedores. Pueden estar en [repositorios públicos](https://hub.docker.com/search?q=&type=image) o privados (creados por nosotr@s mism@s)
+    * **Contenedores**: Se ejecutan a partir de las imágenes.
+    * **Volúmenes**: herramienta para conseguir la **persistencia** de los datos en la ejecución de contenedores.
+    * **Redes**: Docker permite la gestión de las redes a distintos niveles y características. Esto proporciona opciones muy útiles para crear distintos escenarios
 
-Para poder ejecutar docker, debemos instalarlo previamente en nuestro SO (preferiblemente una MV Ubunt Server 20.04, donde ya viene incluido en los repositorios por defecto), teniendo en cuenta varias cosas:
+Para poder ejecutar docker, debemos instalarlo previamente en nuestro SO (preferiblemente una MV Linux Server, donde ya viene incluido en los repositorios por defecto), teniendo en cuenta varias cosas:
 
 * Docker autocompleta los comandos.
 * En caso de duda
@@ -176,8 +178,7 @@ Accede al aula virtual del módulo y completa la segunda práctica sobre contene
 </div>
 </br>
 
-
-**Para practicar un poco más y ampliar los conocimientos, sobretodo en cuanto a redes y almacenamiento en Docker, se recomienda la realización del [Curso de Introducción a Docker de OpenWebInars](https://openwebinars.net/academia/portada/docker-introduccion/).**
+En el aula virtual del módulo puedes encontrar una sección **RECURSOS** con un completo manual de Docker con todos las herramientas comentadas más desarrolladas y ejemplos de utilización de las mismas.
 
 <div class="footnotes">
        <hr />
