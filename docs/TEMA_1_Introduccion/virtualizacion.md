@@ -178,7 +178,7 @@ Accede al aula virtual del módulo y completa la segunda práctica sobre contene
 </div>
 </br>
 
-En el aula virtual del módulo puedes encontrar una sección **RECURSOS** con un completo manual de Docker con todos las herramientas comentadas más desarrolladas y ejemplos de utilización de las mismas.
+**En el aula virtual del módulo puedes encontrar una sección *RECURSOS* con un completo manual de Docker con todos las herramientas comentadas más desarrolladas y ejemplos de utilización de las mismas.**
 
 <div class="footnotes">
        <hr />
