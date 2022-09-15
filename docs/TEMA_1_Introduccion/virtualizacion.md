@@ -98,7 +98,6 @@ Se evita la sobrecarga asociada con tener a cada huésped ejecutando un sistema 
 </div>
 
 
-
 **Docker**
 
 Se ha impuesto como sistema de virtualización de aplicaciones mediante contenedores. Podemos encontrar muchos tutoriales y formaciones en la web <b><sup id="fnref:note1"><a class="footnote-ref" href="#fn:note1" role="doc-noteref">1</a></sup></b>. Varios aspectos destacan:
