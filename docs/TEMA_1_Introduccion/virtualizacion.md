@@ -124,7 +124,6 @@ Se ha impuesto como sistema de virtualización de aplicaciones mediante contened
     * **Redes**: Docker permite la gestión de las redes a distintos niveles y características. Esto proporciona opciones muy útiles para crear distintos escenarios.
       - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/07_Redes.pdf" target="_blank">Tutorial</a>
 
-
 Para poder ejecutar docker, debemos instalarlo previamente en nuestro SO (preferiblemente una MV Linux Server, donde ya viene incluido en los repositorios por defecto), teniendo en cuenta varias cosas:
 
 * Docker autocompleta los comandos.
