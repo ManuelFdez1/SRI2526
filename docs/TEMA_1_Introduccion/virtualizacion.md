@@ -154,6 +154,18 @@ Como ejemplo, un comando típico de docker, en el que publicamos el puerto 80 de
       $docker run -d -p 8080:80 --name=XX --mount type=bind, source=dirHost, target=dirContainer DockerImg
   ```
 
+___
+> **¿SABRÍAS?...**
+1. Instalar *docker y docker-compose* en una máquina virtual Ubuntu Server
+2. Conseguir ejecutar comandos de docker sin necesidad de sudo.
+3. **Descargar** la imagen Hello-world del repoitorio oficial de docker.
+4. Listar las imágenes y contenedores existentes en tu MV, ejecutar la imagen anterior, comprobar su estado y finalmente borrar la imagen de tu MV.
+5. Ejecutar el contenedor **[httpd](https://hub.docker.com/_/httpd/)**  poniéndole como nombre *web* y redirigiendo al puerto 8080 del host(tu MV) el puerto 80 del contenedor. Prueba el acceso a la web.
+6. Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.
+___
+
+**Más cosas sobre Docker/Contenedores**
+
 Si quisiéramos organizar la ejecución de dos contenedores relacionados de alguna manera (por ejemplo un servidor http y un servidor de BD que trabajan en conjunto para servir una página web) tendríamos la opción de usar **Docker-compose**<b><sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup></b>. Previamente debemos haber instalado el paquete.
 
 En los contenedores en general y en Docker en particular se manejan varios conceptos que debemos conocer para aprovechar todas sus posibilidades:
@@ -171,15 +183,7 @@ En los contenedores en general y en Docker en particular se manejan varios conce
     - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/07_Redes.pdf" target="_blank">Tutorial</a>
 
 **En el aula virtual de la asignatura tienes una sección *RECURSOS* con un tutorial completo de Docker que puede resultarte de utilidad**
-___
-> **¿SABRÍAS?...**
-1. Instalar *docker y docker-compose* en una máquina virtual Ubuntu Server
-2. Conseguir ejecutar comandos de docker sin necesidad de sudo.
-3. **Descargar** la imagen Hello-world del repoitorio oficial de docker.
-4. Listar las imágenes y contenedores existentes en tu MV, ejecutar la imagen anterior, comprobar su estado y finalmente borrar la imagen de tu MV.
-5. Ejecutar el contenedor **[httpd](https://hub.docker.com/_/httpd/)**  poniéndole como nombre *web* y redirigiendo al puerto 8080 del host(tu MV) el puerto 80 del contenedor. Prueba el acceso a la web.
-6. Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.
-___
+
 
 <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
 <b>PRÁCTICA 2</b></br></br>
