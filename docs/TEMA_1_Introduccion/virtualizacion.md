@@ -170,6 +170,7 @@ En los contenedores en general y en Docker en particular se manejan varios conce
   * **Redes**: Docker permite la gestión de las redes a distintos niveles y características. Esto proporciona opciones muy útiles para crear distintos escenarios.
     - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/07_Redes.pdf" target="_blank">Tutorial</a>
 
+**En el aula virtual de la asignatura tienes una sección *RECURSOS* con un tutorial completo de Docker que puede resultarte de utilidad**
 ___
 > **¿SABRÍAS?...**
 1. Instalar *docker y docker-compose* en una máquina virtual Ubuntu Server
