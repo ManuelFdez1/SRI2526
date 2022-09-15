@@ -12,11 +12,15 @@ En algunos apartados del módulo (especialmente en el servicio web) podremos enc
 
 ![](img/escenarioDockermultiple.jpg "Entorno de trabajo con múltiples contenedores")
 
-<div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-<b>PRÁCTICA 3</b></br></br>
-Accede al aula virtual del módulo y completa la tercera práctica.  Es muy importante que la realices correctamente, ya que la mayoría de los escenarios para probar nuestros servicios serán similares a este. Envía un <b>documento pdf</b> con los pantallazos y características de los equipos, aportando las explicaciones que consideres oportunas.
+<div style="text-align: left; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<u>TAREA</u></br>
+<ul>
+<li>Añade a las MV que creaste para la primera práctica una tarjeta interna, a la cual darás dirección estática(la que quieras) la tarjeta externa se contectará a la red real y se configurará por DHCP.</li>
+<li>A cada MV se conectará un cliente interno, el cual también configuraras de manera manual, y podrá verse con el servidor únicamente (mediante un ping)</li>
+<li>Realiza esto para los tres servidores virtualizados que creaste.</li>
+</ul>
 </div>
-</br>
+
 
 
 <div class="footnotes">
