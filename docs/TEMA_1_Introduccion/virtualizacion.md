@@ -213,7 +213,7 @@ Tenemos multitud de herramientas disponibles para configurar entornos de orquest
 
 <div style="text-align: left; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
 <u>EJEMPLO</u></br>
-Siguiendo el siguiente tutorial (<a href="https://www.middlewareinventory.com/blog/vagrant-ansible-example/#Ansible_playbook_and_its_artifacts" target="_blank"> https://www.middlewareinventory.com</a>) y con alguna corrección, prueba a ejecutar un primer escenario de automatización con Ansible y Vagrant en una **máquina real**(tu portátil o si arrancas tu SO anfitrión desde un DD externo).
+Siguiendo el siguiente tutorial (<a href="https://www.middlewareinventory.com/blog/vagrant-ansible-example/#Ansible_playbook_and_its_artifacts" target="_blank"> https://www.middlewareinventory.com</a>) y con alguna corrección, prueba a ejecutar un primer escenario de automatización con Ansible y Vagrant en una <b>máquina real</b> (tu portátil o si arrancas tu SO anfitrión desde un DD externo).
 </div>
 
 
