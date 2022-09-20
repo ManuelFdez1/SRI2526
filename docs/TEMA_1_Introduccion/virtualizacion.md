@@ -217,6 +217,13 @@ Siguiendo el siguiente tutorial (<a href="https://www.middlewareinventory.com/bl
 </div>
 
 
+Una vez ejecutado este ejemplo, piensa las posibilidades que te ofrecen estas herramientas:
+
+- Arranque/parada en remoto de varias MV.
+- Configuración de las características de esas MV.
+- Automatización de instalaciones, comprobaciones, etc...
+- ++++++++++++++++++++++++
+
 <div class="footnotes">
        <hr />
        <ol>
