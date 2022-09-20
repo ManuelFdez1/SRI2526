@@ -3,7 +3,7 @@ Virtualización
 
 El funcionamiento de los servidores hoy día no tiene nada que ver con lo que sucedía hace unos pocos años. Se ha pasado de un alojamiento en máquinas reales, las cuales incluso albergaban varios servicios, a trabajar con máquinas simuladas que ofrecen unicámente un servicio. Estas técnicas reciben el nombre de *Virtualización*. La virtualización de sistemas es una potente **técnica de abstracción mediante la cual podemos crear una capa intermedia que se encarga de posibilitar la comunicación entre una máquina física (anfitrión o host) y el sistema o sistemas huésped (guest) virtuales**.
 
-![](img/arquitectura-v1.png)
+![arquitectura de contenedores](img/arquitectura-v1.png)
 
 **VENTAJAS**
 + Reducción de costes y mejor gestión de los recursos hardware. Cada máquina física puede usarse para varios propósitos a la vez, con los recursos adecuados.
@@ -193,6 +193,30 @@ Accede al aula virtual del módulo y completa la segunda práctica sobre contene
 
 **En el aula virtual del módulo puedes encontrar una sección *RECURSOS* con un completo manual de Docker con todos las herramientas comentadas más desarrolladas y ejemplos de utilización de las mismas.**
 
+### Automatización
+
+La **ORQUESTACIÓN O AUTOMATIZACIÓN** de los servicios consiste en la organización de los sistemas, configuración, gestión y coordinación automatizadas de los sistemas informáticos, las aplicaciones y los servicios. Ayuda a la TI a gestionar con mayor facilidad las tareas complejas y los flujos de trabajo, ya que éstos suelen ser **variables**(piensa en el ejemplo de una web como Amazon en determinadas fechas del año como navidades, Black Friday...) <b><sup id="fnref:note1"><a class="footnote-ref" href="#fn:note3" role="doc-noteref">3</a></sup></b>. Con las herramientas que vamos a ver conseguimos cosas como:
+
+  1. Mejorar el funcionamiento de nuestros servicios, ya que se adaptan a las necesidades en cada momento.
+  2. Optimizamos el uso de nuestros recursos, ya que los asignamos de manera coherente.
+  3. Reducimos la presencia de errores al limitar la intervención humana.
+  4. Ahorro de costes.
+
+  ![orquestación de servicios](http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/imagenes/sesion5/orquestacion.gif)
+
+Tenemos multitud de herramientas disponibles para configurar entornos de orquestación/automatización a distintos niveles:
+
+  - **Máquinas virtuales:** <a href="https://desarrolloweb.com/articulos/trabajar-con-vagrant.html" target="_blank">Vagrant</a> y <a href="https://openwebinars.net/blog/que-es-ansible/" target="_blank">Ansible</a>. Puedes encontrar un ejemplo en
+  - **Contenedores:** <a href="https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/" target="_blank"> Kubernetes</a> o <a href="https://docs.docker.com/engine/swarm/swarm-tutorial/" target="_blank">Docker Swarm</a>.
+  - **En la nube**(cloud computing): Cada empresa ofrece distintas herramientas, si nos fijamos en AWS, y <a href="https://aws.amazon.com/es/containers/" target="_blank">según su propia documentación</a>: Para obtener control completo sobre el entorno de informática, elija ejecutar los contenedores en *Amazon Elastic Compute Cloud (EC2)*. Para los orquestadores de contenedores, puede elegir *Amazon Elastic Container Service (ECS)* o *Amazon Elastic Kubernetes Service (EKS)*.
+
+
+<div style="text-align: left; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<u>EJEMPLO</u></br>
+Siguiendo el siguiente tutorial (<a href="https://www.middlewareinventory.com/blog/vagrant-ansible-example/#Ansible_playbook_and_its_artifacts" target="_blank"> https://www.middlewareinventory.com</a>) y con alguna corrección, prueba a ejecutar un primer escenario de automatización con Ansible y Vagrant en una **máquina real**(tu portátil o si arrancas tu SO anfitrión desde un DD externo).
+</div>
+
+
 <div class="footnotes">
        <hr />
        <ol>
@@ -208,6 +232,11 @@ Accede al aula virtual del módulo y completa la segunda práctica sobre contene
            <li class="footnote" id="fn:note2">
                <p>
                    <b>Ejemplo: </b><a href="https://blog.dinahosting.com/servicio-web-con-docker-y-docker-compose/" target="_blank">Como levantar un srv con docker-compose</a> <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
+               </p>
+           </li>
+           <li class="footnote" id="fn:note3">
+               <p>
+                   <b>Ejemplo: </b><a href="https://www.redhat.com/es/topics/automation/what-is-orchestration" target="_blank">Tutoriales de RedHat</a> <a class="footnote-backref" rev="footnote" href="#fnref:note3">&#8617;</a>
                </p>
            </li>
        </ol>
