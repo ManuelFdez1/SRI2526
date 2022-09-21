@@ -69,7 +69,7 @@ Posibilidad de aplicaciones de gestión automática(Kubernetes..)
 
 > **Puedes encontrar un interesante artículo de las diferencias entre MV y contenedor, y la evolución de estas tecnologías en los últimos años en el [siguiente blog](https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo)**.
 
-### Gestión de la virtualización.
+### Máquinas Virtuales
 
 A la hora de virtualizar SO, debemos tener varios elementos y parametros de configuracion en cuenta. En concreto, **utilizando VirtualBox** debemos prestar especial atención a:
 
@@ -104,13 +104,9 @@ Se ha impuesto como sistema de virtualización de aplicaciones mediante contened
 * Inicialmente creada para GNU/Linux. Actualmente también existe como aplicación para Windows 2010/2016/2019 Srv
 * Los contenedores ofrecen un mejor rendimiento que las MV.
 * Pueden crearse redes virtuales privadas de contenedores
-* Existen herramientas para la gestión de grupos de contenedores(clusters..).
-  * [Kubernetes](https://kubernetes.io/es/docs/home/).
-  * [Docker Swarm](https://docs.docker.com/engine/swarm/key-concepts).
 * El núcleo es el Docker Engine, pero existen opciones para gestionar contenedores.
   * [Docker Compose](https://docs.docker.com/compose/).
   * [Docker Machine](https://www.josedomingo.org/pledin/2016/05/creando-servidores-docker-con-docker-machine/).
-
 Para poder ejecutar docker, debemos instalarlo previamente en nuestro SO (preferiblemente una MV Linux Server, donde ya viene incluido en los repositorios por defecto), teniendo en cuenta varias cosas:
 
 * Docker autocompleta los comandos.
@@ -206,14 +202,17 @@ La **ORQUESTACIÓN O AUTOMATIZACIÓN** de los servicios consiste en la organizac
 
 Tenemos multitud de herramientas disponibles para configurar entornos de orquestación/automatización a distintos niveles:
 
-  - **Máquinas virtuales:** <a href="https://desarrolloweb.com/articulos/trabajar-con-vagrant.html" target="_blank">Vagrant</a> y <a href="https://openwebinars.net/blog/que-es-ansible/" target="_blank">Ansible</a>. Puedes encontrar un ejemplo en
+  - **Máquinas virtuales:** <a href="https://desarrolloweb.com/articulos/trabajar-con-vagrant.html" target="_blank">Vagrant</a> y <a href="https://openwebinars.net/blog/que-es-ansible/" target="_blank">Ansible</a>.
   - **Contenedores:** <a href="https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/" target="_blank"> Kubernetes</a> o <a href="https://docs.docker.com/engine/swarm/swarm-tutorial/" target="_blank">Docker Swarm</a>.
   - **En la nube**(cloud computing): Cada empresa ofrece distintas herramientas, si nos fijamos en AWS, y <a href="https://aws.amazon.com/es/containers/" target="_blank">según su propia documentación</a>: Para obtener control completo sobre el entorno de informática, elija ejecutar los contenedores en *Amazon Elastic Compute Cloud (EC2)*. Para los orquestadores de contenedores, puede elegir *Amazon Elastic Container Service (ECS)* o *Amazon Elastic Kubernetes Service (EKS)*.
 
 
 <div style="text-align: left; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-<u>EJEMPLO</u></br>
-Siguiendo el siguiente tutorial (<a href="https://www.middlewareinventory.com/blog/vagrant-ansible-example/#Ansible_playbook_and_its_artifacts" target="_blank"> https://www.middlewareinventory.com</a>) y con alguna corrección, prueba a ejecutar un primer escenario de automatización con Ansible y Vagrant en una <b>máquina real</b> (tu portátil o si arrancas tu SO anfitrión desde un DD externo).
+<u>EJEMPLOS</u></br>
+<ul>
+<li>Siguiendo el siguiente tutorial (<a href="https://www.middlewareinventory.com/blog/vagrant-ansible-example/#Ansible_playbook_and_its_artifacts" target="_blank"> https://www.middlewareinventory.com</a>) y con alguna corrección, prueba a ejecutar un primer escenario de automatización con Ansible y Vagrant en una <b>máquina real</b> (tu portátil o si arrancas tu SO anfitrión desde un DD externo).</li>
+<li>Si quieres probar tu primer CLUSTER de contenedores, puedes seguir lo indicado en <a href="https://www.campusmvp.es/recursos/post/introduccion-a-docker-swarm-mode-creacion-de-clusteres-y-levantar-servicios.aspx" target="_blank"> https://www.campusmvp.es</a>.</li>
+</ul>
 </div>
 
 
