@@ -121,13 +121,23 @@ Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:
 
 .. raw:: html
 
-        <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/5AMMCAcw3js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+    <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/5AMMCAcw3js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
-        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <b>PRÁCTICA 1</b></br></br>
-        Accede al aula virtual del módulo y completa la primera práctica del Tema2.
-        </div>
-        </br>
+    <div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+    <u>¿Sabrías?</u></br>
+    Montar el siguiente escenario en Virtualbox, virtualizando como servidor el SO Windows Server y como cliente el que tú prefieras:
+    <ol>
+        <li>Un servidor conectado a la red local del aula con la primera interfaz.</li>
+        <li>La segunda solo visible en su propio equipo con una IP tipo C FIJA. Configuración mínima, ya que no sale a ninguna red externa con esta interfaz.</li>
+        <li>Un servidor DHCP repartiendo dirección en su red local, sin subnetting, y pasando a los clientes como gateway y como DNS la dirección del propio servidor.</li>
+        <li>Añadir dos tarjetas más internas al servidor (de manera que tenga una tarjeta en modo puente y tres en red interna). Dale una configuración estática a cada tarjeta interna y finalmente crea un ámbito DHCP en cada una de ellas. Cada tarjeta
+        interna estará en una red interna distintas DHCP1, DHCP2 y DHCP3.</li>
+        <li>Probar el funcionamiento del servidor conectando un cliente virtualizado con red interna, probando cada uno de los 3 ámbitos.</li>
+        <li>Generar el fichero con la exportación de la configuración de tu servidor DHCP (puedes generarlo con el comando <a href="https://learn.microsoft.com/en-us/powershell/module/dhcpserver/export-dhcpserver?view=windowsserver2022-ps" target="_blank">
+        Export-DhcpServer</a> )</li>
+    </ol>
+    </div></br>
+
 
 .. raw:: html
 
@@ -155,8 +165,8 @@ Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:
 .. raw:: html
 
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <b>PRÁCTICA 2</b></br></br>
-        Accede al aula virtual del módulo y completa la segunda práctica del Tema2, en la que crearás el ámbito DHCP con PowerShell. Envía <b>la secuencia de comandos de PowerShell</b> que has utilizado para solucionar la práctica.
+        <b>PRÁCTICA 1</b></br></br>
+        Accede al aula virtual del módulo y completa la primera práctica del Tema2, en la que crearás el ámbito DHCP con PowerShell. Envía <b>la secuencia de comandos de PowerShell</b> que has utilizado para solucionar la práctica.
         </div>
         </br>
 
@@ -198,8 +208,8 @@ Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:
 
         <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/eWwasdFtIzM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <b>PRÁCTICA 3</b></br></br>
-        Accede al aula virtual del módulo y completa la tercera práctica del Tema2, configurando un srv DHCP en Ubuntu. Envía <b>el fichero /etc/dhcpd/dhpd.conf</b> como solución a la práctica.
+        <b>PRÁCTICA 2</b></br>
+        Accede al aula virtual del módulo y completa la segunda práctica del Tema2, configurando un srv DHCP en Ubuntu. Envía <b>el fichero /etc/dhcpd/dhpd.conf y el de configuración de red</b> como solución a la práctica.
         </div>
         </br>
 
