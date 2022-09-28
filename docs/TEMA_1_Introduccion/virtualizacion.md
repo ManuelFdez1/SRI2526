@@ -237,7 +237,7 @@ Una vez ejecutado este ejemplo, piensa las posibilidades que te ofrecen estas he
            </li>
            <li class="footnote" id="fn:note2">
                <p>
-                   <b>Ejemplo: </b><a href="https://blog.dinahosting.com/servicio-web-con-docker-y-docker-compose/" target="_blank">Como levantar un srv con docker-compose</a> <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
+                   <b>Ejemplo: </b><a href="https://josejuansanchez.org/bd/practica-07/index.html#ejemplo-de-docker-compose.yml-con-mysql-y-phpmyadmin" target="_blank">Como levantar un entorno con varios contenedores con docker-compose</a> <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
                </p>
            </li>
            <li class="footnote" id="fn:note3">
