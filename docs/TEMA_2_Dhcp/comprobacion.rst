@@ -41,6 +41,7 @@ En Linux, las opciones que tenemos para comprobar el estado de nuestro servidor 
 * Comprobación del log del sistema
             .. code-block:: shell-session
 
+              $dhcpd -t -cf /etc/dhcp/dhcpd.conf
               $cat /var/log/syslog
               $sudo service isc-dhcp-server status
               $sudo systemctl status isc-dhcp-server
