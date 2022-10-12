@@ -66,7 +66,7 @@ El protoco DHCP FAILOVER puedes encontrarlo en cualquiera de los sistemas operat
 .. raw:: html
 
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <b>PRÁCTICA 4</b></br></br>
+        <b>PRÁCTICA 3</b></br></br>
         Accede al aula virtual del módulo y completa la última práctica del tema. Vas a montar un sistema de alta disponibilidad sobre el servicio DHCP.
         </div>
         </br>
