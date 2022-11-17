@@ -130,14 +130,7 @@ La principal desventaja del uso de proxy es la necesidad de configurar los naveg
    * **eth0** es la tarjeta externa del servidor
    * **3128** es el puerto por defecto de Squid
 
-.. raw:: html
 
-        </br>
-        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>PRÁCTICA 2</b></u></br>
-        Realiza la práctica 2 del Tema 4 del aula virtual, configurando el acceso de tu red local a la web.
-        </div>
-        </br>
 
 .. raw:: html
 
