@@ -27,9 +27,9 @@ Entre otros, algunos de los elementos más destacados del protocolo HTTP son los
 
 .. raw:: html
 
-        </br>
+        <!-- </br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
         <u><b>EJERCICIO 1</b></u></br>
         Accede al <b>Ejercicio 1 - Componentes HTTP</b> del aula virtual. Vamos a definir entre tod@s los elementos anteriores con nuestras propias palabras.
         </div>
-        </br>
+        </br> -->

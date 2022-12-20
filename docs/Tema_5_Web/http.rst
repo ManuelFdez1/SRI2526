@@ -82,7 +82,7 @@ en la cual podemos encontrar información muy completa y tutoriales de creación
         </br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
         <u><b>PRÁCTICA 1</b></u></br>
-        Accede a la práctica 1 del Tema 5 del aula virtual. Realiza la configuración de un servidor Apache.
+        Realiza la actividad indicada en el aula virtual y entrega el diploma obtenido a la finalización de la misma.
         </div>
         </br>
 
