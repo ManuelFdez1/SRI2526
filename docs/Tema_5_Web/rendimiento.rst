@@ -140,7 +140,13 @@ Algunos ejemplos este tipo de SW que podemos usar para obtener cálculos del ren
 
 
 
+.. raw:: html
 
+    <div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+    <u>¿Sabrías?</u></br>
+    Usando el código enlazado anteriormente prueba a realizar con AB algún análisis del rendimiento de ambos servidores. Puedes utilizar cualquier Instalación
+    previa de un servidor web que hayas hecho en este tema, capaz de ejecutar código PHP.
+    </div></br>
 
 
 
