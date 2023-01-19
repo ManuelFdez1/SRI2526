@@ -86,6 +86,15 @@ en la cual podemos encontrar información muy completa y tutoriales de creación
         </div>
         </br>
 
+.. raw:: html
+
+        </br>
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <u><b>PRÁCTICA 2</b></u></br>
+        Realiza la actividad indicada en el aula virtual.
+        </div>
+        </br>
+
 NginX
 -------
 
@@ -133,8 +142,8 @@ En realidad la configuración de un servidor y otro guardan ciertas semejanzas.
 
    </br>
    <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-   <u><b>PRÁCTICA 2</b></u></br>
-   Accede a la práctica 2 del Tema 5 del aula virtual. Realiza la configuración de un servidor NGINX.
+   <u><b>PRÁCTICA 3</b></u></br>
+   Accede a la práctica 3 del Tema 5 del aula virtual. Realiza la configuración de un servidor NGINX.
    </div>
    </br>
    </br>

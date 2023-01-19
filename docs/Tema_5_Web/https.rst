@@ -43,13 +43,3 @@ En los siguientes enlaces puedes encontrar unos sencillos tutoriales:
       * CA de pago
       * Opciones gratuitas como `Let's Encrypt <https://letsencrypt.org/es/>`_, aunque en este caso necesitarias un dominio real público en la web (puedes usar una alternativa gratuita tipo `no-ip <https://www.noip.com/>`_ para hacer esto). Puedes encontrar una manual paso a
         paso de como configuar esto en `la web de Digitalocean <https://www.digitalocean.com/community/tutorials/como-asegurar-nginx-con-let-s-encrypt-en-ubuntu-18-04-es>`_
-
-
-.. raw:: html
-
-        </br>
-        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>EJERCICIO 2</b></u></br>
-        Realiza el ejercicio 2 del Tema 5 del aula virtual. Configura tu servidor Apache de modo seguro.
-        </div>
-        </br>
