@@ -154,8 +154,8 @@ Algunos ejemplos este tipo de SW que podemos usar para obtener cálculos del ren
 
         </br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>EJERCICIO 3</b></u></br>
-        Realiza el ejercicio 3 del Tema 5 del aula virtual. Realiza comprobaciones del rendimiento de tu servidor web y configúralo para mejorar los resultados.
+        <u><b>EJERCICIO 2</b></u></br>
+        Realiza el ejercicio 2 del Tema 5 del aula virtual. Realiza comprobaciones del rendimiento de tu servidor web y configúralo para mejorar los resultados.
         </div>
         </br>
 
