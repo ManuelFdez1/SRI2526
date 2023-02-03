@@ -1,4 +1,4 @@
-Servicios de acceso a ficheros
+Acceso a ficheros
 ===============================
 
 Servicios LAN
@@ -230,3 +230,138 @@ Los pasos a realizar en este caso puedes encontrarlos en la `documentación ofic
 
 .. Important::
    ¿Sabrías deducir que puertos utiliza WebDAV?
+
+
+Control de versiones
+--------------------
+Un `control de versiones <https://es.wikipedia.org/wiki/Control_de_versiones>`_ es un sistema que registra los cambios realizados en archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.
+Aunque su origen era el código fuente compartido, maneja cualquier tipo de archivo. A estos sistemas de almacenamiento se les suele denominar **repositorios**. Dos de los ejemplos más populares(**trabajando
+ambos bajo los protocolos HTTP/HTTPS**) para el control de versiones son:
+
+    1. Subversion(https://subversion.apache.org/)
+    2. **GIT** (https://git-scm.com/)
+
+.. image:: img/introrepositiorios.png
+                :width: 300 px
+                :alt: Sw control de versiones
+                :align: center
+
+.. Warning::
+   ¿Conoces algún repositorio público en la web?¿Qué sistema de control de versiones emplean?¿Para que crees que se utilizan estos repositorios?
+
+Hay multitud de opciones gratuitas para tener un repositorio en la web. Pero...¿Si queremos nuestro repositorio propio?. Montar nuestro propio
+sistema de control de versiones no es demasiado complejo. Puedes encontrar ayuda en el video a continuación o en el `siguiente tutorial <https://www.ecodeup.com/instala-y-crea-tu-primer-repositorio-local-con-git-en-windows/>`_.
+
+.. raw:: html
+
+      <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/XNRYPs8SGhg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+
+La manera de trabajar y comunicarse con el repositorio depende del programa bajo el que lo hayamos instalado. En el ejemplo de GIT el **flujo de trabajo(workflow)** sería
+algo parecido a la siguiente imagen.
+
+.. image:: img/GitDiagram.svg
+               :width: 400 px
+               :alt: Sw control de versiones
+               :align: center
+
+.. Warning::
+   En los repositorios se utilizan términos como **TRUNK, TAG o BRANCH**. Debemos conocer su significado para entender correctamente como trabajan los sistemas de
+   control de versiones.
+
+     .. image:: img/branchtagtrunk.png
+                    :width: 300 px
+                    :alt: Sw control de versiones
+                    :align: center
+
+Para comunicarse con los repositorios tienes varias opciones, además de la linea de comandos, gran cantidad de `Clientes GUI <https://git-scm.com/downloads/guis/>`_ que nos van a facilitar el trabajo entre nuestro **Working Directory y el repositorio**.
+
+Conociendo su funcionamiento, ya podemos configurar nuestro equipo para tener un **WD(working directory)** vinculado con cualquier repositorio publico disponible en la web.
+
+
+.. raw:: html
+
+      <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/3XlZWpLwvvo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+
+.. Important::
+   Un buen ejercicio podría consistir en crear una cuenta en algún sitio público  que ese GIT (github, gitlab, gitbook....), crees tu primer repositorio y
+   lo conectes a un cliente GIT para trabajar con él. Piensa en las utilidades que podría tener este repositorio:
+
+        * Alojar el código fuente de tus proyectos de IAW.
+        * Copias de seguridad y configuraciones de tus BD.
+        * C. Seg de tus ficheros de conf. de SER.
+        * Tu documentación, anotaciones de distintas categorías.
+
+Cloud Computing
+----------------
+
+Tod@s conocemos, y probablemente utilicemos, la computación en la nube. El acceso a los recursos desde cualquier parte, y con las posibilidades de edición y
+sincronización de nuestros datos ha hecho que sea el sistema de trabajo de cualquier empresa, independientemente de su ámbito de actuación.
+
+.. image:: img/introcloud.png
+                :width: 300 px
+                :alt: Sw control de versiones
+                :align: center
+
+
+De nuevo, como en el punto anterior..¿Si queremos nuestro servidor propio..?:
+
+Vamos a montar nuestra nube local, con el apoyo de docker, y con las herramientas NEXTCLOUD y COLLABORA (también puedes probar con ONLYOFFICE). Puedes utilizar lo indicado en el
+`siguiente manual <https://www.collaboraoffice.com/code/quick-tryout-nextcloud-docker/>`_
+
+.. image:: img/nextcloud.png
+                :width: 300 px
+                :alt: Sw control de versiones
+                :align: center
+
+.. Important::
+   En la actualidad muchos de los servidores y servicios se encuentran ubicados en servicios remotos (cloud), como pueden ser:
+          * Amazon Web Services
+          * Microsoft Azure
+          * Google Cloud
+
+   En ellos podemos crear instancias de MV/Cotenedores, publicar servicios, gestionar almacenamiento remoto, BBDD, crear infraestructuras de red....
+   También existen alternativas para crear nuestro propio cloud, como OpenShift
+
+Sistemas Operativos NAS
+-----------------------
+
+En este apartado nos referimos a distribuciones Linux diseñadas para almacenamiento conectado a la red **NAS, siglas de Almacenamiento Conectado en
+Red (Network Attached Storage)**. Muchos de estos SSOO tienen un carácter gratuito, open-source y software libre (basado en licencia BSD) y nos
+permiten administrar soportes de almacenamiento accesible desde red, por ejemplo para almacenamientos masivos de información, música, backups, etc.
+Dos ejemplos:
+
+    * FreeNAS: https://www.freenas.org/
+        .. image:: img/Freenas.png
+            :width: 400 px
+            :alt: Ejemplo freenas
+            :align: center
+    * OpenMediaVault (necesita menos recursos para funcionar): https://www.openmediavault.org/
+        .. image:: img/OpenMediaVault.png
+            :width: 400 px
+            :alt: Ejemplo openmediavault
+            :align: center
+
+
+Para poder practicar con estas distribuciones podemos hacer uso de la virtualización. Vamos a simular nuestro NAS, como si hubiéramos comprado uno. Para ello
+debemos dar los siguientes pasos:
+
+    1 Crearemos una MV
+       * OpenMediaVault/FreeNAS ISO
+       * Atentos-as a los requisitos y al tipo de la MV
+
+    2 Añadimos disco/s duro/s a nuestra configuración (nuestro NAS)
+       * Podemos añadir los que queramos y darle estructura de RAID/LVM¿?¿
+
+    3 Configuramos la red de la MV para hacerlo pública
+
+    4 Primeras tareas
+       * Crear pool
+       * Usuarios/grupos
+       * Configuramos el/los servicios que queramos proporcionar
+          * SMB
+          * WebDAV
+          * FTP
+          * Git
+
+.. Important::
+   Configurar tu propio NAS instalando uno de los SO comentados en una MV, añade tantos DD virtuales como quieras y 'juega' con las opciones de servicios, uso y seguridad que te ofrecen.

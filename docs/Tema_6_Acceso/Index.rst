@@ -22,9 +22,4 @@ Los distintos apartados(la verdad es que es un tema que podríamos incluir otros
 
    Accesoremoto
    Accesofichero
-   sservicioslan
-   ftp
-   webdav
-   versiones
-   cloud
-   ssoonas
+   
