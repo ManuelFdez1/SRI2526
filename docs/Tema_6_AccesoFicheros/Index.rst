@@ -12,7 +12,7 @@ En el último apartado, conoceremos algún ejemplo de Sistema Operativo concebid
       :align: center
       :target: https://commons.wikimedia.org/wiki/File:Cloud_computing-es.svg
 
-Debemos tener en cuenta las limitaciones de las opciones para compartir ficheros más clásicas en comparación con las opciones de edición en linea y concurrencia que tenemos hoy en día,
+Debemos tener en cuenta las características de las opciones para compartir ficheros más clásicas en comparación con las opciones de edición en linea y concurrencia que tenemos hoy en día,
 las cuales eran impensables hace no tanto tiempo, y que son una de las bases del `Cloud Computing <https://w3techs.com/technologies/comparison/ws-apache,ws-microsoftiis,ws-nginx>`_.
 
 Los distintos apartados(la verdad es que es un tema que podríamos incluir otros muchos aspectos) que vamos a estudiar en este tema son:
