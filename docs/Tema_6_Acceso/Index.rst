@@ -1,5 +1,5 @@
 ========================
-Acceso Remoto a Ficheros
+Acceso
 ========================
 
 En este tema vamos a conocer algunas opciones para compartir recursos (generalmente ficheros). Desde las opciones más clásicas, como **FTP, NFS o Samba**, a herramientas
@@ -20,7 +20,9 @@ Los distintos apartados(la verdad es que es un tema que podríamos incluir otros
 .. toctree::
    :maxdepth: 2
 
-   servicioslan
+   Accesoremoto
+   Accesofichero
+   sservicioslan
    ftp
    webdav
    versiones
