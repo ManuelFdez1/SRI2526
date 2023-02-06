@@ -8,8 +8,8 @@ En el último apartado, conoceremos algún ejemplo de Sistema Operativo concebid
 Debemos tener en cuenta las características de las opciones para compartir ficheros más clásicas en comparación con las opciones de edición en linea y concurrencia que tenemos hoy en día,
 las cuales eran impensables hace no tanto tiempo, y que son una de las bases del `Cloud Computing <https://w3techs.com/technologies/comparison/ws-apache,ws-microsoftiis,ws-nginx>`_.
 
-Sistemas de ficheros distribuidos
----------------------------------
+Sistemas distribuidos
+---------------------
 
 Si hablamos de redes locales (LAN) y compartir ficheros y recursos, tenemos varios sistemas de ficheros destacados:
     * Network File System (**NFS**): Sistemas UNIX-Linux.
