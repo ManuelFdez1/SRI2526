@@ -1,6 +1,13 @@
 Acceso a ficheros
 ===============================
 
+Desde las opciones más clásicas, como **FTP, NFS o Samba**, a herramientas
+más actualizadas, apoyadas sobretodo por la tecnología HTTP/HTTPS, que nos permitirán crear servicios de alojamiento de archivos.
+En el último apartado, conoceremos algún ejemplo de Sistema Operativo concebido para la gestión de almacenamiento en red (**NAS**).
+
+Debemos tener en cuenta las características de las opciones para compartir ficheros más clásicas en comparación con las opciones de edición en linea y concurrencia que tenemos hoy en día,
+las cuales eran impensables hace no tanto tiempo, y que son una de las bases del `Cloud Computing <https://w3techs.com/technologies/comparison/ws-apache,ws-microsoftiis,ws-nginx>`_.
+
 Servicios LAN
 --------------
 
@@ -15,8 +22,6 @@ Si hablamos de redes locales (LAN) y compartir ficheros y recursos, tenemos vari
       :alt: Compartir recursos en red Windows Linux
       :align: center
 
-.. Warning::
-   ¿Pueden/Deben usarse estos servicios más allá de una LAN?¿Sabrías decir que habría que configurar para poder hacerlo?
 
 SAMBA es una opción bastante sencilla para poder compartir recursos entre máquinas Windows y Linux. No importa que SO sea el servidor y que SO actúe de cliente.
 
