@@ -8,10 +8,10 @@ En el último apartado, conoceremos algún ejemplo de Sistema Operativo concebid
 Debemos tener en cuenta las características de las opciones para compartir ficheros más clásicas en comparación con las opciones de edición en linea y concurrencia que tenemos hoy en día,
 las cuales eran impensables hace no tanto tiempo, y que son una de las bases del `Cloud Computing <https://w3techs.com/technologies/comparison/ws-apache,ws-microsoftiis,ws-nginx>`_.
 
-Servicios LAN
---------------
+Sistemas de ficheros distribuidos
+---------------------------------
 
-Si hablamos de redes locales (LAN) y compartir ficheros y recursos, tenemos varios protocolos destacados:
+Si hablamos de redes locales (LAN) y compartir ficheros y recursos, tenemos varios sistemas de ficheros destacados:
     * Network File System (**NFS**): Sistemas UNIX-Linux.
     * Server Message Block (**SMB/CIFS**):​ Protocolo para compartir archivos, impresoras... entre sistemas Windows. Aunque es un protocolo propiedad de Microsoft, tiene
       algunas implementaciones libres, por ejemplo SAMBA en versiones Linux.
