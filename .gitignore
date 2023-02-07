@@ -1,5 +1,4 @@
 _build/
 _templates/
 .vscode/
-../build
 .gitignore
