@@ -293,7 +293,7 @@ Conociendo su funcionamiento, ya podemos configurar nuestro equipo para tener un
 
         * Alojar el código fuente de tus proyectos de IAW.
         * Copias de seguridad y configuraciones de tus BD.
-        * Backup de tus ficheros de conf. de SER.
+        * C. Seg de tus ficheros de conf. de SER.
         * Tu documentación, anotaciones de distintas categorías.
 
 Cloud Computing
