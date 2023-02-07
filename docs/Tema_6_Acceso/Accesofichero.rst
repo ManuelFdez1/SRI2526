@@ -181,8 +181,9 @@ Los pasos a realizar, `extraídos del siguiente manual <https://www.digitalocean
             :alt: WebDAV
             :align: center
 
-    4. Reiniciar apache
-    5. Probar la conexión con un cliente(Linux|Windows|MAC).
+    4. Limit/LimitExcept para que solo pida usuario/passwd en el caso de acceder a ficheros via dav (https://httpd.apache.org/docs/2.4/mod/mod_dav.html#page-header).
+    5. Reiniciar apache
+    6. Probar la conexión con un cliente(Linux|Windows|MAC).
 
         .. image:: img/webdav_3.png
             :width: 400 px
