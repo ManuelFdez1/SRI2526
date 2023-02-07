@@ -104,7 +104,7 @@ En este servicio debemos prestar atención a los siguientes elementos o propieda
   * Tipos de usuari@/autenticación.
       * Usuari@s locales
       * Usuari@s virtuales. Varias posibilidades.
-          * Ficheros generados con el paquete db-util (al final del siguiente enlace puedes encontrar como https://help.ubuntu.com/community/vsftpd)
+          * Ficheros generados con el paquete db-util (al final del enlace puedes encontrar como https://help.ubuntu.com/community/vsftpd)
           * Ficheros generados con htpasswd.
           * Bases de datos (MySql..)
           * Servicios de directorio (LDAP)
