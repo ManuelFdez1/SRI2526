@@ -8,8 +8,8 @@ En el último apartado, conoceremos algún ejemplo de Sistema Operativo concebid
 Debemos tener en cuenta las características de las opciones para compartir ficheros más clásicas en comparación con las opciones de edición en linea y concurrencia que tenemos hoy en día,
 las cuales eran impensables hace no tanto tiempo, y que son una de las bases del `Cloud Computing <https://w3techs.com/technologies/comparison/ws-apache,ws-microsoftiis,ws-nginx>`_.
 
-Sistemas distribuidos
----------------------
+Sistemas de ficheros en red
+----------------------------
 
 Si hablamos de redes locales (LAN) y compartir ficheros y recursos, tenemos varios sistemas de ficheros destacados:
     * Network File System (**NFS**): Sistemas UNIX-Linux.
@@ -73,11 +73,11 @@ Podemos encontrar clientes de varios tipos:
                 :align: center
 
         .. Tip::
-           Puedes encontrar servidores públicos de FTP donde probar los comandos, incluso de subida de ficheros (en **speedtest.tele2.net** puedes encontrar un servidor que admite
-           acceso anónimo).
+           Puedes encontrar servidores públicos de FTP donde probar los comandos, incluso de subida de ficheros (en https://dlptest.com/ftp-test/ puedes encontrar un servidor que admite
+           acceso 'público').
 
 
-    2. INTEGRADOS EN EL NAVEGADOR: Muchos navegadores llevan integrados clientes FTP o permiten la instalación de *plugins*.
+    2. INTEGRADOS EN EL NAVEGADOR: Muchos navegadores llevan integrados clientes FTP o permiten la instalación de *plugins*. En las versiones actuales o bien el soporte para FTP ha sido desactivado(https://www.trishtech.com/2021/04/how-to-re-enable-ftp-protocol-support-in-firefox/) o directamente ya no lo incluyen.
 
             .. image:: img/ejemploftpnavegador.png
                 :width: 300 px
@@ -123,24 +123,14 @@ la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html
   * Puede incluirse **cifrado** (FTP seguro)
   * **Enjaular usuarios** (*atención writeable chroot*)
 
-  Por defecto los usuarios del servicio FTP se encuentran vinculados a los usuarios del sistema en Linux pero existen otras maneras de gestionar la identificación de usuarios
-  como por ejemplo con una base de datos MySQL(USUARIOS VIRTUALES).
 
-  .. raw:: html
-
-        <p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pdf-2127829.png/480px-Pdf-2127829.png" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>  <b>En el siguiente documento puedes encontrar un manual completo de como realizar la configuración básica un servidor FTP con sus usuari@s incluidos en una BD MySQL.</b></br>
-
-  .. image:: img/usuariosvirtuales.pdf
-        :width: 400 px
-        :alt: Usuarios virtuales(VSFTP+MYSQL+PAM)
-        :align: center
 
 .. raw:: html
 
         </br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
         <u><b>PRÁCTICA 1</b></u></br>
-        Servidor FTP seguro en Ubuntu Server.
+        Servidor FTP seguro en una MV/Instancia Linuxff.
         </div>
         </br>
 
@@ -172,27 +162,27 @@ Los pasos a realizar, `extraídos del siguiente manual <https://www.digitalocean
 
                     # a2enmod dav dav_fs
 
-    2. Añadir en nuestra configuración de Apache el módulo (sobre  un directorio/location) →  DAV On
+    1. Añadir en nuestra configuración de Apache el módulo (sobre  un directorio/location) →  DAV On
 
         .. image:: img/webdav_1.png
             :width: 400 px
             :alt: WebDAV
             :align: center
 
-    3. Añadir algún método de autenticación
+    2. Añadir algún método de autenticación
         * ¿basic/digest?
         * ¿IP?
         * Sin autenticación Acceso libre
 
-    4. Atención a permisos/propietario
+    3. Atención a permisos/propietario
 
         .. image:: img/webdav_2.png
             :width: 400 px
             :alt: WebDAV
             :align: center
 
-    5. Reiniciar apache
-    6. Probar la conexión con un cliente(Linux|Windows|MAC).
+    4. Reiniciar apache
+    5. Probar la conexión con un cliente(Linux|Windows|MAC).
 
         .. image:: img/webdav_3.png
             :width: 400 px
