@@ -84,10 +84,10 @@ html_theme = "sphinx_rtd_theme"
 #
 html_theme_options = {
     #'body_min_width': '0',
-    'body_min_width': '90%',
+    #'body_min_width': '90%',
     #'body_text_align': 'justify',
     #'font_family': 'Roboto',
-    'body_max_width': '90%',
+    #'body_max_width': '90%',
 }
 
 html_title='ASIR - Servicios de Red e Internet'
