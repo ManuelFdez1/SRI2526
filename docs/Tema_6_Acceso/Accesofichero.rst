@@ -148,13 +148,16 @@ A través de los protocolos HTTP/HTTPS podemos configurar el acceso remoto a sis
 Tal y como dice la `documentación oficial de Apache <https://httpd.apache.org/docs/2.4/mod/mod_dav.html>`_, el objetivo de este protocolo (o más concretamente EXTENSIÓN DE PROTOCOLO) es conseguir que la web (http/https) permita el acceso con permisos de escritura a recursos publicados.
 Con él podemos hacer accesibles partes de nuestro sitio web como  un directorio remoto.
 
+
 .. Warning::
-   ¿Sabrías deducir para que resultaría de utilidad este tipo de característica instalada y configurada en nuestros servidores web?
+   La directiva `DirectoryIndex <https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex>`_ en Apache o `Autoindex <http://nginx.org/en/docs/http/ngx_http_autoindex_module.html>`_ en NginX para listar el contenido de un directorio del servidor suele ser una fuente de errores en combinación con WebDAV.
+   **La recomendación general es desactivar esa directiva para poder utilizar los módulos dav**
+
 
 Configuración en Apache
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Los pasos a realizar, `extraídos del siguiente manual <https://www.digitalocean.com/community/tutorials/how-to-configure-webdav-access-with-apache-on-ubuntu-14-04>`_, son:
+Los pasos a realizar, `extraídos del siguiente manual <https://cloudinfrastructureservices.co.uk/how-to-setup-apache-webdav-server-access-on-ubuntu-20-04/>`_, son:
 
     1. Activar los módulos correspondientes.
 
@@ -190,6 +193,14 @@ Los pasos a realizar, `extraídos del siguiente manual <https://www.digitalocean
             :alt: WebDAV
             :align: center
 
+.. Important::
+   En caso de querer dar acceso DAV **desde el directorio raiz de nuestro sitio web** debemos realizar algunas tareas más de configuración, sobretodo por la colisión con la 
+   desactivación de la directiva *DirectoryIndex*
+        .. image:: img/EjemploDAV_Raiz.png
+                :width: 300 px
+                :alt: Sw control de versiones
+                :align: center
+
 
 Configuración en NginX
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -202,18 +213,15 @@ Los pasos a realizar en este caso puedes encontrarlos en la `documentación ofic
 
                     # apt -y install nginx-extras libnginx-mod-http-dav-ext
 
-    2. Añadir en nuestra configuración de las opciones correspondientes:
+    1. Añadir en nuestra configuración de las opciones correspondientes:
 
         .. image:: img/webdav_4.png
             :width: 400 px
             :alt: WebDAV
             :align: center
 
-    3. El resto de aspectos a tener en cuenta son muy similares a Apache.
+    2. El resto de aspectos a tener en cuenta son muy similares a Apache.
 
-.. Warning::
-   La directiva `DirectoryIndex <https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex>`_ en Apache o `Autoindex <http://nginx.org/en/docs/http/ngx_http_autoindex_module.html>`_ en NginX para listar el contenido de un directorio del servidor suele ser una fuente de errores en combinación con WebDAV.
-   **La recomendación general es desactivar esa directiva para poder utilizar los módulos dav**
 
 .. raw:: html
 
@@ -223,9 +231,6 @@ Los pasos a realizar en este caso puedes encontrarlos en la `documentación ofic
         Realiza la práctica de configuración de WebDAV
         </div>
         </br>
-
-.. Important::
-   ¿Sabrías deducir que puertos utiliza WebDAV?
 
 
 Control de versiones
