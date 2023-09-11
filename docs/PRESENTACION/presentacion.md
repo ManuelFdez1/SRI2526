@@ -66,11 +66,10 @@ Funcionamiento
 + A través de los medios anteriores o en clase se podrán resolver las dudas que vayan apareciendo.
 + Los puestos están señalados. NO desplazar equipo o mobiliario.
 + Siempre nos sentaremos en el mismo sitio
-+ Se recomienda el uso de vuestro propio equipo portátil por comodidad y rendimiento de los equipos del aula. En caso de no disponer de portátil, se aconseja el uso de un disco duro externo para todas las cuestiones relacionadas con la virtualización.
-+ Para evitar las pérdidas de información y facilitar tu trabajo tienes dos opciones (**OBLIGATORIO**):
++ Para evitar las pérdidas de información y facilitar tu trabajo tienes dos opciones (**MUY RECOMENDABLE**):
   + Usa tu propio disco duro externo/portátil SSD (seguro que será más rápido que el DD del PC del aula).
   + Traer tu propio portátil (En este caso habría que ubicarte en algún puesto concreto. **ATENCIÓN AL USO DE LOS CABLES DE RED**).
-+ **Atención con la UBICACIÓN de tus MV si están en el DD del PC si accedes con tu usuario de Lliurex.**
++ **Atención con la UBICACIÓN de tus MV si están en el DD del PC.**
 
 Evaluación
 ===========
