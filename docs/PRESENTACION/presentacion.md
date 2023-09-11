@@ -57,7 +57,8 @@ Funcionamiento
     + Onedrive → Almacenamiento en la nube.
     + Teams → Videoconferencia.
     + Calendario.
-+ Telegram (grupo para noticias/anuncios) → [Enlace al canal](https://t.me/+hSH3fGQkQBs2Mzlk)
++ WebFamilia
++ Telegram (grupo para noticias/anuncios) → [Enlace al canal](https://t.me/+jdNkAxmCMjRhY2Q0)
 
   ![QRGrupoTelegram](img/QRGrupoTelegram.png "Enlace al canal de Telegram")
 
