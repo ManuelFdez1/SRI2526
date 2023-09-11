@@ -1,6 +1,6 @@
 Calendario del curso
 ===============
-![Calendario IES Botet Curso 2023-24](img/CALENDARI2023-24.png "Calendario Botet Curso 2023-24")
+![Calendario IES Botet Curso 2023-24](img/Calendario23-24.png "Calendario Botet Curso 2023-24")
 
 Objetivos del módulo
 ===============
