@@ -66,7 +66,7 @@ Funcionamiento
 + A través de los medios anteriores o en clase se podrán resolver las dudas que vayan apareciendo.
 + Los puestos están señalados. NO desplazar equipo o mobiliario.
 + Siempre nos sentaremos en el mismo sitio
-+ Evitar tocar la pantalla.
++ Se recomienda el uso de vuestro propio equipo portátil por comodidad y rendimiento de los equipos del aula. En caso de no disponer de portátil, se aconseja el uso de un disco duro externo para todas las cuestiones relacionadas con la virtualización.
 + Para evitar las pérdidas de información y facilitar tu trabajo tienes dos opciones (**OBLIGATORIO**):
   + Usa tu propio disco duro externo/portátil SSD (seguro que será más rápido que el DD del PC del aula).
   + Traer tu propio portátil (En este caso habría que ubicarte en algún puesto concreto. **ATENCIÓN AL USO DE LOS CABLES DE RED**).
