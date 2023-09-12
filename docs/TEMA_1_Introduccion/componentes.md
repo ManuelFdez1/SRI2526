@@ -1,5 +1,5 @@
 Componentes de los Srv. de Red
-==============
+===============================
 
 Para poder configurar correctamente cualquier servicio, se deben tener claros algunos conceptos relacionados con las redes informáticas.
 
@@ -46,3 +46,4 @@ ___
 8. ¿Qué es una **dirección** de red?¿y una de **broadcast**?
 9. ¿Sabrías partir una red(**subnetting**) de tipo C en 4 subredes, por ejemplo *192.168.100.0/24*?
 ___
+

@@ -196,6 +196,7 @@ Los pasos a realizar, `extraídos del siguiente manual <https://cloudinfrastruct
 .. Important::
    En caso de querer dar acceso DAV **desde el directorio raiz de nuestro sitio web** debemos realizar algunas tareas más de configuración, sobretodo por la colisión con la 
    desactivación de la directiva *DirectoryIndex*
+   
         .. image:: img/EjemploDAV_Raiz.png
                 :width: 300 px
                 :alt: Sw control de versiones
