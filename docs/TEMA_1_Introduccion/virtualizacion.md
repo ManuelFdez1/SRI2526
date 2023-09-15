@@ -160,23 +160,21 @@ ___
 6. Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.
 ___
 
-**Más cosas sobre Docker/Contenedores**
-
 Si quisiéramos organizar la ejecución de dos contenedores relacionados de alguna manera (por ejemplo un servidor http y un servidor de BD que trabajan en conjunto para servir una página web) tendríamos la opción de usar **Docker-compose**<b><sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup></b>. Previamente debemos haber instalado el paquete docker-compose.
 
 En los contenedores en general y en Docker en particular se manejan varios conceptos que debemos conocer para aprovechar todas sus posibilidades:
 
   * **Imágenes**: Plantillas a partir de las cuales lanzamos los contenedores. Pueden estar en [repositorios públicos](https://hub.docker.com/search?q=&type=image) o privados (creados por nosotr@s mism@s)
-    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/05_Imagenes.pdf" target="_blank">Tutorial</a>
-    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/05_Imagenes-Soluciones.pdf" target="_blank">Ejemplos</a>
+    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/05_Imagenes.pdf" target="_blank">Tutorial</a>
+    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/05_Imagenes-Soluciones.pdf" target="_blank">Ejemplos</a>
   * **Contenedores**: Se ejecutan a partir de las imágenes.
-    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/04_Contenedores.pdf" target="_blank">Tutorial</a>
-    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/04_Contenedores-Soluciones.pdf" target="_blank">Ejemplos</a>
+    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/04_Contenedores.pdf" target="_blank">Tutorial</a>
+    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/04_Contenedores-Soluciones.pdf" target="_blank">Ejemplos</a>
   * **Volúmenes**: herramienta para conseguir la **persistencia** de los datos en la ejecución de contenedores.
-    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/06_Almacenamiento.pdf" target="_blank">Tutorial</a>
-    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/06_Almacenamiento-Soluciones.pdf" target="_blank">Ejemplos</a>
+    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/06_Almacenamiento.pdf" target="_blank">Tutorial</a>
+    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/06_Almacenamiento-Soluciones.pdf" target="_blank">Ejemplos</a>
   * **Redes**: Docker permite la gestión de las redes a distintos niveles y características. Esto proporciona opciones muy útiles para crear distintos escenarios.
-    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/Docker/07_Redes.pdf" target="_blank">Tutorial</a>
+    - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/07_Redes.pdf" target="_blank">Tutorial</a>
 
 **En el aula virtual de la asignatura tienes una sección *RECURSOS* con un tutorial completo de Docker que puede resultarte de utilidad**
 

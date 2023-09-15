@@ -60,7 +60,7 @@ Funcionamiento
 + WebFamilia
 + Telegram (grupo para noticias/anuncios) → [Enlace al canal](https://t.me/+jdNkAxmCMjRhY2Q0)
 
-  ![](img/QRGrupoTelegram.png "Enlace al canal de Telegram")
+  ![](img/QRGrupoTelegram.png "Enlace al grupo de Telegram")
 
 + Las explicaciones teóricas se harán en clase con lo más reducidas posible y a trabajar (**en clase y en casa**).
 + A través de los medios anteriores o en clase se podrán resolver las dudas que vayan apareciendo.
