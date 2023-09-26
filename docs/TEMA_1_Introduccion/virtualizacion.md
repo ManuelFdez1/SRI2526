@@ -150,16 +150,6 @@ Como ejemplo, un comando típico de docker, en el que publicamos el puerto 80 de
       $docker run -d -p 8080:80 --name=XX --mount type=bind, source=dirHost, target=dirContainer DockerImg
   ```
 
-___
-> **¿SABRÍAS?...**
-1. Instalar *docker y docker-compose* en una máquina virtual Ubuntu Server
-2. Conseguir ejecutar comandos de docker sin necesidad de sudo.
-3. **Descargar** la imagen Hello-world del repoitorio oficial de docker.
-4. Listar las imágenes y contenedores existentes en tu MV, ejecutar la imagen anterior, comprobar su estado y finalmente borrar la imagen de tu MV.
-5. Ejecutar el contenedor **[httpd](https://hub.docker.com/_/httpd/)**  poniéndole como nombre *web* y redirigiendo al puerto 8080 del host(tu MV) el puerto 80 del contenedor. Prueba el acceso a la web.
-6. Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.
-___
-
 Si quisiéramos organizar la ejecución de dos contenedores relacionados de alguna manera (por ejemplo un servidor http y un servidor de BD que trabajan en conjunto para servir una página web) tendríamos la opción de usar **Docker-compose**<b><sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup></b>. Previamente debemos haber instalado el paquete docker-compose.
 
 En los contenedores en general y en Docker en particular se manejan varios conceptos que debemos conocer para aprovechar todas sus posibilidades:
@@ -176,14 +166,18 @@ En los contenedores en general y en Docker en particular se manejan varios conce
   * **Redes**: Docker permite la gestión de las redes a distintos niveles y características. Esto proporciona opciones muy útiles para crear distintos escenarios.
     - <a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/07_Redes.pdf" target="_blank">Tutorial</a>
 
-**En el aula virtual de la asignatura tienes una sección *RECURSOS* con un tutorial completo de Docker que puede resultarte de utilidad**
+___
+> **¿SABRÍAS?...**
+1. Instalar *docker y docker-compose* en una máquina virtual Ubuntu Server
+2. Conseguir ejecutar comandos de docker sin necesidad de sudo.
+3. **Descargar** la imagen Hello-world del repoitorio oficial de docker.
+4. Listar las imágenes y contenedores existentes en tu MV, ejecutar la imagen anterior, comprobar su estado y finalmente borrar la imagen de tu MV.
+5. Ejecutar el contenedor **[httpd](https://hub.docker.com/_/httpd/)**  poniéndole como nombre *web* y redirigiendo al puerto 8080 del host(tu MV) el puerto 80 del contenedor. Prueba el acceso a la web.
+6. Modificar la ejecución anterior para que tu contenido web se encuentre en una carpeta real de tu MV.
+7. Ejecutar 4 veces más el contenedor con las mismas características que el caso anterior, en cada caso a los puertos 8081..8084 y con los nombres web2..web5
+8. Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.
+___
 
-
-<div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-<b>PRÁCTICA 2</b></br></br>
-Accede al aula virtual del módulo y completa la segunda práctica sobre contenedores siguiendo lo indicado en el enunciado. Envía un <b>documento pdf</b> con los pantallazos y características de los equipos, aportando las explicaciones que consideres oportunas.
-</div>
-</br>
 
 **En el aula virtual del módulo puedes encontrar una sección *RECURSOS* con un completo manual de Docker con todos las herramientas comentadas más desarrolladas y ejemplos de utilización de las mismas.**
 
@@ -200,7 +194,7 @@ La **ORQUESTACIÓN O AUTOMATIZACIÓN** de los servicios consiste en la organizac
 
 Tenemos multitud de herramientas disponibles para configurar entornos de orquestación/automatización a distintos niveles:
 
-  - **Máquinas virtuales:** <a href="https://desarrolloweb.com/articulos/trabajar-con-vagrant.html" target="_blank">Vagrant</a> y <a href="https://openwebinars.net/blog/que-es-ansible/" target="_blank">Ansible</a>.
+  - **Máquinas virtuales:** <a href="https://devopscube.com/vagrant-tutorial-beginners/" target="_blank">Vagrant</a> y <a href="https://openwebinars.net/blog/que-es-ansible/" target="_blank">Ansible</a>.
   - **Contenedores:** <a href="https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/" target="_blank"> Kubernetes</a> o <a href="https://docs.docker.com/engine/swarm/swarm-tutorial/" target="_blank">Docker Swarm</a>.
   - **En la nube**(cloud computing): Cada empresa ofrece distintas herramientas, si nos fijamos en AWS, y <a href="https://aws.amazon.com/es/containers/" target="_blank">según su propia documentación</a>: Para obtener control completo sobre el entorno de informática, elija ejecutar los contenedores en *Amazon Elastic Compute Cloud (EC2)*. Para los orquestadores de contenedores, puede elegir *Amazon Elastic Container Service (ECS)* o *Amazon Elastic Kubernetes Service (EKS)*.
 
