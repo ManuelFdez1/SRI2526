@@ -1,5 +1,5 @@
 Conceptos previos
-==============
+=================
 
 **LA ARQUITECTURA CLIENTE/SERVIDOR**
 
