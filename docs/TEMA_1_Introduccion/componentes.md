@@ -27,6 +27,7 @@ Una dirección IP es una etiqueta numérica que identifica a un interfaz (elemen
   + Privadas
 + IPv4 vs IPv6
 
+
 <u>OTROS PARÁMETROS IP:</u>
 
 Además de la dirección IP, todo equipo necesita tener definidos otros parámetros para poder interactuar en la red correctamente.
