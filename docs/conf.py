@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Servicios de Red e Internet'
-copyright = u'2020, M. Tomás Giménez Albert'
+copyright = u'2023, M. Tomás Giménez Albert'
 author = u'M. Tomás Giménez Albert'
 
 # The short X.Y version
