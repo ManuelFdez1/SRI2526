@@ -38,9 +38,16 @@ release = u'1.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-    'sphinx.ext.mathjax',
-]
+extensions = ['sphinx.ext.autodoc', 'myst_parser', 'sphinx.ext.autosectionlabel', 'sphinx_design','sphinx.ext.mathjax',]
+# Make sure the target is unique
+autosectionlabel_prefix_document = True
+
+
+# Include methods that start with an _
+napoleon_include_private_with_doc = True
+
+# Add Myst extensions
+myst_enable_extensions = ["colon_fence", "html_image"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -183,9 +190,3 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-
-# -- Extension configuration -------------------------------------------------
-extensions = ['recommonmark']
-#enable_auto_toc_tree = 'true'
-#enable_eval_rst = 'true'
