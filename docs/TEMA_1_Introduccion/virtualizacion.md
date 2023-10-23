@@ -23,7 +23,7 @@ Entornos para aprendizaje y pruebas. Se simplifica el montaje y experimentación
   **Actualmente se asocia un único servicio a cada servidor, con el fin de limitar el alcance de un hipotético fallo**
 
 
-### Tipos de Virtualización.
+## Tipos de Virtualización.
 
 **TIPO 1:** Denominada **nativa/unhosted**, es software que se ejecuta directamente sobre el hardware, para ofrecer la funcionalidad. El hipervisor es un SO cuya única misión es gestionar conjuntos de clusters, Máq. Virtuales, unidades de almacenamiento, etc... Un ejemplo de este tipo de virtualización [lo puedes encontrar en el siguiente video](https://youtu.be/ERb_X20UKqU), en el que muestran una instalación real de un hipervisor denominado [Proxmox](https://www.proxmox.com/en/).
 
@@ -69,7 +69,7 @@ Posibilidad de aplicaciones de gestión automática(Kubernetes..)
 
 > **Puedes encontrar un interesante artículo de las diferencias entre MV y contenedor, y la evolución de estas tecnologías en los últimos años en el [siguiente blog](https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo)**.
 
-### Máquinas Virtuales
+## Máquinas Virtuales
 
 A la hora de virtualizar SO, debemos tener varios elementos y parametros de configuracion en cuenta. En concreto, **utilizando VirtualBox** debemos prestar especial atención a:
 
@@ -88,7 +88,7 @@ Accede al aula virtual del módulo y completa la primera práctica, siguiendo lo
 </div>
 
 
-### Contenedores
+## Contenedores
 
 Los contenedores(containers) son el siguiente paso en la evolución de la virtualización de sistemas operativos, su objetivo principal es OPTIMIZAR el uso de los recursos de la máquina anfitrión(host). Se puede entender como una virtualización a nivel de sistema operativo.
 Se evita la sobrecarga asociada con tener a cada huésped ejecutando un sistema operativo completamente instalado. Una desventaja de la virtualización basada en contenedores, sin embargo, es que cada invitado debe utilizar el mismo sistema operativo que utiliza el host, además de tener un menor nivel de aislamiento.
@@ -181,7 +181,7 @@ ___
 
 **En el aula virtual del módulo puedes encontrar una sección *RECURSOS* con un completo manual de Docker con todos las herramientas comentadas más desarrolladas y ejemplos de utilización de las mismas.**
 
-### Automatización
+## Automatización
 
 La **ORQUESTACIÓN O AUTOMATIZACIÓN** de los servicios consiste en la organización de los sistemas, configuración, gestión y coordinación automatizadas de los sistemas informáticos, las aplicaciones y los servicios. Ayuda a la TI a gestionar con mayor facilidad las tareas complejas y los flujos de trabajo, ya que éstos suelen ser **variables**(piensa en el ejemplo de una web como Amazon en determinadas fechas del año como navidades, Black Friday...) <b><sup id="fnref:note1"><a class="footnote-ref" href="#fn:note3" role="doc-noteref">3</a></sup></b>. Con las herramientas que vamos a ver conseguimos cosas como:
 

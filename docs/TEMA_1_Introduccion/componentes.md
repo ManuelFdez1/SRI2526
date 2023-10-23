@@ -35,6 +35,8 @@ Además de la dirección IP, todo equipo necesita tener definidos otros parámet
 + **PUERTA DE ENLACE/GATEWAY/PASARELA**: Direccion del dispositivo que permite interconectar redes con protocolos y arquitecturas diferentes a todos los niveles de comunicación. *Obligatoriamente debe estar en la misma red que el equipo*.
 + **SERVIDOR/ES DNS**: Direccion/es de aquel/aquellos equipo/s encargado/s de traducir los nombres de dominio por su correspondiente IP. *Puede estar en una red externa*.
 
+
+
 ___
 > **RECUERDA...**
 1. ¿Que elemento maneja el nivel de enlace, el de red y el de transporte, para realizar sus funciones correspondientes?
