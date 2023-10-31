@@ -186,8 +186,8 @@ Linux
     </div></br>
 
 
-Mejorando nuestro servicio
------------------------------
+Ampliando nuestra configuración
+--------------------------------
 
 A partir de aquí podemos trabajar sobre escenarios más complejos en los que podremos incluir:
 
@@ -212,6 +212,32 @@ A partir de aquí podemos trabajar sobre escenarios más complejos en los que po
         Realiza la práctica 1 del Tema 3 del aula virtual, vas a crear tu sistema de servidores DNS.
         </div>
 
+
+Juntando todo(DDNS)
+-------------------
+
+.. raw:: html
+
+        <p>
+          El <b>DNS dinámico(Dynamic DNS)</b> es un servicio que puede ser de gran utilidad en la mayoría de ocasiones en aplicaciones reales. 
+          El DNS dinámico garantiza que los usuarios puedan seguir accediendo al dispositivo o servicio mediante el nombre de dominio. No necesitan rastrear ni actualizar la dirección IP manualmente.<sup id="fnref:note3"><a class="footnote-ref" href="#fn:note3" role="doc-noteref">3</a></sup>. 
+        </p>
+
+
+
+.. image:: img/DDNS.png
+    :width: 900 px
+    :alt: conf. DNS Linux GUI
+    :align: center
+
+
+**¿Se te pueden ocurrir situaciones en lo que esto sea de utilidad?¿Qué ventajas podría tener?**
+
+Puedes encontrar multitud de recursos en la web para poder orientarte en la configuración de esta característica para nuestros servidores DNS. Por ejemplo puedes 
+`acceder al siguiente enlace <https://medium.com/marcsanchezg/instalar-y-configurar-un-servidor-ddns-dhcp-dns-790cbc34e53d>`_ y realizar las tareas correspondientes en tu
+servidor.
+
+    
 .. raw:: html
 
    </br>
@@ -228,6 +254,11 @@ A partir de aquí podemos trabajar sobre escenarios más complejos en los que po
            <li class="footnote" id="fn:note2">
                <p>
                    <b>Ayuda:</b> Puedes encontrar un manual muy completo sobre DNS y BIND <a href="https://www.fpgenred.es/DNS/instalacin_de_bind_versin_9.html" target="_blank">el siguiente enlace</a><a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
+               </p>
+           </li>
+           <li class="footnote" id="fn:note3">
+               <p>
+                   <b>Fuente:</b> Puedes encontrar una explicación muy buena en la <a href="https://aws.amazon.com/es/what-is/dynamic-dns/" target="_blank">documentación de AWS sobre DDNS</a><a class="footnote-backref" rev="footnote" href="#fnref:note3">&#8617;</a>
                </p>
            </li>
        </ol>
