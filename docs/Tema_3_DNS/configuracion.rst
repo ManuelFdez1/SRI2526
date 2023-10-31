@@ -236,8 +236,74 @@ Juntando todo(DDNS)
 Puedes encontrar multitud de recursos en la web para poder orientarte en la configuración de esta característica para nuestros servidores DNS. Por ejemplo puedes 
 `acceder al siguiente enlace <https://medium.com/marcsanchezg/instalar-y-configurar-un-servidor-ddns-dhcp-dns-790cbc34e53d>`_ y realizar las tareas correspondientes en tu
 servidor.
+Para que los servicios de DHCP y DNS puedan trabajar en conjunto, necesitaremos una clave, en nuestro caso, usaremos una clave usando el algoritmo HMAC-MD5 y la generaremos con el nombre DDNS_UPDATE. 
 
-    
+Todo ello lo incluiremos en un fichero que posteriormente incorporaremos a la configuración tanto de DHCP como de DNS.
+
+.. image:: img/ddnsKey.png
+    :width: 900 px
+    :alt: generación claves ddns
+    :align: center
+
+Ahora copiaremos el archivo a los directorios de cada servicio, y les daremos los permisos y propietarios necesarios para que éstos puedan hacer uso del archivo que acabamos de crear:
+
+.. image:: img/comandosDDNS.png
+    :width: 900 px
+    :alt: comandos previos DDNS
+    :align: center
+
+Tras esto ya podemos comenzar a configurar nuestros servicios
+
+**Configuración DNS:** 
+
+Modificamos el archivo /etc/bind/named.conf.local para definir las zonas (directa e inversa) con las que vamos a trabajar, es muy importante incluir el archivo ddns.key que se encuentra en /etc/bind/ddns.key y luego permitir actualizaciones (allow-update) con el nombre de la misma clave.
+
+.. image:: img/confDDNS_BIND.png
+    :width: 900 px
+    :alt: config DDNS en Bind
+    :align: center
+
+Comprobamos todo. Atento-a a los distintos parámetros y nombres utilizados. TODO ha de mantener una coherencia.
+
+.. image:: img/Comprobacion_DDNS_BIND.png
+    :width: 900 px
+    :alt: test DDNS en Bind
+    :align: center
+
+
+
+**Configuración DHCP:** 
+
+Para configurar el servicio DHCP editaremos el archivo /etc/dhcp/dhcpd.conf y configuraremos los siguientes valores de la siguiente manera:
+
+.. image:: img/confDDHCP_BIND.png
+    :width: 900 px
+    :alt: config DDNS en Bind
+    :align: center
+
+
+**Comprobación:** 
+
+¿Cómo comprobamos el funcionamiento de todo? Si conectamos un cliente veremos algunas cosas nuevas sucediendo:
+
+.. image:: img/Comprobacion_DDNS_DHCP.png
+    :width: 900 px
+    :alt: test DHCP en Bind
+    :align: center
+.
+
+
+
+.. raw:: html
+
+    <div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+    <u>¡Atención!</u></br>
+    La linea marcada en rojo al final de la imagen anterior...¿Qué crees que significa?¿Cómo puedes solucionarlo?
+    </div></br>
+
+
+
+
 .. raw:: html
 
    </br>
