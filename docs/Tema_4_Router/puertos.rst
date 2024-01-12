@@ -17,7 +17,7 @@ Si trabajamos, como en nuestro caso, configurando un SISTEMA OPERATIVO como Rout
         :alt: Reenvío de puertos en SO
         :align: center
 
-* WINDOWS: Con comando **netsh** (`ejemplo en la web <-https://superuser.com/questions/1131001/howto-do-a-port-forwarding-on-a-windows-2012-server>`_)
+* WINDOWS: Con comando **netsh** (`ejemplo en la web <https://superuser.com/questions/1131001/howto-do-a-port-forwarding-on-a-windows-2012-server>`_)
 * LINUX: También, con IpTables.
 
       .. code-block:: shell-session

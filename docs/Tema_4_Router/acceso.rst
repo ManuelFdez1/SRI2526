@@ -36,23 +36,16 @@ Linux
 En las distribuciones Linux no necesitamos instalar ningún servicio para conseguir el enrutamiento y la NAT, ya que con las utilidades que incorpora el núcleo del SO podremos conseguir lo que pretendemos.
 Tenemos varias opciones para crear rutas:
 
-1. Con el uso del comando **ip route** (https://www.cyberciti.biz/faq/linux-route-add/)
-2. Inclyendo **rutas estáticas en nuestro fichero de netplan** de configuración de red (https://linuxconfig.org/how-to-add-static-route-with-netplan-on-ubuntu-20-04-focal-fossa-linux)
-3. A través de las **IPTABLES** (https://es.wikipedia.org/wiki/Netfilter).
-
-          .. raw:: html
-
-              <p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pdf-2127829.png/480px-Pdf-2127829.png" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>  En el siguiente documento puedes encontrar un manual completo. </br> </br>
-
-          .. image:: img/doc-iptables-firewall.pdf
-              :width: 400 px
-              :alt: Tutorial IpTables
-              :align: center
+* Con el uso del comando **ip route** (https://www.cyberciti.biz/faq/linux-route-add/)
+* Inclyendo **rutas estáticas en nuestro fichero de netplan** de configuración de red (https://linuxconfig.org/how-to-add-static-route-with-netplan-on-ubuntu-20-04-focal-fossa-linux) 
+* A través de **NETFILTER**  (https://es.wikipedia.org/wiki/Netfilter) que es el  framework disponible en el núcleo de Linux que permite interceptar y manipular paquetes de red. Dicho framework permite interactuar con paquetes en diferentes etapas del procesamiento dentro del sistema operativo, ofreciendo funcionalidades de cortafuegos y otras utilidades relacionadas. Los componentes más populares son:
+   - Las clásicas **IPTABLES** (http://es.tldp.org/Manuales-LuCAS/doc-iptables-firewall/doc-iptables-firewall.pdf).
+   - Sustituidas por las más modernas (y probablemente sencillas) **NFTABLES** (https://www.josedomingo.org/pledin/2020/01/nftables-cortafuegos-perimetral-nat/). 
 
 
 Debemos incluir los comandos necesarios para:
 
-* Enrutar los paquetes que vengan de nuestra red local a nuestra tarjeta interna.
+* Enrutar los paquetes que vengan de nuestra red local a nuestra tarjeta interna. Activando el ip_forward entre tarjetas.
 * De estos paquetes identificar cuales tienen como destino otra red.
 * Reenviarlos por la tarjeta externa del servidor.
 * Realizar la NAT para que se puedan comunicar con la red destino.
@@ -61,38 +54,7 @@ Debemos incluir los comandos necesarios para:
    Para que funcione bien el enrutamiento, recuerda repasar tus servidors DHCP y DNS, comprobando que todo esté correctamente configurado.
 
 
-Finalmente, sería conveniente configurar todo lo anterior de manera que el servicio se iniciara con el arranque del SO para evitar tener que reconfigurar en caso de reinicio del servidor.
-Una de las opciones puede ser utilizar el comando **update-rc.d**. Puedes encontrar un HOW-TO en el `siguiente tutorial web <https://www.solusan.com/como-va-update-rcd-niveles-de-ejecucion-en-debian.html>`_
 
-
-      .. code-block:: shell-session
-
-                  1. net.ipv4.ip_forward=1 //poner este bit a 1. Tienes varias alternativas.
-                  #!/bin/bash
-                  2. #iptables -A FORWARD -j ACCEPT
-                  3. #iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
-
-.. warning::
-   En relación con las lineas anteriores:
-
-   1. Poniendo ese bit de sistema a 1 **activas únicamente el enrutamiento** entre tarjetas
-   2. Iptables acepta paquetes FORWARD (aquellos que llegan al servidor con destino a otras redes). Esta linea es opcional.
-   3. Configuras iptables para que envíe los paquetes de la red local(*192.168.200.0/24*) a la tarjeta externa(*enp0s3*) realizando la traducción correspondiente (usamos la palabra MASQUERADE, aunque también puede usarse SNAT, tal y como se explica en https://www.fpgenred.es/DebianRed/nat.html).
-          A. SNAT : Cuando la tarjeta que hace el NAT tiene IP estática.
-          B. MASQUERADE: Cuando la tarjeta tiene IP dinámica (DHCP)
-
-El script debería quedar bastante similar al siguiente. Recuerda que en las lineas iniciales definimos en que **niveles de ejecución** queremos que se inicie el servicio y en que otros queremos que se pare.
-
-.. image:: img/scriptEnrutamientoNat.png
-    :width: 400 px
-    :alt: script enrutamiento y NAT
-    :align: center
-
-Si lo prefieres, también puedes ver como se realiza esto en multitud de videotutoriales.
-
-.. raw:: html
-
-            <iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/HeUyUDV697E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
 .. raw:: html
 
