@@ -22,10 +22,11 @@ varios años.
 La configuración de una web protegida con HTTPS, independientemente del servidor que utilicemos, se realiza básicamente con los siguientes pasos:
 
     1. Activar los módulos correspondientes (en el caso de Apache).
-    2. Generar un certificado para el servidor (Recuerda los conceptos **certificado, clave pública/privada, firma**) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
+    2. Generar un certificado para el servidor. Recuerda conceptos *certificado, clave pública/privada* (https://www.manualesfaciles.com/certificados-diferencias-de-pem-crt-y-key/) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
           * ¿Ubicación de los certificados?
           * ¿Propietario/Permisos?
-    3. Crear virtual host seguro.Incluyendo la **clave privada y el certificado** en la configuración
+  
+    3. Crear virtual host seguro.Incluyendo la *clave privada y el certificado* en la configuración
     4. Redirigir HTTP a HTTPS  →  (**OPCIONAL, aunque recomendable**)
     5. Activar el nuevo sitio creado →  (**a2ensite** si estamos en Apache, **ln -s** en NginX)
 
