@@ -22,10 +22,11 @@ varios años.
 La configuración de una web protegida con HTTPS, independientemente del servidor que utilicemos, se realiza básicamente con los siguientes pasos:
 
     1. Activar los módulos correspondientes (en el caso de Apache).
-    2. Generar un certificado para el servidor (Recuerda los conceptos **certificado, clave pública/privada, firma**) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
+    2. Generar un certificado para el servidor. Recuerda conceptos *certificado, clave pública/privada* (https://www.manualesfaciles.com/certificados-diferencias-de-pem-crt-y-key/) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
           * ¿Ubicación de los certificados?
           * ¿Propietario/Permisos?
-    3. Crear virtual host seguro.Incluyendo la **clave privada y el certificado** en la configuración
+  
+    3. Crear virtual host seguro.Incluyendo la *clave privada y el certificado* en la configuración
     4. Redirigir HTTP a HTTPS  →  (**OPCIONAL, aunque recomendable**)
     5. Activar el nuevo sitio creado →  (**a2ensite** si estamos en Apache, **ln -s** en NginX)
 
@@ -42,4 +43,4 @@ En los siguientes enlaces puedes encontrar unos sencillos tutoriales:
 
       * CA de pago
       * Opciones gratuitas como `Let's Encrypt <https://letsencrypt.org/es/>`_, aunque en este caso necesitarias un dominio real público en la web (puedes usar una alternativa gratuita tipo `no-ip <https://www.noip.com/>`_ para hacer esto). Puedes encontrar una manual paso a
-        paso de como configuar esto en `la web de Digitalocean <https://www.digitalocean.com/community/tutorials/como-asegurar-nginx-con-let-s-encrypt-en-ubuntu-18-04-es>`_
+        paso de como configuar esto en la web, tanto para `APACHE <https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-22-04>`_ como para `NGINX <https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-22-04>`_

@@ -1,0 +1,60 @@
+server {
+	#PUERTO
+	listen 80;
+	#ARCHIVOSPOR DEFECTO A LEER
+	index index.php index.html;
+	#DIRECTORIO DONDE SE ENCUENTRA INFORMACION DEL SERVER
+	root /var/www/nginx1;
+
+	#NOMBRE DEL SERVIDOR
+	server_name www.nginx1.com nginx1.com;
+
+	#PERMITIR PHP
+	location ~ \.php {
+			include snippets/fastcgi-php.conf;
+			fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+
+			}
+
+
+	#LOG GENERAL DE NGINX1
+	access_log /var/log/nginx/nginx1/access_nginx1.log;
+	error_log /var/log/nginx/nginx1/error_nginx1.log warn;
+
+		#CARPETA /PUBLIC
+		location /public {
+		#LOCALIZACION DE LA CARPETA
+			root /var/www/;
+		#PERMITO EL INDIZADO DEL DIRECTORIO
+			autoindex on;
+
+			#LOG EN /PUBLIC
+			access_log /var/log/nginx/access_nginx1.log;
+			error_log /var/log/nginx/error_nginx1.log;
+				}
+				#FIN DE /public
+
+		#CARPETA /PRIV
+		location /priv {
+			root /var/www/;
+			autoindex off;
+
+			#LOG EN /PRIV
+			access_log /var/log/nginx/access_priv.log;
+			error_log /var/log/nginx/error_priv.log;
+
+			#ACCESO USUARIOS CREADOS
+			auth_basic "Credenciales muggle";
+			auth_basic_user_file /etc/nginx/.httpasswd;
+
+			#ACCESO DESDE RED LOCAL
+			allow 192.168.0.158;
+			allow 192.168.0.0/24;
+			deny all;
+					}
+					#FIN CARPETA PRIV
+
+
+
+#fin fichero
+}
