@@ -173,7 +173,7 @@ Algunos ejemplos este tipo de SW que podemos usar para obtener cálculos del ren
            </li>
            <li class="footnote" id="fn:note2">
                <p>
-                   <b> Geekflare:</b> <a href="https://geekflare.com/es/nginx-production-configuration/" target="_blank">Configuración de Nginx para rendimiento y seguridad</a>
+                   <b> Geekflare:</b> <a href="https://www.cloudpanel.io/blog/nginx-performance/" target="_blank">Configuración de Nginx para rendimiento y seguridad</a>
                   <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
                </p>
            </li>
