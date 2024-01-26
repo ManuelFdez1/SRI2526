@@ -12,10 +12,14 @@ Sistemas de ficheros en red
 ----------------------------
 
 Si hablamos de redes locales (LAN) y compartir ficheros y recursos, tenemos varios sistemas de ficheros destacados:
-    * Network File System (**NFS**): Sistemas UNIX-Linux.
+    * Network File System (**NFS**): Sistemas UNIX-Linux. 
     * Server Message Block (**SMB/CIFS**):​ Protocolo para compartir archivos, impresoras... entre sistemas Windows. Aunque es un protocolo propiedad de Microsoft, tiene
       algunas implementaciones libres, por ejemplo SAMBA en versiones Linux.
     * Linux incluye algunos comandos muy útiles de gestión remota de ficheros (**rsync, scp...**).
+    * Sistemas de ficheros compartidos en la nube. Ejemplos:
+        * AWS -> EFS(Elastic FileSystem) puede ser un ejercicio muy práctico y real el enlazar tu sitio web a uno de estos sistemas, tal y como explica en https://docs.aws.amazon.com/es_es/efs/latest/ug/wt2-apache-web-server.html.
+        * Azure -> Azure Files (https://azure.microsoft.com/es-es/products/storage/files/).
+        * Google Cloud -> FileStore (https://cloud.google.com/filestore?hl=es).
 
 .. image:: img/samba.png
       :width: 200 px
@@ -27,10 +31,10 @@ SAMBA es una opción bastante sencilla para poder compartir recursos entre máqu
 
 .. raw:: html
 
-      <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/LjvFmSHAS3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+      <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/NXsl7WTdKjs?si=BEoKgMl_re0zGq_u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
-.. Important::
-   Sería un ejercicio interesante que compartieras ficheros entre MV Linux y Windows. Podrías incluso ubicar esos recursos compartidos en discos distintos al SO.
+.. note:: 
+   ¿Sabrías montar tu servidor web en la nube en una sistema de ficheros EFS?
 
 FTP
 ----
@@ -58,6 +62,7 @@ capa SSL similar a la utilizada en HTTPS, alternativas que permiten transferir a
 
    Es importante conocer las características de cada una, ya que podemos encontrarnos problemas de funcionamiento dependiendo de las características de seguridad de
    la red bajo la que estemos trabajando.
+   También hay que tener en cuenta que FTP es uno de los protocolos más antiguos (más incluso que HTTP) y presenta algunos problemas de seguridad y funcionamiento que hacen que sea una tecnología mucho menos utilizada que hace unos años.
 
 Clientes
 ~~~~~~~~
@@ -77,14 +82,14 @@ Podemos encontrar clientes de varios tipos:
            acceso 'público').
 
 
-    2. INTEGRADOS EN EL NAVEGADOR: Muchos navegadores llevan integrados clientes FTP o permiten la instalación de *plugins*. En las versiones actuales o bien el soporte para FTP ha sido desactivado(https://www.trishtech.com/2021/04/how-to-re-enable-ftp-protocol-support-in-firefox/) o directamente ya no lo incluyen.
+    1. INTEGRADOS EN EL NAVEGADOR: Muchos navegadores llevan integrados clientes FTP o permiten la instalación de *plugins*. En las versiones actuales o bien el soporte para FTP ha sido desactivado(https://www.trishtech.com/2021/04/how-to-re-enable-ftp-protocol-support-in-firefox/) o directamente ya no lo incluyen.
 
             .. image:: img/ejemploftpnavegador.png
                 :width: 300 px
                 :alt: Ejemplo conexión comando FTP
                 :align: center
 
-    3. PROGRAMAS ESPECÍFICOS: Hay disponibles clientes con **más funcionalidades y opciones**, tanto para Windows como para Unix/Linux o Mac. Algunos ejemplos podrían ser:
+    2. PROGRAMAS ESPECÍFICOS: Hay disponibles clientes con **más funcionalidades y opciones**, tanto para Windows como para Unix/Linux o Mac. Algunos ejemplos podrían ser:
 
         * `FileZilla Client <https://filezilla-project.org/download.php?type=client>`_.
         * `WinSCP <https://winscp.net/eng/index.php>`_.
@@ -124,15 +129,26 @@ la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html
   * **Enjaular usuarios** (*atención writeable chroot*)
 
 
+.. note:: 
+   Sería un ejercicio interesante realizar la instalación y configuración de un servidor FTP en una MV Linux, con las siguientes características:
+        * No permite las conexiones anónimas.
+        * Funciona en modo pasivo. Determina los puertos donde se puede conectar.
+        * Crea las reglas correspondientes de firewall para que permita su acceso.
+        * Personaliza el mensaje de bienvenida
+        * El servidor permite la conexión de algunos usuarios locales. Los que aparezcan en un determinado fichero (El que tu quieras).
+        * Los usuarios son enjaulados. Atentos a los mensajes que proporciona al servidor.
+        * El servidor funciona en modo seguro de manera forzosa.
+        * Los nombre de ficheros/carpetas deben verse correctamente(acentos, eñes...)
+        * Exisitiran una seria de usuarios creado con las utilidades de db-utils (usuarios virtuales) que accederan al servidor. Debes crear también sus carpetas con los permisos correspondientes.
 
 .. raw:: html
 
-        </br>
+        <!--</br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
         <u><b>PRÁCTICA 1</b></u></br>
         Servidor FTP seguro en una MV/Instancia Linuxff.
         </div>
-        </br>
+        </br>-->
 
 
 WebDAV(HTTP/S)
@@ -228,7 +244,7 @@ Los pasos a realizar en este caso puedes encontrarlos en la `documentación ofic
 
         </br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>PRÁCTICA 2</b></u></br>
+        <u><b>PRÁCTICA 1</b></u></br>
         Realiza la práctica de configuración de WebDAV
         </div>
         </br>
