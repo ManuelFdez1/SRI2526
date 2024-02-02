@@ -8,33 +8,106 @@ En el último apartado, conoceremos algún ejemplo de Sistema Operativo concebid
 Debemos tener en cuenta las características de las opciones para compartir ficheros más clásicas en comparación con las opciones de edición en linea y concurrencia que tenemos hoy en día,
 las cuales eran impensables hace no tanto tiempo, y que son una de las bases del `Cloud Computing <https://w3techs.com/technologies/comparison/ws-apache,ws-microsoftiis,ws-nginx>`_.
 
-Sistemas de ficheros en red
-----------------------------
+WebDAV(HTTP/S)
+--------------
+A través de los protocolos HTTP/HTTPS podemos configurar el acceso remoto a sistemas de ficheros en nuestro/s servidor/es, con protocolos más modernos que FTP.
+`WebDAV(Web Distributed Authoring and Versioning) <https://es.wikipedia.org/wiki/SSH_File_Transfer_Protocol>`_.
 
-Si hablamos de redes locales (LAN) y compartir ficheros y recursos, tenemos varios sistemas de ficheros destacados:
-    * Network File System (**NFS**): Sistemas UNIX-Linux. 
-    * Server Message Block (**SMB/CIFS**):​ Protocolo para compartir archivos, impresoras... entre sistemas Windows. Aunque es un protocolo propiedad de Microsoft, tiene
-      algunas implementaciones libres, por ejemplo SAMBA en versiones Linux.
-    * Linux incluye algunos comandos muy útiles de gestión remota de ficheros (**rsync, scp...**).
-    * Sistemas de ficheros compartidos en la nube. Ejemplos:
-        * AWS -> EFS(Elastic FileSystem) puede ser un ejercicio muy práctico y real el enlazar tu sitio web a uno de estos sistemas, tal y como explica en https://docs.aws.amazon.com/es_es/efs/latest/ug/wt2-apache-web-server.html.
-        * Azure -> Azure Files (https://azure.microsoft.com/es-es/products/storage/files/).
-        * Google Cloud -> FileStore (https://cloud.google.com/filestore?hl=es).
+.. image:: img/introwebdav.png
+    :width: 300 px
+    :alt: WebDAV
+    :align: center
 
-.. image:: img/samba.png
-      :width: 200 px
-      :alt: Compartir recursos en red Windows Linux
-      :align: center
+Tal y como dice la `documentación oficial de Apache <https://httpd.apache.org/docs/2.4/mod/mod_dav.html>`_, el objetivo de este protocolo (o más concretamente EXTENSIÓN DE PROTOCOLO) es conseguir que la web (http/https) permita el acceso con permisos de escritura a recursos publicados.
+Con él podemos hacer accesibles partes de nuestro sitio web como  un directorio remoto.
 
 
-SAMBA es una opción bastante sencilla para poder compartir recursos entre máquinas Windows y Linux. No importa que SO sea el servidor y que SO actúe de cliente.
+.. Warning::
+   La directiva `DirectoryIndex <https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex>`_ en Apache o `Autoindex <http://nginx.org/en/docs/http/ngx_http_autoindex_module.html>`_ en NginX para listar el contenido de un directorio del servidor suele ser una fuente de errores en combinación con WebDAV.
+   **La recomendación general es desactivar esa directiva para poder utilizar los módulos dav**
+
+
+Configuración en Apache
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Los pasos a realizar, `extraídos del siguiente manual <https://cloudinfrastructureservices.co.uk/how-to-setup-apache-webdav-server-access-on-ubuntu-20-04/>`_, son:
+
+    1. Activar los módulos correspondientes.
+
+    .. code-block:: shell-session
+
+                    # a2enmod dav dav_fs
+
+    1. Añadir en nuestra configuración de Apache el módulo (sobre  un directorio/location) →  DAV On
+
+        .. image:: img/webdav_1.png
+            :width: 400 px
+            :alt: WebDAV
+            :align: center
+
+    2. Añadir algún método de autenticación
+        * ¿basic/digest?
+        * ¿IP?
+        * Sin autenticación Acceso libre
+
+    3. Atención a permisos/propietario
+
+        .. image:: img/webdav_2.png
+            :width: 400 px
+            :alt: WebDAV
+            :align: center
+
+    4. Limit/LimitExcept para que solo pida usuario/passwd en el caso de acceder a ficheros via dav (https://httpd.apache.org/docs/2.4/mod/mod_dav.html#page-header).
+    5. Reiniciar apache
+    6. Probar la conexión con un cliente(Linux|Windows|MAC).
+
+        .. image:: img/webdav_3.png
+            :width: 400 px
+            :alt: WebDAV
+            :align: center
+
+.. Important::
+   En caso de querer dar acceso DAV **desde el directorio raiz de nuestro sitio web** debemos realizar algunas tareas más de configuración, sobretodo por la colisión con la 
+   desactivación de la directiva *DirectoryIndex*
+   
+        .. image:: img/EjemploDAV_Raiz.png
+                :width: 300 px
+                :alt: Sw control de versiones
+                :align: center
+
+
+Configuración en NginX
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Los pasos a realizar en este caso puedes encontrarlos en la `documentación oficial <http://nginx.org/en/docs/http/ngx_http_dav_module.html>`_, son:
+
+    1. Instalar los paquetes correspondientes.
+
+    .. code-block:: shell-session
+
+                    # apt -y install nginx-extras libnginx-mod-http-dav-ext
+
+    1. Añadir en nuestra configuración de las opciones correspondientes:
+
+        .. image:: img/webdav_4.png
+            :width: 400 px
+            :alt: WebDAV
+            :align: center
+
+    2. El resto de aspectos a tener en cuenta son muy similares a Apache.
+
 
 .. raw:: html
 
-      <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/NXsl7WTdKjs?si=BEoKgMl_re0zGq_u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+        </br>
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <u><b>PRÁCTICA 1</b></u></br>
+        Realiza la práctica de configuración de WebDAV
+        </div>
+        </br>
 
-.. note:: 
-   ¿Sabrías montar tu servidor web en la nube en una sistema de ficheros EFS?
+
+
 
 FTP
 ----
@@ -151,104 +224,6 @@ la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html
         </br>-->
 
 
-WebDAV(HTTP/S)
---------------
-A través de los protocolos HTTP/HTTPS podemos configurar el acceso remoto a sistemas de ficheros en nuestro/s servidor/es, con protocolos más modernos que FTP.
-`WebDAV(Web Distributed Authoring and Versioning) <https://es.wikipedia.org/wiki/SSH_File_Transfer_Protocol>`_.
-
-.. image:: img/introwebdav.png
-    :width: 300 px
-    :alt: WebDAV
-    :align: center
-
-Tal y como dice la `documentación oficial de Apache <https://httpd.apache.org/docs/2.4/mod/mod_dav.html>`_, el objetivo de este protocolo (o más concretamente EXTENSIÓN DE PROTOCOLO) es conseguir que la web (http/https) permita el acceso con permisos de escritura a recursos publicados.
-Con él podemos hacer accesibles partes de nuestro sitio web como  un directorio remoto.
-
-
-.. Warning::
-   La directiva `DirectoryIndex <https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex>`_ en Apache o `Autoindex <http://nginx.org/en/docs/http/ngx_http_autoindex_module.html>`_ en NginX para listar el contenido de un directorio del servidor suele ser una fuente de errores en combinación con WebDAV.
-   **La recomendación general es desactivar esa directiva para poder utilizar los módulos dav**
-
-
-Configuración en Apache
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Los pasos a realizar, `extraídos del siguiente manual <https://cloudinfrastructureservices.co.uk/how-to-setup-apache-webdav-server-access-on-ubuntu-20-04/>`_, son:
-
-    1. Activar los módulos correspondientes.
-
-    .. code-block:: shell-session
-
-                    # a2enmod dav dav_fs
-
-    1. Añadir en nuestra configuración de Apache el módulo (sobre  un directorio/location) →  DAV On
-
-        .. image:: img/webdav_1.png
-            :width: 400 px
-            :alt: WebDAV
-            :align: center
-
-    2. Añadir algún método de autenticación
-        * ¿basic/digest?
-        * ¿IP?
-        * Sin autenticación Acceso libre
-
-    3. Atención a permisos/propietario
-
-        .. image:: img/webdav_2.png
-            :width: 400 px
-            :alt: WebDAV
-            :align: center
-
-    4. Limit/LimitExcept para que solo pida usuario/passwd en el caso de acceder a ficheros via dav (https://httpd.apache.org/docs/2.4/mod/mod_dav.html#page-header).
-    5. Reiniciar apache
-    6. Probar la conexión con un cliente(Linux|Windows|MAC).
-
-        .. image:: img/webdav_3.png
-            :width: 400 px
-            :alt: WebDAV
-            :align: center
-
-.. Important::
-   En caso de querer dar acceso DAV **desde el directorio raiz de nuestro sitio web** debemos realizar algunas tareas más de configuración, sobretodo por la colisión con la 
-   desactivación de la directiva *DirectoryIndex*
-   
-        .. image:: img/EjemploDAV_Raiz.png
-                :width: 300 px
-                :alt: Sw control de versiones
-                :align: center
-
-
-Configuración en NginX
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Los pasos a realizar en este caso puedes encontrarlos en la `documentación oficial <http://nginx.org/en/docs/http/ngx_http_dav_module.html>`_, son:
-
-    1. Instalar los paquetes correspondientes.
-
-    .. code-block:: shell-session
-
-                    # apt -y install nginx-extras libnginx-mod-http-dav-ext
-
-    1. Añadir en nuestra configuración de las opciones correspondientes:
-
-        .. image:: img/webdav_4.png
-            :width: 400 px
-            :alt: WebDAV
-            :align: center
-
-    2. El resto de aspectos a tener en cuenta son muy similares a Apache.
-
-
-.. raw:: html
-
-        </br>
-        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>PRÁCTICA 1</b></u></br>
-        Realiza la práctica de configuración de WebDAV
-        </div>
-        </br>
-
 
 Control de versiones
 --------------------
@@ -308,6 +283,36 @@ Conociendo su funcionamiento, ya podemos configurar nuestro equipo para tener un
         * Copias de seguridad y configuraciones de tus BD.
         * C. Seg de tus ficheros de conf. de SER.
         * Tu documentación, anotaciones de distintas categorías.
+
+Sistemas de ficheros en red
+----------------------------
+
+Si hablamos de redes locales (LAN) y compartir ficheros y recursos, tenemos varios sistemas de ficheros destacados:
+    * Network File System (**NFS**): Sistemas UNIX-Linux. 
+    * Server Message Block (**SMB/CIFS**):​ Protocolo para compartir archivos, impresoras... entre sistemas Windows. Aunque es un protocolo propiedad de Microsoft, tiene
+      algunas implementaciones libres, por ejemplo SAMBA en versiones Linux.
+    * Linux incluye algunos comandos muy útiles de gestión remota de ficheros (**rsync, scp...**).
+    * Sistemas de ficheros compartidos en la nube. Ejemplos:
+        * AWS -> EFS(Elastic FileSystem) puede ser un ejercicio muy práctico y real el enlazar tu sitio web a uno de estos sistemas, tal y como explica en https://docs.aws.amazon.com/es_es/efs/latest/ug/wt2-apache-web-server.html.
+        * Azure -> Azure Files (https://azure.microsoft.com/es-es/products/storage/files/).
+        * Google Cloud -> FileStore (https://cloud.google.com/filestore?hl=es).
+
+.. image:: img/samba.png
+      :width: 200 px
+      :alt: Compartir recursos en red Windows Linux
+      :align: center
+
+
+SAMBA es una opción bastante sencilla para poder compartir recursos entre máquinas Windows y Linux. No importa que SO sea el servidor y que SO actúe de cliente.
+
+.. raw:: html
+
+      <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/NXsl7WTdKjs?si=BEoKgMl_re0zGq_u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
+
+.. note:: 
+   ¿Sabrías montar tu servidor web en la nube en una sistema de ficheros EFS, conectándolo automáticamente a tu instancia EC2?¿Sabrías además conectarte a ese sistema de ficheros desde tu equipo local? Puedes encontrar ayuda para esto último en https://docs.aws.amazon.com/efs/latest/ug/efs-onpremises.html 
+
+
 
 Cloud Computing
 ----------------
