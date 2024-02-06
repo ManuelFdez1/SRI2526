@@ -310,8 +310,12 @@ SAMBA es una opción bastante sencilla para poder compartir recursos entre máqu
       <iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/NXsl7WTdKjs?si=BEoKgMl_re0zGq_u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
 
 .. note:: 
-   ¿Sabrías montar tu servidor web en la nube en una sistema de ficheros EFS, conectándolo automáticamente a tu instancia EC2?¿Sabrías además conectarte a ese sistema de ficheros desde tu equipo local? Puedes encontrar ayuda para esto último en https://docs.aws.amazon.com/efs/latest/ug/efs-onpremises.html 
+   ¿Sabrías realizar la siguientes configuraciones en un sistema en la nube?
 
+   1. Montar tu servidor web en la nube en una sistema de ficheros EFS, conectándolo automáticamente a tu instancia EC2.
+   2. ¿Sabrías además conectarte a ese sistema de ficheros desde tu equipo local? 
+       * A través de las herramientas oficiales de AWS (https://docs.aws.amazon.com/efs/latest/ug/efs-onpremises.html.)
+       * Sin tener que acudir a servicios más costosos(como AWS VPN), podemos aprovechar el `tunneling-ssh <https://www.sombreroblanco.es/2018/10/tunel-ssh-for-dummies-una-explicacion-sencilla/>`_, tal y como indica en el apartado correspondiente en el tutorial ubicado en https://dodov.dev/blog/how-to-mount-amazon-efs-on-windows
 
 
 Sistemas Operativos NAS
