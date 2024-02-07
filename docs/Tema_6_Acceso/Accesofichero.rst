@@ -182,7 +182,7 @@ En este servicio debemos prestar atención a los siguientes elementos o propieda
   * Tipos de usuari@/autenticación.
       * Usuari@s locales
       * Usuari@s virtuales. Varias posibilidades.
-          * Ficheros generados con el paquete db-util (al final del enlace puedes encontrar como https://help.ubuntu.com/community/vsftpd)
+          * Ficheros generados con el paquete db-util (`VIRTUAL USERS <https://help.ubuntu.com/community/vsftpd#The_workshop>`_ ) 
           * Ficheros generados con htpasswd.
           * Bases de datos (MySql..)
           * Servicios de directorio (LDAP)
@@ -192,7 +192,7 @@ En este servicio debemos prestar atención a los siguientes elementos o propieda
 
 **SERVIDOR FTP EN LINUX**
 
-Utilizaremos VsFTP (`manual en la web <https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-rg-es-4/s1-ftp-vsftpd-conf.html>`_ o también
+Utilizaremos VsFTP (`manual en la web <https://help.ubuntu.com/community/vsftpd>`_ o también
 la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html>`_  ), teniendo en cuenta lo siguiente:
 
   * # apt-get install vsftpd
