@@ -208,11 +208,12 @@ la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html
         * Funciona en modo pasivo. Determina los puertos donde se puede conectar.
         * Crea las reglas correspondientes de firewall para que permita su acceso.
         * Personaliza el mensaje de bienvenida
-        * El servidor permite la conexión de algunos usuarios locales. Los que aparezcan en un determinado fichero (El que tu quieras).
+        * Exisitiran una seria de usuarios creado con las utilidades de db-utils (usuarios virtuales) que accederan al servidor. Debes crear también sus carpetas con los permisos correspondientes.
+        * El servidor prohibe la conexión de algunos usuarios. Los que aparezcan en un determinado fichero (El que tu quieras).
         * Los usuarios son enjaulados. Atentos a los mensajes que proporciona al servidor.
         * El servidor funciona en modo seguro de manera forzosa.
         * Los nombre de ficheros/carpetas deben verse correctamente(acentos, eñes...)
-        * Exisitiran una seria de usuarios creado con las utilidades de db-utils (usuarios virtuales) que accederan al servidor. Debes crear también sus carpetas con los permisos correspondientes.
+  
 
 .. raw:: html
 
