@@ -1,6 +1,6 @@
 Calendario del curso
 ===============
-![](img/Calendario23-24.png "Calendario Botet Curso 2023-24")
+![](img/CalendariBotet24-25_CCFF.png "Calendario Botet Curso 2024-25")
 
 Objetivos del módulo
 ===============
@@ -52,13 +52,13 @@ Funcionamiento
 + Asistencia **PRESENCIAL**.
 + Si algo no funciona. Se cambia. Se habla...
 + Ventaja: vamos a usar **herramientas que ya conocemos** y que no nos deben ser complicadas de usar. Además debemos ser capaces de usar cada una correctamente.
+  + WebFamilia -> Debéis tener acceso. Si no es así solicitarlo.
   + Aules. → Materiales, tareas, cuestionarios, *foros, chats, ...*
-  + Correo **@edu.gva.es** que incluye herramientas como:
-    + Onedrive → Almacenamiento en la nube.
+  + Correo **@alu.edu.gva.es** que incluye herramientas como:
+    + **Onedrive** → Almacenamiento en la nube.
     + Teams → Videoconferencia.
-    + Calendario.
-+ WebFamilia
-+ Telegram (grupo para noticias/anuncios) → [Enlace al canal](https://t.me/+jdNkAxmCMjRhY2Q0)
+    + **Calendario** -> Tendremos calendario de grupo para exámenes, controles, etc...y además podéis tener vuestro propio calendario.
++ + Telegram (grupo para noticias/anuncios) → [Enlace al canal](https://t.me/+zR3rCJqs-I0xM2U8)
 
   ![](img/QRGrupoTelegram.png "Enlace al grupo de Telegram")
 
@@ -70,6 +70,7 @@ Funcionamiento
   + Usa tu propio disco duro externo/portátil SSD (seguro que será más rápido que el DD del PC del aula).
   + Traer tu propio portátil (En este caso habría que ubicarte en algún puesto concreto. **ATENCIÓN AL USO DE LOS CABLES DE RED**).
 + **Atención con la UBICACIÓN de tus MV si están en el DD del PC.**
++ **Estrenamos PDIs. NO TOCAR**
 
 Evaluación
 ===========
