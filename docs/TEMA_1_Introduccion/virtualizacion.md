@@ -59,14 +59,6 @@ Posibilidad de aplicaciones de gestión automática(Kubernetes..)
 
 **CLOUD virtualization:**   Virtualización en sistemas remotos, con todas la ventajas del cloud computing (Azure, AWS, GoogleCloud..)
 
-<a title="Tondashell / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg"><img width="512" alt="OpenQRMEnterprise-Datacenter-Cloud-Model-2017" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg/512px-OpenQRMEnterprise-Datacenter-Cloud-Model-2017.jpg"></a>
-
-**Ejemplos**
-* Azure
-*  Amazon Web Services.
-* Google Cloud
-* ……
-
 > **Puedes encontrar un interesante artículo de las diferencias entre MV y contenedor, y la evolución de estas tecnologías en los últimos años en el [siguiente blog](https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo)**.
 
 ## Máquinas Virtuales
@@ -80,12 +72,6 @@ A la hora de virtualizar SO, debemos tener varios elementos y parametros de conf
 * **Carpetas compartidas** → GuestAdditions (Se deben instalar en cada MV por separado. ¿Sabrías hacerlo en una MV sin interfaz gráfica(GUI)?). Puedes encontrar guías de como hacerlo en la web:
   * [Sistemas Linux](https://www.techrepublic.com/article/how-to-install-virtualbox-guest-additions-on-a-gui-less-ubuntu-server-host/).
   * [Sistemas Windows](http://somebooks.es/instalar-guest-additions-windows-server-2016-sin-escritorio-virtualizado-virtualbox/)
-
-
-<div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-<b>PRÁCTICA 1</b></br></br>
-Accede al aula virtual del módulo y completa la primera práctica, siguiendo lo indicado en el enunciado. Envía un <b>documento pdf</b> con los pantallazos y características de los equipos, aportadndo las explicaciones que consideres oportunas.
-</div>
 
 
 ## Contenedores
@@ -190,7 +176,9 @@ La **ORQUESTACIÓN O AUTOMATIZACIÓN** de los servicios consiste en la organizac
   3. Reducimos la presencia de errores al limitar la intervención humana.
   4. Ahorro de costes.
 
-  ![orquestación de servicios](http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/imagenes/sesion5/orquestacion.gif)
+Gracias a estas capacidades aparece un concepto denominado **Infraestructura Como Código (IaC)**(https://aws.amazon.com/es/what-is/iac/) en el que trabajamos con nuestos escenarios de una manera completamente diferente a la clásica.
+
+![infraestructura como código](https://blog.sparkfabrik.com/hubfs/Blog/Infrastructure-as-code-scheme.png)
 
 Tenemos multitud de herramientas disponibles para configurar entornos de orquestación/automatización a distintos niveles:
 
@@ -202,8 +190,8 @@ Tenemos multitud de herramientas disponibles para configurar entornos de orquest
 <div style="text-align: left; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
 <u>EJEMPLOS</u></br>
 <ul>
-<li>Siguiendo el siguiente tutorial (<a href="https://www.middlewareinventory.com/blog/vagrant-ansible-example/#Ansible_playbook_and_its_artifacts" target="_blank"> https://www.middlewareinventory.com</a>) y con alguna corrección, prueba a ejecutar un primer escenario de automatización con Ansible y Vagrant en una <b>máquina real</b> (tu portátil o si arrancas tu SO anfitrión desde un DD externo).</li>
-<li>Si quieres probar tu primer CLUSTER de contenedores, puedes seguir lo indicado en <a href="https://www.campusmvp.es/recursos/post/introduccion-a-docker-swarm-mode-creacion-de-clusteres-y-levantar-servicios.aspx" target="_blank"> https://www.campusmvp.es</a>.</li>
+<li>Prueba a instalar Vagrant en tu equipo y a lanzar el siguiente (<a href="./img/Vagrantfile" target="_blank"> ejemplo de Vagrantfile</a>), prueba a ejecutar un primer escenario de IaC con Vagrant en una <b>máquina real</b> (tu portátil o si arrancas tu SO anfitrión desde un DD externo).</li>
+<li>Si quieres probar tu primer CLUSTER de contenedores en una MV, puedes seguir lo indicado en <a href="https://www.campusmvp.es/recursos/post/introduccion-a-docker-swarm-mode-creacion-de-clusteres-y-levantar-servicios.aspx" target="_blank"> https://www.campusmvp.es</a>.</li>
 </ul>
 </div>
 
@@ -214,6 +202,23 @@ Una vez ejecutado este ejemplo, piensa las posibilidades que te ofrecen estas he
 - Configuración de las características de esas MV.
 - Automatización de instalaciones, comprobaciones, etc...
 - ++++++++++++++++++++++++
+
+## Cloud Computing
+
+Piensa en todas las alternativas que hemos analizado en este punto. Tu labor como Técnico de Administración de Sistemas en un futuro consisitirá en crear, gestionar y adaptar este tipo de escenarios. Teniendo en cuenta que estamos hablando siempre en entornos locales(servidores locales ejecutando alguna de las soluciones propuestas), piensa en las ventajas de poder realizar TODO esto en sistemas remotos.
+¿Te gusta tener tus documentos en la nube para tenerlos siempre accesibles, no encargarte de copias de seguridad y además poderlos compartir y editar con otras personas? Pues la misma filosofía aplicada a la virtualización es lo que se conoce como **COMPUTACIÓN EN LA NUBE o CLOUD COMPUTING**
+
+___
+> **¿SABRÍAS?...**
+Imaginar alguna de las ventajas/desventajas de esta tecnología.
+___
+
+Algunas de las empresas más importantes se han involucrado de lleno en este campo.
+
+  * Amazon -> [AWS](https://aws.amazon.com/)
+  * Microsoft -> [Azure](https://azure.microsoft.com/es-es)
+  * Google -> [Google Cloud Platform](https://cloud.google.com/?hl=es)
+  * Oracle -> [Oracle Cloud](https://www.oracle.com/cloud)
 
 <div class="footnotes">
        <hr />

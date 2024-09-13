@@ -14,6 +14,6 @@ El módulo profesional **Servicios de Red e Internet** se imparte durante el seg
    * - **6 H. Sem * 20 sem = 120 HORAS**
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    presentacion
