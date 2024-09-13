@@ -190,7 +190,7 @@ Tenemos multitud de herramientas disponibles para configurar entornos de orquest
 <div style="text-align: left; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
 <u>EJEMPLOS</u></br>
 <ul>
-<li>Prueba a instalar Vagrant en tu equipo y a lanzar el siguiente (<a href="./img/Vagrantfile" target="_blank"> ejemplo de Vagrantfile</a>), prueba a ejecutar un primer escenario de IaC con Vagrant en una <b>máquina real</b> (tu portátil o si arrancas tu SO anfitrión desde un DD externo).</li>
+<li>Prueba a instalar Vagrant en tu equipo y a lanzar el siguiente (<a href="./Vagrantfile" target="_blank"> ejemplo de Vagrantfile</a>), prueba a ejecutar un primer escenario de IaC con Vagrant en una <b>máquina real</b> (tu portátil o si arrancas tu SO anfitrión desde un DD externo).</li>
 <li>Si quieres probar tu primer CLUSTER de contenedores en una MV, puedes seguir lo indicado en <a href="https://www.campusmvp.es/recursos/post/introduccion-a-docker-swarm-mode-creacion-de-clusteres-y-levantar-servicios.aspx" target="_blank"> https://www.campusmvp.es</a>.</li>
 </ul>
 </div>
