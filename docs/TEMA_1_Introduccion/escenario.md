@@ -12,6 +12,14 @@ En algunos apartados del módulo (especialmente en el servicio web) podremos enc
 
 ![](img/escenarioDockermultiple.jpg "Entorno de trabajo con múltiples contenedores")
 
+.. raw:: html
+        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+        <b>PRÁCTICA 1</b></br>
+        Accede al aula virtual del módulo y completa la primera práctica del Tema1, configurando tus primeras MV
+        </div>
+        </br>
+
+
 <div style="text-align: left; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
 <u>TAREA</u></br>
 <ul>
