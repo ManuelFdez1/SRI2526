@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5.2. Apertura de puertos &mdash; ASIR - Servicios de Red e Internet</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/my_theme.css?v=572081c4" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4936afed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="5.3. Seguridad. Proxy-Caché" href="seguridad.html" />
+    <link rel="prev" title="5.1. Acceso redes remotas" href="acceso.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Servicios de Red e Internet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PRESENTACION/Index.html">1. Presentación Módulo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_1_Introduccion/Index.html">2. Introducción a los Servicios de Red</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_2_Dhcp/Index.html">3. Protocolo de Configuración Dinámico. DHCP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_3_DNS/Index.html">4. Resolución de nombres. DNS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">5. Interconexión de Redes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="acceso.html">5.1. Acceso redes remotas</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.2. Apertura de puertos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="seguridad.html">5.3. Seguridad. Proxy-Caché</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_5_Web/Index.html">6. Servicio WEB. HTTP(S)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_6_Acceso/Index.html">7. Acceso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_7_Email/Index.html">8. Correo Electrónico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_8_Otros/Index.html">9. Otros Servicios</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Servicios de Red e Internet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Index.html"><span class="section-number">5. </span>Interconexión de Redes</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5.2. </span>Apertura de puertos</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Tema_4_Router/puertos.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="apertura-de-puertos">
+<h1><span class="section-number">5.2. </span>Apertura de puertos<a class="headerlink" href="#apertura-de-puertos" title="Link to this heading"></a></h1>
+<p>También llamado <strong>Forwarding o Reenvío</strong> de puertos. Se puede configurar de diversas maneras:</p>
+<p>Si trabajamos sobre un ROUTER, y queremos hacer accesible algún servicio en nuestra red desde el exterior, debemos configurar el dispositivo de manera que las peticiones que lleguen por la interfaz externa al puerto correspondiente, las redirigimos a la IP donde se encuentre alojado ese servidor.</p>
+<a class="reference internal image-reference" href="../_images/puertosrouter.png"><img alt="Reenvío de puertos en router LINKSYS" class="align-center" src="../_images/puertosrouter.png" style="width: 400px;" />
+</a>
+<p>Si trabajamos, como en nuestro caso, configurando un SISTEMA OPERATIVO como Router, tenemos diferentes opciones, en función del SO:</p>
+<a class="reference internal image-reference" href="../_images/puertosesquema.png"><img alt="Reenvío de puertos en SO" class="align-center" src="../_images/puertosesquema.png" style="width: 400px;" />
+</a>
+<ul>
+<li><p>WINDOWS: Con comando <strong>netsh</strong> (<a class="reference external" href="https://superuser.com/questions/1131001/howto-do-a-port-forwarding-on-a-windows-2012-server">ejemplo en la web</a>)</p></li>
+<li><p>LINUX: También, con IpTables.</p>
+<blockquote>
+<div><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>iptables<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-i<span class="w"> </span>eth0<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>--dport<span class="w"> </span><span class="m">80</span><span class="w"> </span>-j<span class="w"> </span>DNAT<span class="w"> </span>--to<span class="w"> </span><span class="m">192</span>.168.1.2:8080
+<span class="gp"># </span>iptables<span class="w"> </span>-A<span class="w"> </span>FORWARD<span class="w"> </span>-p<span class="w"> </span>tcp<span class="w"> </span>-d<span class="w"> </span><span class="m">192</span>.168.1.2<span class="w"> </span>--dport<span class="w"> </span><span class="m">8080</span><span class="w"> </span>-j<span class="w"> </span>ACCEPT
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>En el código anterior :</p>
+<ul class="simple">
+<li><p><strong>Eth0</strong>: nombre int. Externa del servidor.</p></li>
+<li><p><strong>80</strong> puerto donde se reciben las conexiones externas</p></li>
+<li><p><strong>192.168.1.2</strong>: IP interna del equipo destino.</p></li>
+<li><p><strong>8080</strong>: Puerto en el equipo destino.</p></li>
+</ul>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p>Otro de los ejemplos en los que usarás la redirección de puertos es el <strong>funcionamiento de los contenedores</strong>, en los cuales se redirigen puertos de la máquina anfitrión a puertos contenedor.</p>
+<blockquote>
+<div><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>nginx:alpine
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>En el comando anterior se ejecuta como demonio (-d) el contenedor <em>nginx:alpine</em>, redirigiendo el <strong>puerto 8080 de la máquina anfitrión al puerto 80 del contenedor</strong> (-p 8080:80).</p>
+</div>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="acceso.html" class="btn btn-neutral float-left" title="5.1. Acceso redes remotas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="seguridad.html" class="btn btn-neutral float-right" title="5.3. Seguridad. Proxy-Caché" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, M. Tomás Giménez Albert.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

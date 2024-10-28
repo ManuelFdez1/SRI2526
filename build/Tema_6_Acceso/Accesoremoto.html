@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7.2. Acceso remoto &mdash; ASIR - Servicios de Red e Internet</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/my_theme.css?v=572081c4" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4936afed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="8. Correo Electrónico" href="../Tema_7_Email/Index.html" />
+    <link rel="prev" title="7.1. Acceso a ficheros" href="Accesofichero.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Servicios de Red e Internet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PRESENTACION/Index.html">1. Presentación Módulo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_1_Introduccion/Index.html">2. Introducción a los Servicios de Red</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_2_Dhcp/Index.html">3. Protocolo de Configuración Dinámico. DHCP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_3_DNS/Index.html">4. Resolución de nombres. DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_4_Router/Index.html">5. Interconexión de Redes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_5_Web/Index.html">6. Servicio WEB. HTTP(S)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">7. Acceso</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Accesofichero.html">7.1. Acceso a ficheros</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7.2. Acceso remoto</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ssh">7.2.1. SSH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rdp">7.2.2. RDP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vnc">7.2.3. VNC</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_7_Email/Index.html">8. Correo Electrónico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_8_Otros/Index.html">9. Otros Servicios</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Servicios de Red e Internet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Index.html"><span class="section-number">7. </span>Acceso</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">7.2. </span>Acceso remoto</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Tema_6_Acceso/Accesoremoto.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="acceso-remoto">
+<h1><span class="section-number">7.2. </span>Acceso remoto<a class="headerlink" href="#acceso-remoto" title="Link to this heading"></a></h1>
+<dl class="simple">
+<dt>El acceso remoto es una herramienta fundamental , tanto para los administradores, como para los usuarios finales de un sistema. El concepto de acceso remoto se refiere a la tecnología que permite a los servidores o equipos desde otros dispositivos. De forma simplificada, permitir el acceso remoto significa:</dt><dd><ol class="arabic simple">
+<li><p>Que los empleados pueden acceder a datos, correos electrónicos y otros documentos a través de cualquier dispositivo conectado a la LAN  o a Internet.</p></li>
+<li><p>Posibilita que el <strong>soporte técnico  de una empresa manipule una máquina y solucione un problema sin estar presente en el mismo lugar</strong>.</p></li>
+</ol>
+</dd>
+</dl>
+<p>En el primer apartado estaríamos hablando, sobretodo, de las VPN (Virtual Private Network), las cuales son objetos de estudio en otro módulo de este ciclo. Puedes encontrar información en <a class="reference external" href="https://es.wikipedia.org/wiki/Red_privada_virtual">https://es.wikipedia.org/wiki/Red_privada_virtual</a>.</p>
+<p>En el segundo caso, en el que nos vamos a centrar como sysadmins hablaríamos de servicios como SSH, RDP…
+En todo caso estamos hablando de configuraciones muy úitles para los sistemas informáticos pero que, por sus propias características debemos saber configurar muy bien para no generar agujeros de seguridad.</p>
+<section id="ssh">
+<h2><span class="section-number">7.2.1. </span>SSH<a class="headerlink" href="#ssh" title="Link to this heading"></a></h2>
+</section>
+<section id="rdp">
+<h2><span class="section-number">7.2.2. </span>RDP<a class="headerlink" href="#rdp" title="Link to this heading"></a></h2>
+</section>
+<section id="vnc">
+<h2><span class="section-number">7.2.3. </span>VNC<a class="headerlink" href="#vnc" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="Accesofichero.html" class="btn btn-neutral float-left" title="7.1. Acceso a ficheros" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Tema_7_Email/Index.html" class="btn btn-neutral float-right" title="8. Correo Electrónico" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, M. Tomás Giménez Albert.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

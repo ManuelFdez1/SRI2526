@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.2. Componentes de los Srv. de Red &mdash; ASIR - Servicios de Red e Internet</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/my_theme.css?v=572081c4" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4936afed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="2.3. Virtualización" href="virtualizacion.html" />
+    <link rel="prev" title="2.1. Conceptos previos" href="conceptos.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Servicios de Red e Internet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PRESENTACION/Index.html">1. Presentación Módulo</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">2. Introducción a los Servicios de Red</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="conceptos.html">2.1. Conceptos previos</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.2. Componentes de los Srv. de Red</a></li>
+<li class="toctree-l2"><a class="reference internal" href="virtualizacion.html">2.3. Virtualización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="escenario.html">2.4. Entorno de trabajo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_2_Dhcp/Index.html">3. Protocolo de Configuración Dinámico. DHCP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_3_DNS/Index.html">4. Resolución de nombres. DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_4_Router/Index.html">5. Interconexión de Redes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_5_Web/Index.html">6. Servicio WEB. HTTP(S)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_6_Acceso/Index.html">7. Acceso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_7_Email/Index.html">8. Correo Electrónico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_8_Otros/Index.html">9. Otros Servicios</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Servicios de Red e Internet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Index.html"><span class="section-number">2. </span>Introducción a los Servicios de Red</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2.2. </span>Componentes de los Srv. de Red</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/TEMA_1_Introduccion/componentes.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="componentes-de-los-srv-de-red">
+<h1><span class="section-number">2.2. </span>Componentes de los Srv. de Red<a class="headerlink" href="#componentes-de-los-srv-de-red" title="Link to this heading"></a></h1>
+<p>Para poder configurar correctamente cualquier servicio, se deben tener claros algunos conceptos relacionados con las redes informáticas.</p>
+<p><strong>PROTOCOLOS</strong></p>
+<p>En el campo de las telecomunicaciones, un protocolo de comunicaciones es el conjunto de reglas normalizadas para la representación, señalización, autenticación y detección de errores necesario para enviar información a través de un canal de comunicación.
+Al conjunto de protocolos que aseguran la comunicaciones entre dos o más sistemas las denominamos <em>pila de protocolos</em>. Conocemos dos modelos, uno funciona como marco práctico (<strong>OSI</strong>) y el otro es el más utilizado en la práctica (<strong>TCP/IP</strong>). Los distintos protocolos trabajan directamente con sus iguales en el otro extremo de la comunicación.</p>
+<p><a title="Cristianzambrano / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Osi_y_tcp-ip.jpg"><a class="reference internal" href="https://upload.wikimedia.org/wikipedia/commons/0/03/Osi_y_tcp-ip.jpg"><img alt="Osi y tcp-ip" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Osi_y_tcp-ip.jpg" style="width: 512px;" /></a></a></p>
+<p>En este módulo nos vamos a centrar en algunos de los protocolos más importantes de la <strong>capa de Aplicación</strong></p>
+<p><a title="GISEPROI / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:Suite_de_Protocolos_TCPIP.png"><a class="reference internal" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Suite_de_Protocolos_TCPIP.png/512px-Suite_de_Protocolos_TCPIP.png"><img alt="Suite de Protocolos TCPIP" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Suite_de_Protocolos_TCPIP.png/512px-Suite_de_Protocolos_TCPIP.png" style="width: 512px;" /></a></a></p>
+<p><strong>DIRECCIONAMIENTO IP:</strong></p>
+<p>Una dirección IP es una etiqueta numérica que identifica a un interfaz (elemento de comunicación/conexión) de un dispositivo (habitualmente una computadora) <strong>dentro de una MISMA red</strong> que utilice el protocolo IP (Internet Protocol), que corresponde al nivel de red del protocolo TCP/IP.</p>
+<p><u>CARACTERÍSTICAS:</u></p>
+<ul class="simple">
+<li><p>Existen 5 clases.</p></li>
+<li><p>Nos interesan los tres primeros (A, B y C)</p></li>
+<li><p>Hay dos tipos de  direcciones</p>
+<ul>
+<li><p>Públicas</p></li>
+<li><p>Privadas</p></li>
+</ul>
+</li>
+<li><p>IPv4 vs IPv6</p></li>
+</ul>
+<p><u>OTROS PARÁMETROS IP:</u></p>
+<p>Además de la dirección IP, todo equipo necesita tener definidos otros parámetros para poder interactuar en la red correctamente.</p>
+<ul class="simple">
+<li><p><strong>MÁSCARA DE SUBRED</strong>: La máscara permite distinguir los bits que identifican la red y los que identifican el host de una dirección IP.</p></li>
+<li><p><strong>PUERTA DE ENLACE/GATEWAY/PASARELA</strong>: Direccion del dispositivo que permite interconectar redes con protocolos y arquitecturas diferentes a todos los niveles de comunicación. <em>Obligatoriamente debe estar en la misma red que el equipo</em>.</p></li>
+<li><p><strong>SERVIDOR/ES DNS</strong>: Direccion/es de aquel/aquellos equipo/s encargado/s de traducir los nombres de dominio por su correspondiente IP. <em>Puede estar en una red externa</em>.</p></li>
+</ul>
+<hr class="docutils" />
+<blockquote>
+<div><p><strong>RECUERDA…</strong></p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>¿Que elemento maneja el nivel de enlace, el de red y el de transporte, para realizar sus funciones correspondientes?</p></li>
+<li><p>Explica la estructura de las tres clases de direcciones IP que nos interesan, indicando la cantidad de redes existentes y el número de ordenadores que podemos incluir en cada una de esas redes. Indica, para cada clase, los rangos de direcciones públicas y privadas.</p></li>
+<li><p>Explica las diferencias entre las dos versiones de IP comentadas.</p></li>
+<li><p>Indica los comandos que utilizarías para averiguar la información IP, tanto en Windows como en Linux.</p></li>
+<li><p>Averigua tu IP pública.¿Cual es la de tus compañeros?¿Podrías explicarlo?</p></li>
+<li><p>¿La puerta de enlace ha de pertenecer a tu red para funcionar correctamente?¿y los servidores DNS?</p></li>
+<li><p>De los protocolos de la capa de aplicación, nombra 5 e indica su función y el nº de puerto que utilizan para operar.</p></li>
+<li><p>¿Qué es una <strong>dirección</strong> de red?¿y una de <strong>broadcast</strong>?</p></li>
+<li><p>¿Sabrías partir una red(<strong>subnetting</strong>) de tipo C en 4 subredes, por ejemplo <em>192.168.100.0/24</em>?</p></li>
+</ol>
+<hr class="docutils" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="conceptos.html" class="btn btn-neutral float-left" title="2.1. Conceptos previos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="virtualizacion.html" class="btn btn-neutral float-right" title="2.3. Virtualización" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, M. Tomás Giménez Albert.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1. Funcionamiento del protocolo &mdash; ASIR - Servicios de Red e Internet</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/my_theme.css?v=572081c4" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4936afed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="3.3. Configuración del servicio" href="configuracion.html" />
+    <link rel="prev" title="3. Protocolo de Configuración Dinámico. DHCP" href="Index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Servicios de Red e Internet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PRESENTACION/Index.html">1. Presentación Módulo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_1_Introduccion/Index.html">2. Introducción a los Servicios de Red</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">3. Protocolo de Configuración Dinámico. DHCP</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.1. Funcionamiento del protocolo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parametros-de-configuracion">3.2. Parámetros de configuración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuracion.html">3.3. Configuración del servicio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comprobacion.html">3.4. Comprobando el funcionamiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adicionales.html">3.5. Configuraciones adicionales</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_3_DNS/Index.html">4. Resolución de nombres. DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_4_Router/Index.html">5. Interconexión de Redes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_5_Web/Index.html">6. Servicio WEB. HTTP(S)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_6_Acceso/Index.html">7. Acceso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_7_Email/Index.html">8. Correo Electrónico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_8_Otros/Index.html">9. Otros Servicios</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Servicios de Red e Internet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Index.html"><span class="section-number">3. </span>Protocolo de Configuración Dinámico. DHCP</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1. </span>Funcionamiento del protocolo</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/TEMA_2_Dhcp/funcionamiento.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="funcionamiento-del-protocolo">
+<h1><span class="section-number">3.1. </span>Funcionamiento del protocolo<a class="headerlink" href="#funcionamiento-del-protocolo" title="Link to this heading"></a></h1>
+<p>DHCP (Dynamic Host Configuration Protocol) es un protocolo de red Cliente/Servidor que permite a los clientes de una red IP obtener sus parámetros de configuración automáticamente.
+El intercambio de paquetes que se produce es el siguiente (con un programas como <strong>Wireshark</strong> podrías capturarlo y analizarlo):</p>
+<a class="reference internal image-reference" href="../_images/protocoloDHCP.png"><img alt="Funcionamiento protcolo DHCP" class="align-center" src="../_images/protocoloDHCP.png" style="width: 400px;" />
+</a>
+<dl class="simple">
+<dt><strong>VENTAJAS</strong></dt><dd><ul class="simple">
+<li><p>Facilita el mantenimiento de la red.</p></li>
+<li><p>Inclusión de nuevos equipos con facilidad.</p></li>
+<li><p>Cambios en la red simples.</p></li>
+</ul>
+</dd>
+<dt><strong>INCONVENIENTES</strong></dt><dd><ul class="simple">
+<li><p>Falta de seguridad en el acceso a la red.</p></li>
+<li><p>Servicio candidato a ataques.</p></li>
+<li><p>Saturación de la red (muchos paquetes de <strong>difusión/broadcast</strong>).</p></li>
+</ul>
+</dd>
+</dl>
+<p>En el siguiente video puedes ver una explicación visual y muy práctica del funcionamiento de este protocolo:</p>
+<iframe width="280" height="157" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/S43CFcpOZSI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br></section>
+<section id="parametros-de-configuracion">
+<h1><span class="section-number">3.2. </span>Parámetros de configuración<a class="headerlink" href="#parametros-de-configuracion" title="Link to this heading"></a></h1>
+<p>Además de proporcionar una dirección IP, el servicio DHCP puede asignar valores a los siguientes parámetros de red (<strong>tanto para IPv4 como para IPv6</strong>):</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Dirección IP</p></li>
+<li><p>Máscara de subred</p></li>
+<li><p>Dirección del servidor/es DNS</p></li>
+<li><p>Dir. IP Puerta de enlace.</p></li>
+<li><p>Broadcast address</p></li>
+<li><p>Más parámetros en el <a class="reference external" href="https://www.iana.org/assignments/bootp-dhcp-parameters/bootp-dhcp-parameters.xhtml">siguiente enlace</a>.</p></li>
+</ol>
+</div></blockquote>
+<div style="text-align: center; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+Los parámetros de configuración de las interfaces de red del servidor DHCP han de ser coherentes con la configuración del servicio (en concreto con los ÁMBITOS que se creen), en caso contrario ni siquiera podemos iniciar su funcionamiento.
+</div></br></section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="Index.html" class="btn btn-neutral float-left" title="3. Protocolo de Configuración Dinámico. DHCP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="configuracion.html" class="btn btn-neutral float-right" title="3.3. Configuración del servicio" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, M. Tomás Giménez Albert.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

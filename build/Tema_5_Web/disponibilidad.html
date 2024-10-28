@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6.6. Alta disponibilidad &mdash; ASIR - Servicios de Red e Internet</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/my_theme.css?v=572081c4" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4936afed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="7. Acceso" href="../Tema_6_Acceso/Index.html" />
+    <link rel="prev" title="6.5. Rendimiento y optimización" href="rendimiento.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Servicios de Red e Internet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PRESENTACION/Index.html">1. Presentación Módulo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_1_Introduccion/Index.html">2. Introducción a los Servicios de Red</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_2_Dhcp/Index.html">3. Protocolo de Configuración Dinámico. DHCP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_3_DNS/Index.html">4. Resolución de nombres. DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_4_Router/Index.html">5. Interconexión de Redes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">6. Servicio WEB. HTTP(S)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="componentes.html">6.1. Componentes del protocolo HTTP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clientes.html">6.2. Clientes HTTP. navegadores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html">6.3. Configuración HTTP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https.html">6.4. Seguridad. HTTPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rendimiento.html">6.5. Rendimiento y optimización</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.6. Alta disponibilidad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_6_Acceso/Index.html">7. Acceso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_7_Email/Index.html">8. Correo Electrónico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_8_Otros/Index.html">9. Otros Servicios</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Servicios de Red e Internet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Index.html"><span class="section-number">6. </span>Servicio WEB. HTTP(S)</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">6.6. </span>Alta disponibilidad</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Tema_5_Web/disponibilidad.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="alta-disponibilidad">
+<h1><span class="section-number">6.6. </span>Alta disponibilidad<a class="headerlink" href="#alta-disponibilidad" title="Link to this heading"></a></h1>
+<p>Un siguiente nivel para mejorar el rendimiento sería la <strong>ALTA DISPONIBILIDAD</strong> mediante <strong>REDUNDANCIA</strong> de servidores. En estos casos tenemos un
+servidor intermedio(proxy inverso) que puede actuar, por ejemplo, como:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Balanceador de carga.</p></li>
+<li><p>Proxy cache</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/balanceoCarga.png"><img alt="Balanceo de carga web" class="align-center" src="../_images/balanceoCarga.png" style="width: 400px;" />
+</a>
+<p>Tenemos diferentes alternativas si queremos configurar un escenario de redundancia (La mayoría de las webs que visitamos en realidad trabajan con estos esquemas)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Apache</strong> pueden configurarse para actuar como servidor intermedio (<a class="reference external" href="https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html">documentación oficial</a>).</p></li>
+<li><p>En el caso de <strong>NginX</strong>, es uno de los puntos fuertes del programa (<a class="reference external" href="https://help.clouding.io/hc/es/articles/360019908839-C%C3%B3mo-configurar-un-servidor-de-balanceo-de-carga-Nginx-en-Ubuntu-20-04">guía en la documentación de CLOUDING.IO</a>).</p></li>
+<li><p>Existe SW específico que nos pueden ofrecer más alternativas de configuración (una de las más populares es <a class="reference external" href="http://www.haproxy.org/">HAPROXY</a>).</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>¿Te atreverías a montar tu primer balanceador de carga? Una buena manera para comenzar podría incluir la combinación de:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Una MV en la que se ejecute Apache y permita la ejecución de contenedores.</p></li>
+<li><p>Conjunto de contenedores en la MV anterior ejecutando alguna imagen de Apache. Puedes buscarla en el <a class="reference external" href="https://hub.docker.com">Docker Hub</a>.</p></li>
+<li><p>Configuración del balanceo en NginX (una de sus especialidades), con el tutorial anterior.</p></li>
+<li><p>Configuración del balanceador en Apache, tal y como muestra el siguiente video.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<iframe width="300" style="display:block; margin-left:auto; margin-right:auto;" src="https://www.youtube.com/embed/G0cqFq_EedI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br><!-- </br>
+<div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<u><b>PRÁCTICA 2</b></u></br>
+Realiza la práctica 2 del Tema 5 del aula virtual. Monta un balanceador de carga en Apache.
+</div>
+</br> --><p>En un entorno real se deben tener en cuenta muchos factores a la hora de configurar correctamente la alta disponibilidad, y
+lograr que nuestro sitio web funcione correctamente y de manera transparente para l&#64;s usuari&#64;s, por ejemplo:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Lograr la <strong>persistencia</strong> de nuestra estructura de contenedores mediante el uso de <a class="reference external" href="https://docs.docker.com/storage/">estructuras de almacenamiento de Docker</a>.</p></li>
+<li><p>¿Los servidores web alojados en los contenedores deben <em>“apuntar”</em> al mismo código web? (<a class="reference external" href="https://www.imperva.com/learn/availability/sticky-session-persistence-and-cookies">Sticky sessions</a>)</p></li>
+<li><p>¿Usan la misma BD?</p></li>
+<li><p>Automatizar la puesta en marcha y la parada de nuestro escenario lo máximo posible (<a class="reference external" href="https://docs.docker.com/compose/">Docker-compose</a> + <a class="reference external" href="https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/#">Kubernetes</a>)</p></li>
+</ul>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="rendimiento.html" class="btn btn-neutral float-left" title="6.5. Rendimiento y optimización" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Tema_6_Acceso/Index.html" class="btn btn-neutral float-right" title="7. Acceso" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, M. Tomás Giménez Albert.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

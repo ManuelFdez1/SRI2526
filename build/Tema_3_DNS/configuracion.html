@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.4. Configuración del servicio &mdash; ASIR - Servicios de Red e Internet</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/my_theme.css?v=572081c4" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4936afed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="4.5. Comprobando el funcionamiento" href="comprobaciones.html" />
+    <link rel="prev" title="4.3. Fichero de zona DNS" href="ficherozona.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Servicios de Red e Internet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PRESENTACION/Index.html">1. Presentación Módulo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_1_Introduccion/Index.html">2. Introducción a los Servicios de Red</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_2_Dhcp/Index.html">3. Protocolo de Configuración Dinámico. DHCP</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">4. Resolución de nombres. DNS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espacio.html">4.1. El Espacio de Nombres de Dominio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tipos.html">4.2. Tipos de servidores, resoluciones y búsquedas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ficherozona.html">4.3. Fichero de zona DNS</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.4. Configuración del servicio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configuracion-clientes">4.4.1. Configuración clientes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#windows">4.4.1.1. Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#linux">4.4.1.2. Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#configuracion-basica-servidor">4.4.2. Configuración básica servidor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">4.4.2.1. Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">4.4.2.2. Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ampliando-nuestra-configuracion">4.4.3. Ampliando nuestra configuración</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#juntando-todo-ddns">4.4.4. Juntando todo(DDNS)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="comprobaciones.html">4.5. Comprobando el funcionamiento</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_4_Router/Index.html">5. Interconexión de Redes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_5_Web/Index.html">6. Servicio WEB. HTTP(S)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_6_Acceso/Index.html">7. Acceso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_7_Email/Index.html">8. Correo Electrónico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_8_Otros/Index.html">9. Otros Servicios</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Servicios de Red e Internet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Index.html"><span class="section-number">4. </span>Resolución de nombres. DNS</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4.4. </span>Configuración del servicio</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Tema_3_DNS/configuracion.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuracion-del-servicio">
+<h1><span class="section-number">4.4. </span>Configuración del servicio<a class="headerlink" href="#configuracion-del-servicio" title="Link to this heading"></a></h1>
+<section id="configuracion-clientes">
+<h2><span class="section-number">4.4.1. </span>Configuración clientes<a class="headerlink" href="#configuracion-clientes" title="Link to this heading"></a></h2>
+<section id="windows">
+<h3><span class="section-number">4.4.1.1. </span>Windows<a class="headerlink" href="#windows" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p><strong>GUI</strong></p>
+<p>El servicio cliente DNS debe estar en funcionamiento en el sistema(por defecto lo está). <em>Programas -&gt; Herramientas Administrativas -&gt; Servicios</em></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/srvWinGui.png"><img alt="NAS Diagram" class="align-center" src="../_images/srvWinGui.png" style="width: 400px;" />
+</a>
+</div></blockquote>
+<p>Las propiedades se realizan desde la configuración de las tarjetas de red, junto con el resto de parámetros de red.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/propdnstarjeta.png"><img alt="Conf. DNS windows GUI" class="align-center" src="../_images/propdnstarjeta.png" style="width: 300px;" />
+</a>
+</div></blockquote>
+<p><strong>Línea de comandos</strong></p>
+<p>En PowerShell, a través de los siguientes comandos:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="go">PS C:\&gt; Set-DnsClientServerAddress -InterfaceIndex 12 -ServerAddresses (&quot;10.0.0.1&quot;,&quot;10.0.0.2&quot;)</span>
+<span class="go">PS C:\&gt; Get-DnsClientServerAddress</span>
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="linux">
+<h3><span class="section-number">4.4.1.2. </span>Linux<a class="headerlink" href="#linux" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p><strong>GUI</strong></p>
+<p>Los entornos gráficos (Gnome ,KDE….) proporcionan utilidades para la configuración de los clientes DNS en la configuración de las interfaces de red(muy parecido a Windows).</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/confdnsguilinux.png"><img alt="conf. DNS Linux GUI" class="align-center" src="../_images/confdnsguilinux.png" style="width: 300px;" />
+</a>
+</div></blockquote>
+<p><strong>Línea de comandos</strong></p>
+<p>Si nuestra configuracion la realizamos sin GUI, debemos ubicar el fichero correspondiente, teniendo en cuenta que éste puede variar de una distro o version a otra.</p>
+<p>El fichero sobre el que trabajan la mayoria de las distribuciones es <strong>/etc/resolv.conf(actualmente en muchos sistemas esto no es tan simple, y lo gestiona el demonio systemd)</strong> que guarda las direcciones IP de los servidores DNS. En nuestras distros ya sabemos que esta configuración se realiza en el <strong>fichero .yaml de netplan</strong>.</p>
+<blockquote>
+<div><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="go">nameservers:</span>
+<span class="go">    addresses: [10.10.10.1, 1.1.1.1]</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</section>
+</section>
+<section id="configuracion-basica-servidor">
+<h2><span class="section-number">4.4.2. </span>Configuración básica servidor<a class="headerlink" href="#configuracion-basica-servidor" title="Link to this heading"></a></h2>
+<section id="id1">
+<h3><span class="section-number">4.4.2.1. </span>Windows<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>En este módulo no trataremos la instalación y configuración de controladores de dominio(AD), aunque <strong>Active Directory necesita de DNS</strong> para poder trabajar correctamente.</p>
+<p><strong>GUI</strong></p>
+<p>De manera visual a traves de la interfaz gráfica que ofrece Windows 20XX Server y la instalación de roles y características.</p>
+<p>Puedes encontrar un ejemplo de configuración paso a paso en el siguiente video:</p>
+<iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/B7I0dcHoxpg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br><p>
+  <b>Línea de comandos </b><sup id="fnref:note1"><a class="footnote-ref" href="#fn:note1" role="doc-noteref">1</a></sup>
+</p><ul>
+<li><dl>
+<dt>Instalación. Podemos ejecutar el siguiente comando para buscar el nombre del rol que debemos instalar</dt><dd><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="go">Get-WindowsFeature | where {($_.name -like “DNS”)}</span>
+<span class="gp">#</span>con<span class="w"> </span>el<span class="w"> </span>comando<span class="w"> </span>anterior<span class="w"> </span>averiguamos<span class="w"> </span>y<span class="w"> </span>ahora<span class="w"> </span>lo<span class="w"> </span>instalamos
+<span class="go">Install-WindowsFeature DNS -IncludeManagementTools</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Ponemos a escuchar al servidor únicamente por las interfaces que queramos(en nuestros escenarios en la tarjeta local):</dt><dd><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="go">dnscmd /resetlistenaddresses 192.168.200.254</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Configuramos los reenviadores(forwarders). Serán las direcciones IP a las que el servidor DNS reenvía las consultas DNS cuando no puede resolverlas de forma local.</dt><dd><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="go">dnscmd /resetforwarders 8.8.8.8</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Creación de una zona de búsqueda PRIMARIA y su correspondiente zona INVERSA</dt><dd><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="go">PS C:\&gt; Add-DnsServerPrimaryZone -ZoneName &quot;asir.com&quot; -ZoneFile &quot;asir.com.dns&quot; -verbose -passthru</span>
+<span class="go">PS C:\&gt; Add-DnsServerPrimaryZone -NetworkId &quot;192.168.200.0/24&quot; -ZoneFile &quot;200.168.192.in-addr.arpa.dns&quot; -verbose -passthru</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>Creación de los <strong>registros(RR)</strong> que deseemos</p>
+<dl>
+<dt>Podemos hacer uso de la instrucción <a class="reference external" href="https://docs.microsoft.com/en-us/powershell/module/dnsserver/add-dnsserverresourcerecord?view=win10-ps#examples">Add-DnsServerResourceRecord</a>  o del comando <a class="reference external" href="https://docs.microsoft.com/es-es/windows-server/administration/windows-commands/dnscmd#dnscmd-recordadd-command">DNSCmd/recordadd</a></dt><dd><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span>añadir<span class="w"> </span>un<span class="w"> </span>NS<span class="w"> </span><span class="o">(</span>Servidor<span class="w"> </span>de<span class="w"> </span>nombres<span class="w"> </span>para<span class="w"> </span>zonas<span class="w"> </span>secundarias...<span class="o">)</span>
+<span class="go">Add-DnsServerResourceRecord -Name &quot;asir.com&quot; -NameServer &quot;ns2.asir.com&quot; -NS -ZoneName &quot;asir.com&quot;</span>
+<span class="gp">#</span>añadir<span class="w"> </span>un<span class="w"> </span>host<span class="o">(</span>A<span class="o">)</span><span class="w"> </span>con<span class="w"> </span>su<span class="w"> </span>PTR<span class="w"> </span>para<span class="w"> </span>lo<span class="w"> </span>zona<span class="w"> </span>inversa<span class="w"> </span>correspondiente
+<span class="go">Add-DnsServerResourceRecord -ZoneName &quot;asir.com&quot; -A -Name &quot;www&quot; -IPv4Address &quot;192.168.200.5&quot;</span>
+<span class="go">Add-DnsServerResourceRecordPtr -Name &quot;5&quot; -ZoneName &quot;200.168.192.in-addr.arpa&quot; -PtrDomainName &quot;www.asir.com&quot;</span>
+<span class="gp">#</span>añadir<span class="w"> </span>un<span class="w"> </span>alias<span class="o">(</span>CNAME<span class="o">)</span>
+<span class="go">Add-DnsServerResourceRecord -CName -Name &quot;www2&quot; -HostNameAlias &quot;www.asir.com&quot; -ZoneName &quot;asir.com&quot; -AllowUpdateAny</span>
+<span class="gp">#</span>añadir<span class="w"> </span>un<span class="w"> </span>servidor<span class="w"> </span>de<span class="w"> </span>correo<span class="o">(</span>MX<span class="o">)</span><span class="w"> </span>para<span class="w"> </span>mi<span class="w"> </span>dominio<span class="w"> </span>con<span class="w"> </span>una<span class="w"> </span>preferencia<span class="w"> </span>de<span class="w"> </span><span class="m">10</span>.<span class="w"> </span>Debo<span class="w"> </span>añadir<span class="w"> </span>un<span class="w"> </span>registro<span class="w"> </span>tipo<span class="w"> </span>A<span class="w"> </span>para<span class="w"> </span>que<span class="w"> </span>me<span class="w"> </span>traduzca<span class="w"> </span>nombre<span class="w"> </span>por<span class="w"> </span>IP.
+<span class="go">Add-DnsServerResourceRecord -ZoneName &quot;asir.com&quot; -A -Name &quot;mail&quot; -IPv4Address &quot;192.168.200.6&quot;</span>
+<span class="go">Add-DnsServerResourceRecord -Name &quot;.&quot; -MX -ZoneName &quot;asir.com&quot; -MailExchange &quot;mail.asir.com&quot; -Preference 10</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Exportar/Importar configuración de zona/s del DNS server a fichero/s de texto.</dt><dd><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span>guarda<span class="w"> </span>los<span class="w"> </span>ficheros<span class="w"> </span>en<span class="w"> </span>C:<span class="se">\W</span>indows<span class="se">\S</span>ystem32<span class="se">\d</span>ns
+<span class="gp">#</span>también<span class="w"> </span>guardo<span class="w"> </span>la<span class="w"> </span>zona<span class="w"> </span>inversa
+<span class="go">dnscmd /zoneexport &quot;asir.com&quot; &quot;asir.com.cseg&quot; #también con Export-dnsservervzone se podría hacer</span>
+<span class="go">dnscmd /zoneexport &quot;asir.com&quot; &quot;asir.com.cseg&quot;</span>
+<span class="gp">#</span>para<span class="w"> </span>importar,<span class="w"> </span>renombro<span class="w"> </span>los<span class="w"> </span>ficheros<span class="w"> </span>anteriores<span class="w"> </span>a<span class="w"> </span>acabados<span class="w"> </span>en<span class="w"> </span>.dns<span class="w"> </span><span class="o">(</span>sustituyendo<span class="w"> </span>el<span class="w"> </span>.cseg<span class="o">)</span>
+<span class="gp">#</span>deben<span class="w"> </span>estar<span class="w"> </span>ubicados<span class="w"> </span>en<span class="w"> </span>C:<span class="se">\W</span>indows<span class="se">\S</span>ystem32<span class="se">\d</span>ns
+<span class="go">dnscmd /zoneadd &quot;asir.com&quot; /primary /file &quot;asir.com.dns&quot; /load</span>
+<span class="go">dnscmd /zoneadd &quot;200.168.192.in-addr.arpa&quot; /primary /file &quot;200.168.192.in-addr.arpa.dns&quot; /load</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="id2">
+<h3><span class="section-number">4.4.2.2. </span>Linux<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>BIND o DnsMasq son los paquetes utilizados en todas las distribuciones Linux, sin interfaz gráfica añadida. Su administración configuración se realiza accediendo a varios ficheros de texto (INCLUIDO EL FICHERO DE ZONA).</p>
+<p>
+  En nuestro caso vamos a optar con configurar el servidor <b>BIND</b><sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup>. Podemos encontrar alternativas gráficas para poder configurar BIND, a través de la instalación de un panel de administración, como Webmin:
+</p><a class="reference internal image-reference" href="../_images/dnswebmin.png"><img alt="Pantalla webmin administración BIND" class="align-center" src="../_images/dnswebmin.png" style="width: 400px;" />
+</a>
+<p>Debemos entender la estructura de ficheros que monta BIND una vez instalado, para poder realizar correctamente su configuración:</p>
+<a class="reference internal image-reference" href="../_images/ficherosbind.png"><img alt="Ficheros instalador por BIND" class="align-center" src="../_images/ficherosbind.png" style="width: 200px;" />
+</a>
+<dl class="simple">
+<dt>La configuración de <strong>BIND se encuentra en named.conf</strong>, la cual se distribuye con el <strong>uso de la directiva include</strong>, entre los ficheros:</dt><dd><ul class="simple">
+<li><p><strong>named.conf.options</strong>: Parámetros a nivel global del servidor DNS.</p></li>
+<li><p><strong>named.conf.local</strong>: Aquí se crean las zonas con la instrucción zone. Uno de los parámetros será la ubicación y nombre del <strong>fichero de zona</strong>.</p></li>
+<li><p>named.conf.default-zones: Algunas zonas que incluye BIND por defecto.</p></li>
+<li><p>db.*: ficheros de zona creadas en named.conf.default-zones. db.root=srv. Raiz.</p></li>
+<li><p>db.empty: plantilla de fichero de zona.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Se crea un usuario bind que pertenece al grupo principal bind que también se crea. Este usuario es el que ejecuta el demonio /usr/sbin/named, al que se le pasan los argumentos especificados en <strong>/etc/default/bind9</strong>.
+<strong>En /var/cache/bind, referencia para todas las rutas relativas (instrucción directory en el fichero de options), es donde crearemos nuestros ficheros de zona por defecto</strong>.</p>
+<p>Podemos gestiónar el servicio con los siguiente comandos (podemos elegir entre las dos opciones):</p>
+<blockquote>
+<div><div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>sudo<span class="w"> </span>service<span class="w"> </span>bind9<span class="w"> </span><span class="o">[</span>restart<span class="p">|</span>start<span class="p">|</span>stop<span class="p">|</span>status<span class="o">]</span>
+<span class="gp">$</span>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="o">[</span>restart<span class="p">|</span>start<span class="p">|</span>stop<span class="p">|</span>status<span class="o">]</span><span class="w"> </span>bind9
+</pre></div>
+</div>
+</div></blockquote>
+<p>En el siguiente video encontrarás un ejemplo de configuración muy sencillo:</p>
+<iframe width="250" style="display:block; margin-left:auto; margin-right:auto;"src="https://www.youtube.com/embed/cNr5aLz40fI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br></div></blockquote>
+<div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<u>¿Sabrías?</u></br>
+Realizar la instalación de un servidor DNS MAESTRO que únicamente atienda peticiones en la tarjeta local en cada uno de los tres SSOO que has virtualizado anteriormente
+</div></br></section>
+</section>
+<section id="ampliando-nuestra-configuracion">
+<h2><span class="section-number">4.4.3. </span>Ampliando nuestra configuración<a class="headerlink" href="#ampliando-nuestra-configuracion" title="Link to this heading"></a></h2>
+<p>A partir de aquí podemos trabajar sobre escenarios más complejos en los que podremos incluir:</p>
+<ul>
+<li><p>Servidores maestros</p></li>
+<li><p>Servidores esclavos</p></li>
+<li><p>Delegaciones de zona</p>
+<blockquote>
+<div><blockquote>
+<div><p style="text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pdf-2127829.png/480px-Pdf-2127829.png" alt="Perfil" width="50" style="vertical-align: middle; float:left;"/>  En el siguiente documento puedes encontrar un manual completo de como realizar esto tanto en Windows como en Linux. </br> </br><a class="reference internal image-reference" href="../_images/Practicas_DNS.pdf"><img alt="Tutorial configuración servidores DNS" class="align-center" src="../_images/Practicas_DNS.pdf" style="width: 400px;" />
+</a>
+</div></blockquote>
+</br>
+<div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<u><b>PRÁCTICA 1</b></u></br>
+Realiza la práctica 1 del Tema 3 del aula virtual, vas a crear tu sistema de servidores DNS.
+</div></div></blockquote>
+</li>
+</ul>
+</section>
+<section id="juntando-todo-ddns">
+<h2><span class="section-number">4.4.4. </span>Juntando todo(DDNS)<a class="headerlink" href="#juntando-todo-ddns" title="Link to this heading"></a></h2>
+<p>
+  El <b>DNS dinámico(Dynamic DNS)</b> es un servicio que puede ser de gran utilidad en la mayoría de ocasiones en aplicaciones reales.
+  El DNS dinámico garantiza que los usuarios puedan seguir accediendo al dispositivo o servicio mediante el nombre de dominio. No necesitan rastrear ni actualizar la dirección IP manualmente.<sup id="fnref:note3"><a class="footnote-ref" href="#fn:note3" role="doc-noteref">3</a></sup>.
+</p><a class="reference internal image-reference" href="../_images/DDNS.png"><img alt="conf. DNS Linux GUI" class="align-center" src="../_images/DDNS.png" style="width: 900px;" />
+</a>
+<p><strong>¿Se te pueden ocurrir situaciones en lo que esto sea de utilidad?¿Qué ventajas podría tener?</strong></p>
+<p>Puedes encontrar multitud de recursos en la web para poder orientarte en la configuración de esta característica para nuestros servidores DNS. Por ejemplo puedes
+<a class="reference external" href="https://medium.com/marcsanchezg/instalar-y-configurar-un-servidor-ddns-dhcp-dns-790cbc34e53d">acceder al siguiente enlace</a> y realizar las tareas correspondientes en tu
+servidor.
+Para que los servicios de DHCP y DNS puedan trabajar en conjunto, necesitaremos una clave, en nuestro caso, usaremos una clave usando el algoritmo HMAC-MD5 y la generaremos con el nombre DDNS_UPDATE.</p>
+<p>Todo ello lo incluiremos en un fichero que posteriormente incorporaremos a la configuración tanto de DHCP como de DNS.</p>
+<a class="reference internal image-reference" href="../_images/ddnsKey.png"><img alt="generación claves ddns" class="align-center" src="../_images/ddnsKey.png" style="width: 900px;" />
+</a>
+<p>Ahora copiaremos el archivo a los directorios de cada servicio, y les daremos los permisos y propietarios necesarios para que éstos puedan hacer uso del archivo que acabamos de crear:</p>
+<a class="reference internal image-reference" href="../_images/comandosDDNS.png"><img alt="comandos previos DDNS" class="align-center" src="../_images/comandosDDNS.png" style="width: 900px;" />
+</a>
+<p>Tras esto ya podemos comenzar a configurar nuestros servicios</p>
+<p><strong>Configuración DNS:</strong></p>
+<p>Modificamos el archivo /etc/bind/named.conf.local para definir las zonas (directa e inversa) con las que vamos a trabajar, es muy importante incluir el archivo ddns.key que se encuentra en /etc/bind/ddns.key y luego permitir actualizaciones (allow-update) con el nombre de la misma clave.</p>
+<a class="reference internal image-reference" href="../_images/confDDNS_BIND.png"><img alt="config DDNS en Bind" class="align-center" src="../_images/confDDNS_BIND.png" style="width: 900px;" />
+</a>
+<p>Comprobamos todo. Atento-a a los distintos parámetros y nombres utilizados. TODO ha de mantener una coherencia.</p>
+<a class="reference internal image-reference" href="../_images/Comprobacion_DDNS_BIND.png"><img alt="test DDNS en Bind" class="align-center" src="../_images/Comprobacion_DDNS_BIND.png" style="width: 900px;" />
+</a>
+<p><strong>Configuración DHCP:</strong></p>
+<p>Para configurar el servicio DHCP editaremos el archivo /etc/dhcp/dhcpd.conf y configuraremos los siguientes valores de la siguiente manera:</p>
+<a class="reference internal image-reference" href="../_images/confDDHCP_BIND.png"><img alt="config DDNS en Bind" class="align-center" src="../_images/confDDHCP_BIND.png" style="width: 900px;" />
+</a>
+<p><strong>Comprobación:</strong></p>
+<p>¿Cómo comprobamos el funcionamiento de todo? Si conectamos un cliente veremos algunas cosas nuevas sucediendo:</p>
+<a class="reference internal image-reference" href="../_images/Comprobacion_DDNS_DHCP.png"><img alt="test DHCP en Bind" class="align-center" src="../_images/Comprobacion_DDNS_DHCP.png" style="width: 900px;" />
+</a>
+<p>.</p>
+<div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<u>¡Atención!</u></br>
+La linea marcada en rojo al final de la imagen anterior...¿Qué crees que significa?¿Cómo puedes solucionarlo?
+</div></br></br>
+<div class="footnotes">
+    <hr />
+    <ol>
+        <li class="footnote" id="fn:note1">
+            <p>
+                <b>Fuente:</b> Podemos optar por utilizar el <a href="https://docs.microsoft.com/en-us/powershell/module/dnsserver/?view=win10-ps" target="_blank">Módulo DnsServer PowerShell</a> o aprovoechar la sencillez del
+                <a href="https://docs.microsoft.com/es-es/windows-server/administration/windows-commands/dnscmd" target="_blank">Comando DNSCMD</a>
+                <a class="footnote-backref" rev="footnote" href="#fnref:note1">&#8617;</a>
+            </p>
+        </li>
+        <li class="footnote" id="fn:note2">
+            <p>
+                <b>Ayuda:</b> Puedes encontrar un manual muy completo sobre DNS y BIND <a href="https://www.fpgenred.es/DNS/instalacin_de_bind_versin_9.html" target="_blank">el siguiente enlace</a><a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
+            </p>
+        </li>
+        <li class="footnote" id="fn:note3">
+            <p>
+                <b>Fuente:</b> Puedes encontrar una explicación muy buena en la <a href="https://aws.amazon.com/es/what-is/dynamic-dns/" target="_blank">documentación de AWS sobre DDNS</a><a class="footnote-backref" rev="footnote" href="#fnref:note3">&#8617;</a>
+            </p>
+        </li>
+    </ol>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="ficherozona.html" class="btn btn-neutral float-left" title="4.3. Fichero de zona DNS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="comprobaciones.html" class="btn btn-neutral float-right" title="4.5. Comprobando el funcionamiento" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, M. Tomás Giménez Albert.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

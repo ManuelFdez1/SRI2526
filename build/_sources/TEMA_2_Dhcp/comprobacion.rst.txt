@@ -19,7 +19,7 @@ En realidad esta información se almacena en el fichero **%SystemRoot%\System32\
         :width: 600 px
         :alt: NAS Diagram
         :align: center
-z
+
 También tenemos la posibilidad de consultar esta información a través de algunos comandos de **PowerShell**.
 
     .. code-block:: shell-session

@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.3. Virtualización &mdash; ASIR - Servicios de Red e Internet</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/my_theme.css?v=572081c4" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=4936afed"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="2.4. Entorno de trabajo" href="escenario.html" />
+    <link rel="prev" title="2.2. Componentes de los Srv. de Red" href="componentes.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Servicios de Red e Internet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PRESENTACION/Index.html">1. Presentación Módulo</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">2. Introducción a los Servicios de Red</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="conceptos.html">2.1. Conceptos previos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="componentes.html">2.2. Componentes de los Srv. de Red</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.3. Virtualización</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tipos-de-virtualizacion">2.3.1. Tipos de Virtualización.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#maquinas-virtuales">2.3.2. Máquinas Virtuales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#contenedores">2.3.3. Contenedores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#automatizacion">2.3.4. Automatización</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cloud-computing">2.3.5. Cloud Computing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="escenario.html">2.4. Entorno de trabajo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../TEMA_2_Dhcp/Index.html">3. Protocolo de Configuración Dinámico. DHCP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_3_DNS/Index.html">4. Resolución de nombres. DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_4_Router/Index.html">5. Interconexión de Redes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_5_Web/Index.html">6. Servicio WEB. HTTP(S)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_6_Acceso/Index.html">7. Acceso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_7_Email/Index.html">8. Correo Electrónico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tema_8_Otros/Index.html">9. Otros Servicios</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Servicios de Red e Internet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Index.html"><span class="section-number">2. </span>Introducción a los Servicios de Red</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2.3. </span>Virtualización</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/TEMA_1_Introduccion/virtualizacion.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="virtualizacion">
+<h1><span class="section-number">2.3. </span>Virtualización<a class="headerlink" href="#virtualizacion" title="Link to this heading"></a></h1>
+<p>El funcionamiento de los servidores hoy día no tiene nada que ver con lo que sucedía hace unos pocos años. Se ha pasado de un alojamiento en máquinas reales, las cuales incluso albergaban varios servicios, a trabajar con máquinas simuladas que ofrecen unicámente un servicio. Estas técnicas reciben el nombre de <em>Virtualización</em>. La virtualización de sistemas es una potente <strong>técnica de abstracción mediante la cual podemos crear una capa intermedia que se encarga de posibilitar la comunicación entre una máquina física (anfitrión o host) y el sistema o sistemas huésped (guest) virtuales</strong>.</p>
+<p><img alt="arquitectura de contenedores" src="../_images/arquitectura-v1.png" /></p>
+<p><strong>VENTAJAS</strong></p>
+<ul class="simple">
+<li><p>Reducción de costes y mejor gestión de los recursos hardware. Cada máquina física puede usarse para varios propósitos a la vez, con los recursos adecuados.</p></li>
+<li><p>Sustitución de ordenadores por un fondo de MV (pool) que puedan ser creadas, clonadas y destruidas a demanda.</p></li>
+<li><p>Posibilidad de vender capacidad de cálculo a otras empresas
+(Virtual Private Servers).</p></li>
+<li><p>Simplificación de los sistemas de copia de seguridad.
+Entornos para aprendizaje y pruebas. Se simplifica el montaje y experimentación de otros sistemas operativos y software distinto al que usamos habitualmente. Ideal para estudiantes.</p></li>
+<li><p>Compatibilidad de programas. Posibilidad de usar programas que no ofrezcan versiones para nuestro sistema habitual.</p></li>
+<li><p>Entornos controlados. Se pueden probar programas en los que no confiamos,</p></li>
+<li><p>Fácil migración de unos ordenadores a otros.</p></li>
+</ul>
+<p><strong>INCONVENIENTES</strong></p>
+<ul>
+<li><p>Un único punto de fallo para todas las máquinas virtuales que se ejecuten en un único servidor físico. Para solucionarlo se deben utilizar <strong>servidores con un alto nivel de redundancia</strong> de discos, memoria, red, fuente de alimentación, y demás componentes (algo bastante más fácil de conseguir si trabajamos en entornos virtualizados)</p>
+<p><strong>Actualmente se asocia un único servicio a cada servidor, con el fin de limitar el alcance de un hipotético fallo</strong></p>
+</li>
+</ul>
+<section id="tipos-de-virtualizacion">
+<h2><span class="section-number">2.3.1. </span>Tipos de Virtualización.<a class="headerlink" href="#tipos-de-virtualizacion" title="Link to this heading"></a></h2>
+<p><strong>TIPO 1:</strong> Denominada <strong>nativa/unhosted</strong>, es software que se ejecuta directamente sobre el hardware, para ofrecer la funcionalidad. El hipervisor es un SO cuya única misión es gestionar conjuntos de clusters, Máq. Virtuales, unidades de almacenamiento, etc… Un ejemplo de este tipo de virtualización <a class="reference external" href="https://youtu.be/ERb_X20UKqU">lo puedes encontrar en el siguiente video</a>, en el que muestran una instalación real de un hipervisor denominado <a class="reference external" href="https://www.proxmox.com/en/">Proxmox</a>.</p>
+<p><img alt="" src="../_images/virtTipo_1.png" /></p>
+<p><strong>Ejemplos</strong></p>
+<ul class="simple">
+<li><p>Proxmox</p></li>
+<li><p>PowerVM (IBM)</p></li>
+<li><p>ESXi (VmWare)</p></li>
+<li><p>Xen</p></li>
+<li><p>OpenVZ</p></li>
+</ul>
+<p><strong>TIPO 2:</strong> denominada <strong>hosted o paravirtualización</strong>, es software que se ejecuta <strong>sobre un SO</strong> para ofrecer la funcionalidad(con la consiguiente penlización en rendimiento). Es la virtualización que has usado hasta ahora.</p>
+<p><img alt="" src="../_images/virtTipo_2.png" /></p>
+<p><strong>Ejemplos</strong></p>
+<ul class="simple">
+<li><p>Parallels (Windows/Mac/Linux)</p></li>
+<li><p>VMware (Windows / Linux)</p></li>
+<li><p>VirtualBox (Windows/Mac/Linux, Gratis)</p></li>
+<li><p>QEMU(Linux, Gratis)</p></li>
+<li><p>Windows Virtual PC (Windows, Gratis)</p></li>
+</ul>
+<p><strong>CONTENEDORES:</strong> Es una alternativa más de virtualización, que persigue mejorar el rendimiento y permitiendo el diseño de infraestructuras de trabajo más dinámicas.
+Posibilidad de aplicaciones de gestión automática(Kubernetes..)</p>
+<p><img alt="" src="../_images/arquitecturaContenedores.png" /></p>
+<p><strong>Ejemplos</strong></p>
+<ul class="simple">
+<li><p>Docker</p></li>
+<li><p>LXC/LXD</p></li>
+<li><p>Windows servers containers</p></li>
+</ul>
+<p><strong>CLOUD virtualization:</strong>   Virtualización en sistemas remotos, con todas la ventajas del cloud computing (Azure, AWS, GoogleCloud..)</p>
+<blockquote>
+<div><p><strong>Puedes encontrar un interesante artículo de las diferencias entre MV y contenedor, y la evolución de estas tecnologías en los últimos años en el <a class="reference external" href="https://www.xataka.com/otros/docker-a-kubernetes-entendiendo-que-contenedores-que-mayores-revoluciones-industria-desarrollo">siguiente blog</a></strong>.</p>
+</div></blockquote>
+</section>
+<section id="maquinas-virtuales">
+<h2><span class="section-number">2.3.2. </span>Máquinas Virtuales<a class="headerlink" href="#maquinas-virtuales" title="Link to this heading"></a></h2>
+<p>A la hora de virtualizar SO, debemos tener varios elementos y parametros de configuracion en cuenta. En concreto, <strong>utilizando VirtualBox</strong> debemos prestar especial atención a:</p>
+<ul class="simple">
+<li><p><strong>Requisitos del SO a virtualizar</strong> → En el apartado de <strong>Configuración</strong> de VBox (Memoria, procesador..)</p></li>
+<li><p><strong>Medios virtuales</strong> → Para incluir el/los discos duros necesarios para nuestro sistema, además de vinular la ISO del SO que queremos instalar.</p></li>
+<li><p><strong>Configuracion de red en las MV</strong> → Uno de los apdos. más importantes. Debemos tener claro los distintos tipos de red en VBox y la utilidad de cada uno. Puedes encontrar una buena aclaración en el <a class="reference external" href="https://www.virtualbox.org/manual/ch06.html#networkingmodes">apartado correspondiente del manual oficial de VirtualBox</a>.</p></li>
+<li><p><strong>Dispositivos USB</strong> → Extension Pack (se instala en la consola de administración de VBox)</p></li>
+<li><p><strong>Carpetas compartidas</strong> → GuestAdditions (Se deben instalar en cada MV por separado. ¿Sabrías hacerlo en una MV sin interfaz gráfica(GUI)?). Puedes encontrar guías de como hacerlo en la web:</p>
+<ul>
+<li><p><a class="reference external" href="https://www.techrepublic.com/article/how-to-install-virtualbox-guest-additions-on-a-gui-less-ubuntu-server-host/">Sistemas Linux</a>.</p></li>
+<li><p><a class="reference external" href="http://somebooks.es/instalar-guest-additions-windows-server-2016-sin-escritorio-virtualizado-virtualbox/">Sistemas Windows</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="contenedores">
+<h2><span class="section-number">2.3.3. </span>Contenedores<a class="headerlink" href="#contenedores" title="Link to this heading"></a></h2>
+<p>Los contenedores(containers) son el siguiente paso en la evolución de la virtualización de sistemas operativos, su objetivo principal es OPTIMIZAR el uso de los recursos de la máquina anfitrión(host). Se puede entender como una virtualización a nivel de sistema operativo.
+Se evita la sobrecarga asociada con tener a cada huésped ejecutando un sistema operativo completamente instalado. Una desventaja de la virtualización basada en contenedores, sin embargo, es que cada invitado debe utilizar el mismo sistema operativo que utiliza el host, además de tener un menor nivel de aislamiento.</p>
+<div style="text-align:center;">
+<a title="Containers diagram" href="https://hackernoon.com/how-container-tech-like-docker-and-business-service-automation-will-monetize-the-cloud-5cbc5a85fe59"><img width="512" alt="Containers diagram" src="https://hackernoon.com/hn-images/1*xef4b78LWTh-raeSkIssvA.png"></a>
+</div>
+<p><strong>Docker</strong></p>
+<p>Se ha impuesto como sistema de virtualización de aplicaciones mediante contenedores. Podemos encontrar muchos tutoriales y formaciones en la web <b><sup id="fnref:note1"><a class="footnote-ref" href="#fn:note1" role="doc-noteref">1</a></sup></b>. Varios aspectos destacan:</p>
+<ul>
+<li><p>Inicialmente creada para GNU/Linux. Actualmente también existe como aplicación para Windows 2010/2016/2019 Srv</p></li>
+<li><p>Los contenedores ofrecen un mejor rendimiento que las MV.</p></li>
+<li><p>Pueden crearse redes virtuales privadas de contenedores</p></li>
+<li><p>El núcleo es el Docker Engine, pero existen opciones para gestionar contenedores.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.docker.com/compose/">Docker Compose</a>.</p></li>
+<li><p><a class="reference external" href="https://www.josedomingo.org/pledin/2016/05/creando-servidores-docker-con-docker-machine/">Docker Machine</a>.
+Para poder ejecutar docker, debemos instalarlo previamente en nuestro SO (preferiblemente una MV Linux Server, donde ya viene incluido en los repositorios por defecto), teniendo en cuenta varias cosas:</p></li>
+</ul>
+</li>
+<li><p>Docker autocompleta los comandos.</p></li>
+<li><p>En caso de duda</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">  $</span>docker<span class="w"> </span>--help
+</pre></div>
+</div>
+</li>
+<li><p>Para instalar docker</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">  #</span>apt<span class="w"> </span>install<span class="w"> </span>docker<span class="w"> </span>docker.io
+</pre></div>
+</div>
+</li>
+<li><p>Para ejectuar docker sin privilegios de administración(sin sudo)</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">  #</span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>docker<span class="w"> </span>usuario
+</pre></div>
+</div>
+</li>
+<li><p>Estado de Docker, imágenes y contenedores:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">  $</span>docker<span class="w"> </span>system<span class="w"> </span>info
+<span class="gp">  $</span>docker<span class="w"> </span><span class="o">[</span>image<span class="p">|</span>container<span class="o">]</span><span class="w"> </span><span class="o">[</span>ls<span class="p">|</span>rm<span class="p">|</span>prune<span class="p">|</span>load..<span class="o">]</span><span class="w"> </span><span class="o">[</span>-a<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>Arrancar|parar un contenedor:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">  $</span>docker<span class="w"> </span><span class="o">[</span>container<span class="o">]</span><span class="w"> </span><span class="o">[</span>run<span class="p">|</span>start<span class="p">|</span>pause<span class="p">|</span>kill<span class="p">|</span>restart...<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>Gestíon de las <strong>redes</strong>(<a class="reference external" href="https://docs.docker.com/network/">doc oficial</a>) en nuestros entornos(similar a lo que ofrecen las MV):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">  $</span>docker<span class="w"> </span>network<span class="w"> </span><span class="o">[</span>ls<span class="p">|</span>connect<span class="p">|</span>create<span class="p">|</span>rm<span class="p">|</span>prune<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>Administración de <strong>volúmenes</strong>(<a class="reference external" href="https://docs.docker.com/storage/">doc oficial</a>). Es importante entender la diferencia entre <strong>Volúmenes vs Dir. Enlazado</strong></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">  $</span>docker<span class="w"> </span>volume<span class="w"> </span><span class="o">[</span>create<span class="p">|</span>inspect<span class="p">|</span>ls<span class="p">|</span>prune<span class="p">|</span>rm<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>Ejecución de comandos contra los contenedores.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">  $</span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>apache-2<span class="w"> </span>/bin/bash
+<span class="gp">  $</span>docker<span class="w"> </span>cp<span class="w"> </span>index.html<span class="w"> </span>apache:/opt/bitnami/apache/htdocs/index.html
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Como ejemplo, un comando típico de docker, en el que publicamos el puerto 80 del contenedor en el 8080 del host, puede ser:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">    $</span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>--name<span class="o">=</span>XX<span class="w"> </span>--mount<span class="w"> </span><span class="nv">type</span><span class="o">=</span>bind,<span class="w"> </span><span class="nv">source</span><span class="o">=</span>dirHost,<span class="w"> </span><span class="nv">target</span><span class="o">=</span>dirContainer<span class="w"> </span>DockerImg
+</pre></div>
+</div>
+<p>Si quisiéramos organizar la ejecución de dos contenedores relacionados de alguna manera (por ejemplo un servidor http y un servidor de BD que trabajan en conjunto para servir una página web) tendríamos la opción de usar <strong>Docker-compose</strong><b><sup id="fnref:note2"><a class="footnote-ref" href="#fn:note2" role="doc-noteref">2</a></sup></b>. Previamente debemos haber instalado el paquete docker-compose.</p>
+<p>En los contenedores en general y en Docker en particular se manejan varios conceptos que debemos conocer para aprovechar todas sus posibilidades:</p>
+<ul class="simple">
+<li><p><strong>Imágenes</strong>: Plantillas a partir de las cuales lanzamos los contenedores. Pueden estar en <a class="reference external" href="https://hub.docker.com/search?q=&amp;amp;type=image">repositorios públicos</a> o privados (creados por nosotr&#64;s mism&#64;s)</p>
+<ul>
+<li><p><a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/05_Imagenes.pdf" target="_blank">Tutorial</a></p></li>
+<li><p><a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/05_Imagenes-Soluciones.pdf" target="_blank">Ejemplos</a></p></li>
+</ul>
+</li>
+<li><p><strong>Contenedores</strong>: Se ejecutan a partir de las imágenes.</p>
+<ul>
+<li><p><a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/04_Contenedores.pdf" target="_blank">Tutorial</a></p></li>
+<li><p><a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/04_Contenedores-Soluciones.pdf" target="_blank">Ejemplos</a></p></li>
+</ul>
+</li>
+<li><p><strong>Volúmenes</strong>: herramienta para conseguir la <strong>persistencia</strong> de los datos en la ejecución de contenedores.</p>
+<ul>
+<li><p><a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/06_Almacenamiento.pdf" target="_blank">Tutorial</a></p></li>
+<li><p><a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/06_Almacenamiento-Soluciones.pdf" target="_blank">Ejemplos</a></p></li>
+</ul>
+</li>
+<li><p><strong>Redes</strong>: Docker permite la gestión de las redes a distintos niveles y características. Esto proporciona opciones muy útiles para crear distintos escenarios.</p>
+<ul>
+<li><p><a href="https://gitlab.com/mtgimenez.prof/servicios/-/raw/master/docs/TEMA_1_Introduccion/img/Docker/07_Redes.pdf" target="_blank">Tutorial</a></p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<blockquote>
+<div><p><strong>¿SABRÍAS?…</strong></p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Instalar <em>docker y docker-compose</em> en una máquina virtual Ubuntu Server</p></li>
+<li><p>Conseguir ejecutar comandos de docker sin necesidad de sudo.</p></li>
+<li><p><strong>Descargar</strong> la imagen Hello-world del repoitorio oficial de docker.</p></li>
+<li><p>Listar las imágenes y contenedores existentes en tu MV, ejecutar la imagen anterior, comprobar su estado y finalmente borrar la imagen de tu MV.</p></li>
+<li><p>Ejecutar el contenedor <strong><a class="reference external" href="https://hub.docker.com/_/httpd/">httpd</a></strong>  poniéndole como nombre <em>web</em> y redirigiendo al puerto 8080 del host(tu MV) el puerto 80 del contenedor. Prueba el acceso a la web.</p></li>
+<li><p>Modificar la ejecución anterior para que tu contenido web se encuentre en una carpeta real de tu MV.</p></li>
+<li><p>Ejecutar 4 veces más el contenedor con las mismas características que el caso anterior, en cada caso a los puertos 8081..8084 y con los nombres web2..web5</p></li>
+<li><p>Ejecutar el ejemplo de docker-compose incluido en el pie de página con éxito.</p></li>
+</ol>
+<hr class="docutils" />
+<p><strong>En el aula virtual del módulo puedes encontrar una sección <em>RECURSOS</em> con un completo manual de Docker con todos las herramientas comentadas más desarrolladas y ejemplos de utilización de las mismas.</strong></p>
+</section>
+<section id="automatizacion">
+<h2><span class="section-number">2.3.4. </span>Automatización<a class="headerlink" href="#automatizacion" title="Link to this heading"></a></h2>
+<p>La <strong>ORQUESTACIÓN O AUTOMATIZACIÓN</strong> de los servicios consiste en la organización de los sistemas, configuración, gestión y coordinación automatizadas de los sistemas informáticos, las aplicaciones y los servicios. Ayuda a la TI a gestionar con mayor facilidad las tareas complejas y los flujos de trabajo, ya que éstos suelen ser <strong>variables</strong>(piensa en el ejemplo de una web como Amazon en determinadas fechas del año como navidades, Black Friday…) <b><sup id="fnref:note1"><a class="footnote-ref" href="#fn:note3" role="doc-noteref">3</a></sup></b>. Con las herramientas que vamos a ver conseguimos cosas como:</p>
+<ol class="arabic simple">
+<li><p>Mejorar el funcionamiento de nuestros servicios, ya que se adaptan a las necesidades en cada momento.</p></li>
+<li><p>Optimizamos el uso de nuestros recursos, ya que los asignamos de manera coherente.</p></li>
+<li><p>Reducimos la presencia de errores al limitar la intervención humana.</p></li>
+<li><p>Ahorro de costes.</p></li>
+</ol>
+<p>Gracias a estas capacidades aparece un concepto denominado <strong>Infraestructura Como Código (IaC)</strong>(https://aws.amazon.com/es/what-is/iac/) en el que trabajamos con nuestos escenarios de una manera completamente diferente a la clásica.</p>
+<p><img alt="infraestructura como código" src="https://blog.sparkfabrik.com/hubfs/Blog/Infrastructure-as-code-scheme.png" /></p>
+<p>Tenemos multitud de herramientas disponibles para configurar entornos de orquestación/automatización a distintos niveles:</p>
+<ul class="simple">
+<li><p><strong>Máquinas virtuales:</strong> <a href="https://devopscube.com/vagrant-tutorial-beginners/" target="_blank">Vagrant</a> y <a href="https://openwebinars.net/blog/que-es-ansible/" target="_blank">Ansible</a>.</p></li>
+<li><p><strong>Contenedores:</strong> <a href="https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/" target="_blank"> Kubernetes</a> o <a href="https://docs.docker.com/engine/swarm/swarm-tutorial/" target="_blank">Docker Swarm</a>.</p></li>
+<li><p><strong>En la nube</strong>(cloud computing): Cada empresa ofrece distintas herramientas, si nos fijamos en AWS, y <a href="https://aws.amazon.com/es/containers/" target="_blank">según su propia documentación</a>: Para obtener control completo sobre el entorno de informática, elija ejecutar los contenedores en <em>Amazon Elastic Compute Cloud (EC2)</em>. Para los orquestadores de contenedores, puede elegir <em>Amazon Elastic Container Service (ECS)</em> o <em>Amazon Elastic Kubernetes Service (EKS)</em>.</p></li>
+</ul>
+<div style="text-align: left; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+<u>EJEMPLOS</u></br>
+<ul>
+<li>Prueba a instalar Vagrant en tu equipo y a lanzar el siguiente (<a href="https://aules.edu.gva.es/fp/pluginfile.php/8715526/mod_folder/content/0/Ejemplo%20FailOver%20Vagrant%20Linux/Vagrantfile" target="_blank"> ejemplo de Vagrantfile</a>), prueba a ejecutar un primer escenario de IaC con Vagrant en una <b>máquina real</b> (tu portátil o si arrancas tu SO anfitrión desde un DD externo).</li>
+<li>Si quieres probar tu primer CLUSTER de contenedores en una MV, puedes seguir lo indicado en <a href="https://www.campusmvp.es/recursos/post/introduccion-a-docker-swarm-mode-creacion-de-clusteres-y-levantar-servicios.aspx" target="_blank"> https://www.campusmvp.es</a>.</li>
+</ul>
+</div>
+<p>Una vez ejecutado este ejemplo, piensa las posibilidades que te ofrecen estas herramientas:</p>
+<ul class="simple">
+<li><p>Arranque/parada en remoto de varias MV.</p></li>
+<li><p>Configuración de las características de esas MV.</p></li>
+<li><p>Automatización de instalaciones, comprobaciones, etc…</p></li>
+<li></li>
+</ul>
+</section>
+<section id="cloud-computing">
+<h2><span class="section-number">2.3.5. </span>Cloud Computing<a class="headerlink" href="#cloud-computing" title="Link to this heading"></a></h2>
+<p>Piensa en todas las alternativas que hemos analizado en este punto. Tu labor como Técnico de Administración de Sistemas en un futuro consisitirá en crear, gestionar y adaptar este tipo de escenarios. Teniendo en cuenta que estamos hablando siempre en entornos locales(servidores locales ejecutando alguna de las soluciones propuestas), piensa en las ventajas de poder realizar TODO esto en sistemas remotos.
+¿Te gusta tener tus documentos en la nube para tenerlos siempre accesibles, no encargarte de copias de seguridad y además poderlos compartir y editar con otras personas? Pues la misma filosofía aplicada a la virtualización es lo que se conoce como <strong>COMPUTACIÓN EN LA NUBE o CLOUD COMPUTING</strong></p>
+<hr class="docutils" />
+<blockquote>
+<div><p><strong>¿SABRÍAS?…</strong>
+Imaginar alguna de las ventajas/desventajas de esta tecnología.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p>Algunas de las empresas más importantes se han involucrado de lleno en este campo.</p>
+<ul class="simple">
+<li><p>Amazon -&gt; <a class="reference external" href="https://aws.amazon.com/">AWS</a></p></li>
+<li><p>Microsoft -&gt; <a class="reference external" href="https://azure.microsoft.com/es-es">Azure</a></p></li>
+<li><p>Google -&gt; <a class="reference external" href="https://cloud.google.com/?hl=es">Google Cloud Platform</a></p></li>
+<li><p>Oracle -&gt; <a class="reference external" href="https://www.oracle.com/cloud">Oracle Cloud</a></p></li>
+</ul>
+<div class="footnotes">
+       <hr />
+       <ol>
+           <li class="footnote" id="fn:note1">
+               <p>
+                   <b>Más ayuda en:</b> <a class="footnote-backref" rev="footnote" href="#fnref:note1">&#8617;</a>
+                   <ul>
+                   <li><a href="https://www.mclibre.org/consultar/webapps/lecciones/docker.html" target="_blank">mclibre</a></li>
+                   <li><a href="https://www.josedomingo.org/pledin/2016/02/primeros-pasos-con-docker/" target="_blank">pledin 3.0</a></li>
+                   </ul>
+               </p>
+           </li>
+           <li class="footnote" id="fn:note2">
+               <p>
+                   <b>Ejemplo: </b><a href="https://josejuansanchez.org/bd/practica-07/index.html#ejemplo-de-docker-compose.yml-con-mysql-y-phpmyadmin" target="_blank">Como levantar un entorno con varios contenedores con docker-compose</a> <a class="footnote-backref" rev="footnote" href="#fnref:note2">&#8617;</a>
+               </p>
+           </li>
+           <li class="footnote" id="fn:note3">
+               <p>
+                   <b>Ejemplo: </b><a href="https://www.redhat.com/es/topics/automation/what-is-orchestration" target="_blank">Tutoriales de RedHat</a> <a class="footnote-backref" rev="footnote" href="#fnref:note3">&#8617;</a>
+               </p>
+           </li>
+       </ol>
+   </div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="componentes.html" class="btn btn-neutral float-left" title="2.2. Componentes de los Srv. de Red" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="escenario.html" class="btn btn-neutral float-right" title="2.4. Entorno de trabajo" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, M. Tomás Giménez Albert.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
