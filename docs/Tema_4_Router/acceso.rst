@@ -38,9 +38,11 @@ Tenemos varias opciones para crear rutas:
 
 * Con el uso del comando **ip route** (https://www.cyberciti.biz/faq/linux-route-add/)
 * Inclyendo **rutas estáticas en nuestro fichero de netplan** de configuración de red (https://linuxconfig.org/how-to-add-static-route-with-netplan-on-ubuntu-20-04-focal-fossa-linux) 
-* A través de **NETFILTER**  (https://es.wikipedia.org/wiki/Netfilter) que es el  framework disponible en el núcleo de Linux que permite interceptar y manipular paquetes de red. Dicho framework permite interactuar con paquetes en diferentes etapas del procesamiento dentro del sistema operativo, ofreciendo funcionalidades de cortafuegos y otras utilidades relacionadas. Los componentes más populares son:
-   - Las clásicas **IPTABLES** (http://es.tldp.org/Manuales-LuCAS/doc-iptables-firewall/doc-iptables-firewall.pdf).
-   - Sustituidas por las más modernas (y probablemente sencillas) **NFTABLES** (https://www.josedomingo.org/pledin/2020/01/nftables-cortafuegos-perimetral-nat/). 
+* A través de **NETFILTER**  (https://es.wikipedia.org/wiki/Netfilter) que es el  framework disponible en el núcleo de Linux que permite interceptar y manipular paquetes de red. Dicho framework permite interactuar con paquetes en diferentes etapas del procesamiento dentro del sistema operativo, ofreciendo funcionalidades de cortafuegos y otras utilidades relacionadas. 
+  Los componentes más populares son:
+   - Las clásicas **IPTABLES**.
+   - Sustituidas por las más modernas (y probablemente sencillas) **NFTABLES**.
+   - Puedes encontrar un tutorial para ambas opciones en el siguiente enlace https://www.linode.com/docs/guides/linux-router-and-ip-forwarding/?tabs=iptables.
 
 
 Debemos incluir los comandos necesarios para:
@@ -52,15 +54,3 @@ Debemos incluir los comandos necesarios para:
 
 .. important::
    Para que funcione bien el enrutamiento, recuerda repasar tus servidors DHCP y DNS, comprobando que todo esté correctamente configurado.
-
-
-
-
-.. raw:: html
-
-        </br>
-        <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>PRÁCTICA 1</b></u></br>
-        Realiza la práctica 1 del Tema 4 del aula virtual, convirtiendo tus servidores en enrutadores.
-        </div>
-        </br>
