@@ -225,7 +225,7 @@ Juntando todo(DDNS)
 
 
 
-.. image:: img/DDNS.png
+.. image:: img/ddns_image.png
     :width: 900 px
     :alt: conf. DNS Linux GUI
     :align: center
