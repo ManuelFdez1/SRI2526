@@ -22,7 +22,7 @@ varios años.
 La configuración de una web protegida con HTTPS, independientemente del servidor que utilicemos, se realiza básicamente con los siguientes pasos:
 
     1. Activar los módulos correspondientes (en el caso de Apache).
-    2. Generar un certificado para el servidor. Recuerda conceptos *certificado, clave pública/privada* (https://www.manualesfaciles.com/certificados-diferencias-de-pem-crt-y-key/) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
+    2. Generar un certificado para el servidor. Recuerda conceptos *certificado, clave pública/privada* (https://dinahosting.com/ayuda/ficheros-de-un-certificado-crt-key-csr-ca-pem-pfx/) →  Durante la ejecución de comando contestaremos algunas preguntas como el nombre del servidor, el país, etc...
           * ¿Ubicación de los certificados?
           * ¿Propietario/Permisos?
   
@@ -44,3 +44,11 @@ En los siguientes enlaces puedes encontrar unos sencillos tutoriales:
       * CA de pago
       * Opciones gratuitas como `Let's Encrypt <https://letsencrypt.org/es/>`_, aunque en este caso necesitarias un dominio real público en la web (puedes usar una alternativa gratuita tipo `no-ip <https://www.noip.com/>`_ para hacer esto). 
       * Puedes encontrar un interesante manual en https://josejuansanchez.org/iaw/practica-https
+
+
+.. raw:: html
+
+    <div style="text-align: justify; color: BLUE; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
+    <u>¿Sabrías?</u></br>
+    Una vez revisado todo lo explicado en este apartado: ¿Podrías dotar de una capa de seguridad a los servidores web configurados en las prácticas realizadas hasta ahora en este tema?
+    </div></br>
