@@ -42,5 +42,5 @@ En los siguientes enlaces puedes encontrar unos sencillos tutoriales:
    `autoridad certificadora (CA) <https://es.wikipedia.org/wiki/Autoridad_de_certificaci%C3%B3n>`_. Tienes varias opciones:
 
       * CA de pago
-      * Opciones gratuitas como `Let's Encrypt <https://letsencrypt.org/es/>`_, aunque en este caso necesitarias un dominio real público en la web (puedes usar una alternativa gratuita tipo `no-ip <https://www.noip.com/>`_ para hacer esto). Puedes encontrar una manual paso a
-        paso de como configuar esto en la web, tanto para `APACHE <https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-22-04>`_ como para `NGINX <https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-22-04>`_
+      * Opciones gratuitas como `Let's Encrypt <https://letsencrypt.org/es/>`_, aunque en este caso necesitarias un dominio real público en la web (puedes usar una alternativa gratuita tipo `no-ip <https://www.noip.com/>`_ para hacer esto). 
+      * Puedes encontrar un interesante manual en https://josejuansanchez.org/iaw/practica-https
