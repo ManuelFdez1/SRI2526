@@ -59,12 +59,6 @@ Los pasos a realizar, `extraídos del siguiente manual <https://cloudinfrastruct
 
     4. Limit/LimitExcept para que solo pida usuario/passwd en el caso de acceder a ficheros via dav (https://httpd.apache.org/docs/2.4/mod/mod_dav.html#page-header).
     5. Reiniciar apache
-    6. Probar la conexión con un cliente(Linux|Windows|MAC).
-
-        .. image:: img/webdav_3.png
-            :width: 400 px
-            :alt: WebDAV
-            :align: center
 
 .. Important::
    En caso de querer dar acceso DAV **desde el directorio raiz de nuestro sitio web** debemos realizar algunas tareas más de configuración, sobretodo por la colisión con la 
@@ -87,15 +81,34 @@ Los pasos a realizar en este caso puedes encontrarlos en la `documentación ofic
 
                     # apt -y install nginx-extras libnginx-mod-http-dav-ext
 
-    1. Añadir en nuestra configuración de las opciones correspondientes:
+    2. Añadir en nuestra configuración las opciones correspondientes. Un ejemplo podría ser el que mostramos a continuaciónn  (WEBDAVS ya que usamos HTTPS), y en el que aprovechando
+    la directiva location dos para la misma ubicación podemos distinguir el comportamiento que  queremos si accedemos a través de navegador(HTTPS) o a través de un cliente DAV:
 
-        .. image:: img/webdav_4.png
+        .. image:: img/webdav_4_1.png
             :width: 400 px
             :alt: WebDAV
             :align: center
 
-    2. El resto de aspectos a tener en cuenta son muy similares a Apache.
+    3. El resto de aspectos a tener en cuenta son muy similares a Apache.
 
+
+Clientes de WebDAV(S)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Puedes encontrar para cualquiera de nuestros SO habituales.
+    * Windows: Con el programa WinSCP
+
+    .. image:: img/WinSCP.png
+            :width: 400 px
+            :alt: WebDAV
+            :align: center
+  
+    * Linux: Integrados en el gestor de ficheros. Tambien tenemos la opción de montajes con la herramientas **dav2fs** (https://wiki.archlinux.org/title/Davfs2)
+
+    .. image:: img/ClienteDavLinux.png
+            :width: 400 px
+            :alt: WebDAV
+            :align: center
 
 .. raw:: html
 
