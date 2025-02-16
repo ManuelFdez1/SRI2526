@@ -195,8 +195,7 @@ En este servicio debemos prestar atención a los siguientes elementos o propieda
   * Tipos de usuari@/autenticación.
       * Usuari@s locales
       * Usuari@s virtuales. Varias posibilidades.
-          * Ficheros generados con el paquete db-util (`VIRTUAL USERS <https://help.ubuntu.com/community/vsftpd#The_workshop>`_ ) 
-          * Ficheros generados con htpasswd.
+          * Ficheros generados con htpasswd(https://wiki.archlinux.org/title/Very_Secure_FTP_Daemon#Tips_and_tricks).
           * Bases de datos (MySql..)
           * Servicios de directorio (LDAP)
       * Autorizar acceso anónimo
@@ -213,6 +212,7 @@ la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html
   * Permite **servidores virtuales** (por IP)
   * Puede incluirse **cifrado** (FTP seguro)
   * **Enjaular usuarios** (*atención writeable chroot*)
+  * El script de arranque y parada no ofrece mucha información (el comando *#/usr/sbin/vsftpd /etc/vsftpd.conf* ofrece algo más de información de lo que está pasando)
 
 
 .. note:: 
