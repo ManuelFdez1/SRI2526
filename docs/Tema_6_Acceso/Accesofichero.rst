@@ -195,10 +195,9 @@ En este servicio debemos prestar atención a los siguientes elementos o propieda
   * Tipos de usuari@/autenticación.
       * Usuari@s locales
       * Usuari@s virtuales. Varias posibilidades.
-          * Ficheros generados con htpasswd(https://wiki.archlinux.org/title/Very_Secure_FTP_Daemon#Tips_and_tricks).
           * Bases de datos (MySql..)
           * Servicios de directorio (LDAP)
-      * Autorizar acceso anónimo
+      * Autorizar acceso anónimo???
   * Enjaular a l@s usuari@s (**CHROOT**).
   * Soporte para conexiones seguras mediante SSL(instalación de certificados).
 
@@ -213,7 +212,10 @@ la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html
   * Puede incluirse **cifrado** (FTP seguro)
   * **Enjaular usuarios** (*atención writeable chroot*)
   * El script de arranque y parada no ofrece mucha información (el comando *#/usr/sbin/vsftpd /etc/vsftpd.conf* ofrece algo más de información de lo que está pasando)
-
+  * Usuari@s virtuales, por ejemplo generados con el comando **htpasswd**.
+          * https://wiki.archlinux.org/title/Very_Secure_FTP_Daemon#Tips_and_tricks
+             - *#htpasswd -d* (usando crypt)
+             - Generando un fichero /etc/pam.d/vsftpd y un vsftpd.conf similares a los incluidos en el espacio virtual del módulo.  
 
 .. note:: 
    Sería un ejercicio interesante realizar la instalación y configuración de un servidor FTP en una MV Linux, con las siguientes características:
