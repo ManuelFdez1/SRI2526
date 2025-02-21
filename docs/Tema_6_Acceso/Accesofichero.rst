@@ -223,7 +223,7 @@ la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html
         * Funciona en modo pasivo. Determina los puertos donde se puede conectar.
         * Crea las reglas correspondientes de firewall para que permita su acceso.
         * Personaliza el mensaje de bienvenida
-        * Exisitiran una seria de usuarios creado con las utilidades de db-utils (usuarios virtuales) que accederan al servidor. Debes crear también sus carpetas con los permisos correspondientes.
+        * Exisitiran una seria de usuarios creado con la utilidad htpasswd (usuarios virtuales) que accederan al servidor. Debes crear también sus carpetas con los permisos correspondientes.
         * El servidor prohibe la conexión de algunos usuarios. Los que aparezcan en un determinado fichero (El que tu quieras).
         * Los usuarios son enjaulados. Atentos a los mensajes que proporciona al servidor.
         * El servidor funciona en modo seguro de manera forzosa.
@@ -232,12 +232,12 @@ la `documentación oficial <https://security.appspot.com/vsftpd/vsftpd_conf.html
 
 .. raw:: html
 
-        <!--</br>
+        </br>
         <div style="text-align: justify; color: orange; background-color: #e0e0e0; border-radius: 25px; padding-top: 20px;padding-right: 30px;padding-bottom: 20px; padding-left: 30px;">
-        <u><b>PRÁCTICA 1</b></u></br>
-        Servidor FTP seguro en una MV/Instancia Linuxff.
+        <u><b>PRÁCTICA 2</b></u></br>
+        Servidor FTP seguro en una Instancia en la nube con usuarios virtuales y utización de sistemas de ficheros remoto(NFS/EFS).
         </div>
-        </br>-->
+        </br>
 
 
 
